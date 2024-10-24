@@ -49,6 +49,18 @@ The project also includes unit testing functionality using XUnit to ensure relia
 - Login Credentials: Use the following credentials for login management (or register):
   - Username: Manny | Password: 12345678
   - Username: MarcoPolo | Password: 12345678
+
+# Documentation
+### Back-end
+- DocFX: Run docfx serve _site in the command prompt from the main project folder.
+### Front-end
+- Compodoc: Run npx compodoc -s in the command prompt from the main client app folder.
+- 
+# Unit Tests
+### Back-end
+- Run tests from Test Explorer in Visual Studio.
+### Front-end
+- Run ng test in the command prompt from the main project folder to execute tests.
   
 # Features
 - User Authorization: Secure access control for different user roles.
