@@ -2,13 +2,13 @@
 ### C# | TypeScript | Swagger (Swashbuckle) | Angular | Bootstrap | XUnit | SSMS | Serilog | .NET | RESTful API | Visual Studio
 
 # Summary
-MyHaikus is a platform that allows users to explore a diverse collection of renowned authors and their haikus. It offers a user-friendly environment for effortlessly managing personal haikus and viewing those created by others, enabling users to appreciate the beauty of this unique form of poetry. Users can create, update, delete, and share haikus with ease, all facilitated through the front-end using Angular and TypeScript.
+MyHaikus is a platform that allows users to explore a diverse collection of renowned authors and their haikus. It offers a user-friendly environment for effortlessly managing personal haikus and viewing those created by others, enabling users to appreciate the beauty of this unique form of poetry. Users can create, update, delete, and share haikus with ease, all facilitated through the front-end using Angular and TypeScript. It features comprehensive XML documentation in the back end and JSDoc in the front end, strongly emphasizing XML for data transfer, as the controller endpoints produce and consume XML, which involves serialization and deserialization of data between the two.
 
 Haiku.API serves as a robust RESTful API designed for creating and managing haikus and haiku creators. It features JWT Authorization for secure access (utilizing cookies to store the tokens), CRUD operations with built-in validation (including a custom syllable counter), and Serilog for efficient log tracking and monitoring, all implemented through the back-end using .NET.
 
-For documentation, DocFX is utilized to generate comprehensive back-end documentation, ensuring developers have clear and accessible resources. On the front-end, Compodoc is employed for JSDoc documentation, providing detailed insights into the Angular application structure and components. This dual documentation approach enhances maintainability and understanding across the project.
+For documentation, DocFX is utilized to generate comprehensive back-end documentation, ensuring clear and accessible resources. On the front-end, Compodoc is employed for JSDoc documentation, providing detailed insights into the Angular application structure and components.
 
-The project also includes unit tests for services using XUnit to ensure reliability and performance in the back-end, as well as Karma for unit testing in the front-end.
+The project also includes unit testing functionality using XUnit to ensure reliability and performance for the back end and Karma for unit testing in the front end.
 
 # Dependencies
 ### Back-end
