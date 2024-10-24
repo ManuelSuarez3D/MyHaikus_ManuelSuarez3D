@@ -80,7 +80,7 @@ The project also includes unit testing functionality using XUnit to ensure relia
   
 # Business Rules
 - XML Serialization: All data exchanged between the front end and back end must be in XML format, ensuring strict adherence to XML markup for communication.
-- Authorized Users: Only authorized users can create, update, and delete (C.U.D.) their haikus.
+- Authorized Users: Only authorized users can create, update, and delete (C.U.D.) haikus.
 - Admin Role Permissions: Only admin-role users can create, read, update, and delete (C.R.U.D.) authors and their associated haikus.
 - Admin User Capabilities: Admin-role users can delete any non-admin users and remove user haikus that do not belong to them.
   
