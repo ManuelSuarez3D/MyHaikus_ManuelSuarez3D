@@ -1,0 +1,657 @@
+### YamlMime:ManagedReference
+items:
+- uid: Haiku.API.Services.AuthorServices.IAuthorService
+  commentId: T:Haiku.API.Services.AuthorServices.IAuthorService
+  id: IAuthorService
+  parent: Haiku.API.Services.AuthorServices
+  children:
+  - Haiku.API.Services.AuthorServices.IAuthorService.AddAuthorAsync(Haiku.API.Dtos.AuthorDto)
+  - Haiku.API.Services.AuthorServices.IAuthorService.AuthorExistsByIdAsync(System.Int64)
+  - Haiku.API.Services.AuthorServices.IAuthorService.DeleteAuthorByIdAsync(System.Int64)
+  - Haiku.API.Services.AuthorServices.IAuthorService.GetAuthorByIdAsync(System.Int64)
+  - Haiku.API.Services.AuthorServices.IAuthorService.GetPaginatedAuthorsAsync(System.Int32,System.Int32,System.String)
+  - Haiku.API.Services.AuthorServices.IAuthorService.GetTotalAuthorsAsync(System.String)
+  - Haiku.API.Services.AuthorServices.IAuthorService.UpdateAuthorAsync(System.Int64,Haiku.API.Dtos.AuthorDto)
+  langs:
+  - csharp
+  - vb
+  name: IAuthorService
+  nameWithType: IAuthorService
+  fullName: Haiku.API.Services.AuthorServices.IAuthorService
+  type: Interface
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Services/AuthorServices/IAuthorService.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: IAuthorService
+    path: Haiku.API/Services/AuthorServices/IAuthorService.cs
+    startLine: 5
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Services.AuthorServices
+  syntax:
+    content: public interface IAuthorService
+    content.vb: Public Interface IAuthorService
+- uid: Haiku.API.Services.AuthorServices.IAuthorService.GetPaginatedAuthorsAsync(System.Int32,System.Int32,System.String)
+  commentId: M:Haiku.API.Services.AuthorServices.IAuthorService.GetPaginatedAuthorsAsync(System.Int32,System.Int32,System.String)
+  id: GetPaginatedAuthorsAsync(System.Int32,System.Int32,System.String)
+  parent: Haiku.API.Services.AuthorServices.IAuthorService
+  langs:
+  - csharp
+  - vb
+  name: GetPaginatedAuthorsAsync(int, int, string)
+  nameWithType: IAuthorService.GetPaginatedAuthorsAsync(int, int, string)
+  fullName: Haiku.API.Services.AuthorServices.IAuthorService.GetPaginatedAuthorsAsync(int, int, string)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Services/AuthorServices/IAuthorService.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: GetPaginatedAuthorsAsync
+    path: Haiku.API/Services/AuthorServices/IAuthorService.cs
+    startLine: 7
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Services.AuthorServices
+  syntax:
+    content: Task<IEnumerable<AuthorDto>> GetPaginatedAuthorsAsync(int pageNumber, int pageSize, string searchOption)
+    parameters:
+    - id: pageNumber
+      type: System.Int32
+    - id: pageSize
+      type: System.Int32
+    - id: searchOption
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Haiku.API.Dtos.AuthorDto}}
+    content.vb: Function GetPaginatedAuthorsAsync(pageNumber As Integer, pageSize As Integer, searchOption As String) As Task(Of IEnumerable(Of AuthorDto))
+  overload: Haiku.API.Services.AuthorServices.IAuthorService.GetPaginatedAuthorsAsync*
+  nameWithType.vb: IAuthorService.GetPaginatedAuthorsAsync(Integer, Integer, String)
+  fullName.vb: Haiku.API.Services.AuthorServices.IAuthorService.GetPaginatedAuthorsAsync(Integer, Integer, String)
+  name.vb: GetPaginatedAuthorsAsync(Integer, Integer, String)
+- uid: Haiku.API.Services.AuthorServices.IAuthorService.GetTotalAuthorsAsync(System.String)
+  commentId: M:Haiku.API.Services.AuthorServices.IAuthorService.GetTotalAuthorsAsync(System.String)
+  id: GetTotalAuthorsAsync(System.String)
+  parent: Haiku.API.Services.AuthorServices.IAuthorService
+  langs:
+  - csharp
+  - vb
+  name: GetTotalAuthorsAsync(string)
+  nameWithType: IAuthorService.GetTotalAuthorsAsync(string)
+  fullName: Haiku.API.Services.AuthorServices.IAuthorService.GetTotalAuthorsAsync(string)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Services/AuthorServices/IAuthorService.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: GetTotalAuthorsAsync
+    path: Haiku.API/Services/AuthorServices/IAuthorService.cs
+    startLine: 8
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Services.AuthorServices
+  syntax:
+    content: Task<int> GetTotalAuthorsAsync(string searchOption)
+    parameters:
+    - id: searchOption
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+    content.vb: Function GetTotalAuthorsAsync(searchOption As String) As Task(Of Integer)
+  overload: Haiku.API.Services.AuthorServices.IAuthorService.GetTotalAuthorsAsync*
+  nameWithType.vb: IAuthorService.GetTotalAuthorsAsync(String)
+  fullName.vb: Haiku.API.Services.AuthorServices.IAuthorService.GetTotalAuthorsAsync(String)
+  name.vb: GetTotalAuthorsAsync(String)
+- uid: Haiku.API.Services.AuthorServices.IAuthorService.GetAuthorByIdAsync(System.Int64)
+  commentId: M:Haiku.API.Services.AuthorServices.IAuthorService.GetAuthorByIdAsync(System.Int64)
+  id: GetAuthorByIdAsync(System.Int64)
+  parent: Haiku.API.Services.AuthorServices.IAuthorService
+  langs:
+  - csharp
+  - vb
+  name: GetAuthorByIdAsync(long)
+  nameWithType: IAuthorService.GetAuthorByIdAsync(long)
+  fullName: Haiku.API.Services.AuthorServices.IAuthorService.GetAuthorByIdAsync(long)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Services/AuthorServices/IAuthorService.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: GetAuthorByIdAsync
+    path: Haiku.API/Services/AuthorServices/IAuthorService.cs
+    startLine: 9
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Services.AuthorServices
+  syntax:
+    content: Task<AuthorDto> GetAuthorByIdAsync(long authorId)
+    parameters:
+    - id: authorId
+      type: System.Int64
+    return:
+      type: System.Threading.Tasks.Task{Haiku.API.Dtos.AuthorDto}
+    content.vb: Function GetAuthorByIdAsync(authorId As Long) As Task(Of AuthorDto)
+  overload: Haiku.API.Services.AuthorServices.IAuthorService.GetAuthorByIdAsync*
+  nameWithType.vb: IAuthorService.GetAuthorByIdAsync(Long)
+  fullName.vb: Haiku.API.Services.AuthorServices.IAuthorService.GetAuthorByIdAsync(Long)
+  name.vb: GetAuthorByIdAsync(Long)
+- uid: Haiku.API.Services.AuthorServices.IAuthorService.AddAuthorAsync(Haiku.API.Dtos.AuthorDto)
+  commentId: M:Haiku.API.Services.AuthorServices.IAuthorService.AddAuthorAsync(Haiku.API.Dtos.AuthorDto)
+  id: AddAuthorAsync(Haiku.API.Dtos.AuthorDto)
+  parent: Haiku.API.Services.AuthorServices.IAuthorService
+  langs:
+  - csharp
+  - vb
+  name: AddAuthorAsync(AuthorDto)
+  nameWithType: IAuthorService.AddAuthorAsync(AuthorDto)
+  fullName: Haiku.API.Services.AuthorServices.IAuthorService.AddAuthorAsync(Haiku.API.Dtos.AuthorDto)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Services/AuthorServices/IAuthorService.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: AddAuthorAsync
+    path: Haiku.API/Services/AuthorServices/IAuthorService.cs
+    startLine: 10
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Services.AuthorServices
+  syntax:
+    content: Task<AuthorDto> AddAuthorAsync(AuthorDto author)
+    parameters:
+    - id: author
+      type: Haiku.API.Dtos.AuthorDto
+    return:
+      type: System.Threading.Tasks.Task{Haiku.API.Dtos.AuthorDto}
+    content.vb: Function AddAuthorAsync(author As AuthorDto) As Task(Of AuthorDto)
+  overload: Haiku.API.Services.AuthorServices.IAuthorService.AddAuthorAsync*
+- uid: Haiku.API.Services.AuthorServices.IAuthorService.UpdateAuthorAsync(System.Int64,Haiku.API.Dtos.AuthorDto)
+  commentId: M:Haiku.API.Services.AuthorServices.IAuthorService.UpdateAuthorAsync(System.Int64,Haiku.API.Dtos.AuthorDto)
+  id: UpdateAuthorAsync(System.Int64,Haiku.API.Dtos.AuthorDto)
+  parent: Haiku.API.Services.AuthorServices.IAuthorService
+  langs:
+  - csharp
+  - vb
+  name: UpdateAuthorAsync(long, AuthorDto)
+  nameWithType: IAuthorService.UpdateAuthorAsync(long, AuthorDto)
+  fullName: Haiku.API.Services.AuthorServices.IAuthorService.UpdateAuthorAsync(long, Haiku.API.Dtos.AuthorDto)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Services/AuthorServices/IAuthorService.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: UpdateAuthorAsync
+    path: Haiku.API/Services/AuthorServices/IAuthorService.cs
+    startLine: 11
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Services.AuthorServices
+  syntax:
+    content: Task UpdateAuthorAsync(long authorId, AuthorDto existingAuthor)
+    parameters:
+    - id: authorId
+      type: System.Int64
+    - id: existingAuthor
+      type: Haiku.API.Dtos.AuthorDto
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function UpdateAuthorAsync(authorId As Long, existingAuthor As AuthorDto) As Task
+  overload: Haiku.API.Services.AuthorServices.IAuthorService.UpdateAuthorAsync*
+  nameWithType.vb: IAuthorService.UpdateAuthorAsync(Long, AuthorDto)
+  fullName.vb: Haiku.API.Services.AuthorServices.IAuthorService.UpdateAuthorAsync(Long, Haiku.API.Dtos.AuthorDto)
+  name.vb: UpdateAuthorAsync(Long, AuthorDto)
+- uid: Haiku.API.Services.AuthorServices.IAuthorService.DeleteAuthorByIdAsync(System.Int64)
+  commentId: M:Haiku.API.Services.AuthorServices.IAuthorService.DeleteAuthorByIdAsync(System.Int64)
+  id: DeleteAuthorByIdAsync(System.Int64)
+  parent: Haiku.API.Services.AuthorServices.IAuthorService
+  langs:
+  - csharp
+  - vb
+  name: DeleteAuthorByIdAsync(long)
+  nameWithType: IAuthorService.DeleteAuthorByIdAsync(long)
+  fullName: Haiku.API.Services.AuthorServices.IAuthorService.DeleteAuthorByIdAsync(long)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Services/AuthorServices/IAuthorService.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: DeleteAuthorByIdAsync
+    path: Haiku.API/Services/AuthorServices/IAuthorService.cs
+    startLine: 12
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Services.AuthorServices
+  syntax:
+    content: Task DeleteAuthorByIdAsync(long authorId)
+    parameters:
+    - id: authorId
+      type: System.Int64
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function DeleteAuthorByIdAsync(authorId As Long) As Task
+  overload: Haiku.API.Services.AuthorServices.IAuthorService.DeleteAuthorByIdAsync*
+  nameWithType.vb: IAuthorService.DeleteAuthorByIdAsync(Long)
+  fullName.vb: Haiku.API.Services.AuthorServices.IAuthorService.DeleteAuthorByIdAsync(Long)
+  name.vb: DeleteAuthorByIdAsync(Long)
+- uid: Haiku.API.Services.AuthorServices.IAuthorService.AuthorExistsByIdAsync(System.Int64)
+  commentId: M:Haiku.API.Services.AuthorServices.IAuthorService.AuthorExistsByIdAsync(System.Int64)
+  id: AuthorExistsByIdAsync(System.Int64)
+  parent: Haiku.API.Services.AuthorServices.IAuthorService
+  langs:
+  - csharp
+  - vb
+  name: AuthorExistsByIdAsync(long)
+  nameWithType: IAuthorService.AuthorExistsByIdAsync(long)
+  fullName: Haiku.API.Services.AuthorServices.IAuthorService.AuthorExistsByIdAsync(long)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Services/AuthorServices/IAuthorService.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: AuthorExistsByIdAsync
+    path: Haiku.API/Services/AuthorServices/IAuthorService.cs
+    startLine: 13
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Services.AuthorServices
+  syntax:
+    content: Task<bool> AuthorExistsByIdAsync(long authorId)
+    parameters:
+    - id: authorId
+      type: System.Int64
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Function AuthorExistsByIdAsync(authorId As Long) As Task(Of Boolean)
+  overload: Haiku.API.Services.AuthorServices.IAuthorService.AuthorExistsByIdAsync*
+  nameWithType.vb: IAuthorService.AuthorExistsByIdAsync(Long)
+  fullName.vb: Haiku.API.Services.AuthorServices.IAuthorService.AuthorExistsByIdAsync(Long)
+  name.vb: AuthorExistsByIdAsync(Long)
+references:
+- uid: Haiku.API.Services.AuthorServices
+  commentId: N:Haiku.API.Services.AuthorServices
+  href: Haiku.html
+  name: Haiku.API.Services.AuthorServices
+  nameWithType: Haiku.API.Services.AuthorServices
+  fullName: Haiku.API.Services.AuthorServices
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Services
+    name: Services
+    href: Haiku.API.Services.html
+  - name: .
+  - uid: Haiku.API.Services.AuthorServices
+    name: AuthorServices
+    href: Haiku.API.Services.AuthorServices.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Services
+    name: Services
+    href: Haiku.API.Services.html
+  - name: .
+  - uid: Haiku.API.Services.AuthorServices
+    name: AuthorServices
+    href: Haiku.API.Services.AuthorServices.html
+- uid: Haiku.API.Services.AuthorServices.IAuthorService.GetPaginatedAuthorsAsync*
+  commentId: Overload:Haiku.API.Services.AuthorServices.IAuthorService.GetPaginatedAuthorsAsync
+  href: Haiku.API.Services.AuthorServices.IAuthorService.html#Haiku_API_Services_AuthorServices_IAuthorService_GetPaginatedAuthorsAsync_System_Int32_System_Int32_System_String_
+  name: GetPaginatedAuthorsAsync
+  nameWithType: IAuthorService.GetPaginatedAuthorsAsync
+  fullName: Haiku.API.Services.AuthorServices.IAuthorService.GetPaginatedAuthorsAsync
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Haiku.API.Dtos.AuthorDto}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Haiku.API.Dtos.AuthorDto}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IEnumerable<AuthorDto>>
+  nameWithType: Task<IEnumerable<AuthorDto>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<Haiku.API.Dtos.AuthorDto>>
+  nameWithType.vb: Task(Of IEnumerable(Of AuthorDto))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of Haiku.API.Dtos.AuthorDto))
+  name.vb: Task(Of IEnumerable(Of AuthorDto))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Haiku.API.Dtos.AuthorDto
+    name: AuthorDto
+    href: Haiku.API.Dtos.AuthorDto.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Haiku.API.Dtos.AuthorDto
+    name: AuthorDto
+    href: Haiku.API.Dtos.AuthorDto.html
+  - name: )
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Haiku.API.Services.AuthorServices.IAuthorService.GetTotalAuthorsAsync*
+  commentId: Overload:Haiku.API.Services.AuthorServices.IAuthorService.GetTotalAuthorsAsync
+  href: Haiku.API.Services.AuthorServices.IAuthorService.html#Haiku_API_Services_AuthorServices_IAuthorService_GetTotalAuthorsAsync_System_String_
+  name: GetTotalAuthorsAsync
+  nameWithType: IAuthorService.GetTotalAuthorsAsync
+  fullName: Haiku.API.Services.AuthorServices.IAuthorService.GetTotalAuthorsAsync
+- uid: System.Threading.Tasks.Task{System.Int32}
+  commentId: T:System.Threading.Tasks.Task{System.Int32}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<int>
+  nameWithType: Task<int>
+  fullName: System.Threading.Tasks.Task<int>
+  nameWithType.vb: Task(Of Integer)
+  fullName.vb: System.Threading.Tasks.Task(Of Integer)
+  name.vb: Task(Of Integer)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Haiku.API.Services.AuthorServices.IAuthorService.GetAuthorByIdAsync*
+  commentId: Overload:Haiku.API.Services.AuthorServices.IAuthorService.GetAuthorByIdAsync
+  href: Haiku.API.Services.AuthorServices.IAuthorService.html#Haiku_API_Services_AuthorServices_IAuthorService_GetAuthorByIdAsync_System_Int64_
+  name: GetAuthorByIdAsync
+  nameWithType: IAuthorService.GetAuthorByIdAsync
+  fullName: Haiku.API.Services.AuthorServices.IAuthorService.GetAuthorByIdAsync
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Threading.Tasks.Task{Haiku.API.Dtos.AuthorDto}
+  commentId: T:System.Threading.Tasks.Task{Haiku.API.Dtos.AuthorDto}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<AuthorDto>
+  nameWithType: Task<AuthorDto>
+  fullName: System.Threading.Tasks.Task<Haiku.API.Dtos.AuthorDto>
+  nameWithType.vb: Task(Of AuthorDto)
+  fullName.vb: System.Threading.Tasks.Task(Of Haiku.API.Dtos.AuthorDto)
+  name.vb: Task(Of AuthorDto)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Haiku.API.Dtos.AuthorDto
+    name: AuthorDto
+    href: Haiku.API.Dtos.AuthorDto.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Haiku.API.Dtos.AuthorDto
+    name: AuthorDto
+    href: Haiku.API.Dtos.AuthorDto.html
+  - name: )
+- uid: Haiku.API.Services.AuthorServices.IAuthorService.AddAuthorAsync*
+  commentId: Overload:Haiku.API.Services.AuthorServices.IAuthorService.AddAuthorAsync
+  href: Haiku.API.Services.AuthorServices.IAuthorService.html#Haiku_API_Services_AuthorServices_IAuthorService_AddAuthorAsync_Haiku_API_Dtos_AuthorDto_
+  name: AddAuthorAsync
+  nameWithType: IAuthorService.AddAuthorAsync
+  fullName: Haiku.API.Services.AuthorServices.IAuthorService.AddAuthorAsync
+- uid: Haiku.API.Dtos.AuthorDto
+  commentId: T:Haiku.API.Dtos.AuthorDto
+  parent: Haiku.API.Dtos
+  href: Haiku.API.Dtos.AuthorDto.html
+  name: AuthorDto
+  nameWithType: AuthorDto
+  fullName: Haiku.API.Dtos.AuthorDto
+- uid: Haiku.API.Dtos
+  commentId: N:Haiku.API.Dtos
+  href: Haiku.html
+  name: Haiku.API.Dtos
+  nameWithType: Haiku.API.Dtos
+  fullName: Haiku.API.Dtos
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Dtos
+    name: Dtos
+    href: Haiku.API.Dtos.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Dtos
+    name: Dtos
+    href: Haiku.API.Dtos.html
+- uid: Haiku.API.Services.AuthorServices.IAuthorService.UpdateAuthorAsync*
+  commentId: Overload:Haiku.API.Services.AuthorServices.IAuthorService.UpdateAuthorAsync
+  href: Haiku.API.Services.AuthorServices.IAuthorService.html#Haiku_API_Services_AuthorServices_IAuthorService_UpdateAuthorAsync_System_Int64_Haiku_API_Dtos_AuthorDto_
+  name: UpdateAuthorAsync
+  nameWithType: IAuthorService.UpdateAuthorAsync
+  fullName: Haiku.API.Services.AuthorServices.IAuthorService.UpdateAuthorAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Haiku.API.Services.AuthorServices.IAuthorService.DeleteAuthorByIdAsync*
+  commentId: Overload:Haiku.API.Services.AuthorServices.IAuthorService.DeleteAuthorByIdAsync
+  href: Haiku.API.Services.AuthorServices.IAuthorService.html#Haiku_API_Services_AuthorServices_IAuthorService_DeleteAuthorByIdAsync_System_Int64_
+  name: DeleteAuthorByIdAsync
+  nameWithType: IAuthorService.DeleteAuthorByIdAsync
+  fullName: Haiku.API.Services.AuthorServices.IAuthorService.DeleteAuthorByIdAsync
+- uid: Haiku.API.Services.AuthorServices.IAuthorService.AuthorExistsByIdAsync*
+  commentId: Overload:Haiku.API.Services.AuthorServices.IAuthorService.AuthorExistsByIdAsync
+  href: Haiku.API.Services.AuthorServices.IAuthorService.html#Haiku_API_Services_AuthorServices_IAuthorService_AuthorExistsByIdAsync_System_Int64_
+  name: AuthorExistsByIdAsync
+  nameWithType: IAuthorService.AuthorExistsByIdAsync
+  fullName: Haiku.API.Services.AuthorServices.IAuthorService.AuthorExistsByIdAsync
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )

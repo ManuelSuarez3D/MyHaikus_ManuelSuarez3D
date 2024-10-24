@@ -1,0 +1,58 @@
+<form [formGroup]="updateAuthorForm" (ngSubmit)="onSubmit()">
+
+  <div class="form-group text-start">
+    <label for="bio" class="fw-semibold mb-1">Name*</label>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">
+          <i class="fas fa-user custom-icon-color"></i>
+        </span>
+      </div>
+      <input type="text"
+             id="name"
+             [ngClass]="{'is-invalid': hasError('name')}"
+             class="form-control input"
+             formControlName="name"
+             placeholder="Enter a Name..."
+             required />
+    </div>
+    <div *ngIf="hasError('name', 'required')" class="text-danger">
+      <small>Name is required!</small>
+    </div>
+    <div *ngIf="hasError('name', 'minlength')" class="text-danger">
+      <small>Name length can't be less than 2.</small>
+    </div>
+    <div *ngIf="hasError('name', 'maxlength')" class="text-danger">
+      <small>Name length can't be more than 50.</small>
+    </div>
+  </div>
+
+  <div class="form-group text-start mt-3">
+    <label for="bio" class="fw-semibold mb-1">Bio</label>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">
+          <i class="fa-solid fa-id-card custom-icon-color"></i>
+        </span>
+      </div>
+      <textarea id="bio"
+                [ngClass]="{'is-invalid': hasError('bio')}"
+                class="form-control input"
+                formControlName="bio"
+                rows="3"
+                placeholder="Enter a Bio..."></textarea>
+    </div>
+
+    <small *ngIf="hasError('bio', 'minlength')" class="text-danger">
+      Bio length can't be less than 4, if not left empty.
+    </small>
+    <small *ngIf="hasError('bio', 'maxlength')" class="text-danger">
+      Bio length can't be more than 300.
+    </small>
+  </div>
+
+  <ng-container *appIsAuthorized="['Admin']">
+    <button type="submit" class="btn btn-primary mt-3 me-2">Confirm</button>
+  </ng-container>
+  <a [routerLink]="['/all-authors']" class="btn btn-outline-primary mt-3">Cancel</a>
+</form>

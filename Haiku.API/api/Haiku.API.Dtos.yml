@@ -1,0 +1,117 @@
+### YamlMime:ManagedReference
+items:
+- uid: Haiku.API.Dtos
+  commentId: N:Haiku.API.Dtos
+  id: Haiku.API.Dtos
+  children:
+  - Haiku.API.Dtos.AuthorDto
+  - Haiku.API.Dtos.AuthorHaikuDto
+  - Haiku.API.Dtos.JWTokenDto
+  - Haiku.API.Dtos.LoginDto
+  - Haiku.API.Dtos.PaginationMetaDataDto
+  - Haiku.API.Dtos.RegisterDto
+  - Haiku.API.Dtos.UserDto
+  - Haiku.API.Dtos.UserHaikuDto
+  - Haiku.API.Dtos.UserProfileDto
+  langs:
+  - csharp
+  - vb
+  name: Haiku.API.Dtos
+  nameWithType: Haiku.API.Dtos
+  fullName: Haiku.API.Dtos
+  type: Namespace
+  assemblies:
+  - Haiku.API
+references:
+- uid: Haiku.API.Dtos.AuthorDto
+  commentId: T:Haiku.API.Dtos.AuthorDto
+  parent: Haiku.API.Dtos
+  href: Haiku.API.Dtos.AuthorDto.html
+  name: AuthorDto
+  nameWithType: AuthorDto
+  fullName: Haiku.API.Dtos.AuthorDto
+- uid: Haiku.API.Dtos.AuthorHaikuDto
+  commentId: T:Haiku.API.Dtos.AuthorHaikuDto
+  parent: Haiku.API.Dtos
+  href: Haiku.API.Dtos.AuthorHaikuDto.html
+  name: AuthorHaikuDto
+  nameWithType: AuthorHaikuDto
+  fullName: Haiku.API.Dtos.AuthorHaikuDto
+- uid: Haiku.API.Dtos.JWTokenDto
+  commentId: T:Haiku.API.Dtos.JWTokenDto
+  href: Haiku.API.Dtos.JWTokenDto.html
+  name: JWTokenDto
+  nameWithType: JWTokenDto
+  fullName: Haiku.API.Dtos.JWTokenDto
+- uid: Haiku.API.Dtos.LoginDto
+  commentId: T:Haiku.API.Dtos.LoginDto
+  parent: Haiku.API.Dtos
+  href: Haiku.API.Dtos.LoginDto.html
+  name: LoginDto
+  nameWithType: LoginDto
+  fullName: Haiku.API.Dtos.LoginDto
+- uid: Haiku.API.Dtos.PaginationMetaDataDto
+  commentId: T:Haiku.API.Dtos.PaginationMetaDataDto
+  parent: Haiku.API.Dtos
+  href: Haiku.API.Dtos.PaginationMetaDataDto.html
+  name: PaginationMetaDataDto
+  nameWithType: PaginationMetaDataDto
+  fullName: Haiku.API.Dtos.PaginationMetaDataDto
+- uid: Haiku.API.Dtos.RegisterDto
+  commentId: T:Haiku.API.Dtos.RegisterDto
+  parent: Haiku.API.Dtos
+  href: Haiku.API.Dtos.RegisterDto.html
+  name: RegisterDto
+  nameWithType: RegisterDto
+  fullName: Haiku.API.Dtos.RegisterDto
+- uid: Haiku.API.Dtos.UserDto
+  commentId: T:Haiku.API.Dtos.UserDto
+  parent: Haiku.API.Dtos
+  href: Haiku.API.Dtos.UserDto.html
+  name: UserDto
+  nameWithType: UserDto
+  fullName: Haiku.API.Dtos.UserDto
+- uid: Haiku.API.Dtos.UserHaikuDto
+  commentId: T:Haiku.API.Dtos.UserHaikuDto
+  parent: Haiku.API.Dtos
+  href: Haiku.API.Dtos.UserHaikuDto.html
+  name: UserHaikuDto
+  nameWithType: UserHaikuDto
+  fullName: Haiku.API.Dtos.UserHaikuDto
+- uid: Haiku.API.Dtos.UserProfileDto
+  commentId: T:Haiku.API.Dtos.UserProfileDto
+  parent: Haiku.API.Dtos
+  href: Haiku.API.Dtos.UserProfileDto.html
+  name: UserProfileDto
+  nameWithType: UserProfileDto
+  fullName: Haiku.API.Dtos.UserProfileDto
+- uid: Haiku.API.Dtos
+  commentId: N:Haiku.API.Dtos
+  href: Haiku.html
+  name: Haiku.API.Dtos
+  nameWithType: Haiku.API.Dtos
+  fullName: Haiku.API.Dtos
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Dtos
+    name: Dtos
+    href: Haiku.API.Dtos.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Dtos
+    name: Dtos
+    href: Haiku.API.Dtos.html

@@ -1,0 +1,42 @@
+### YamlMime:ManagedReference
+items:
+- uid: HaikuApi.Tests
+  commentId: N:HaikuApi.Tests
+  id: HaikuApi.Tests
+  children:
+  - HaikuApi.Tests.CustomWebApplicationFactory`1
+  langs:
+  - csharp
+  - vb
+  name: HaikuApi.Tests
+  nameWithType: HaikuApi.Tests
+  fullName: HaikuApi.Tests
+  type: Namespace
+  assemblies:
+  - HaikuApi.Tests
+references:
+- uid: HaikuApi.Tests.CustomWebApplicationFactory`1
+  commentId: T:HaikuApi.Tests.CustomWebApplicationFactory`1
+  href: HaikuApi.Tests.CustomWebApplicationFactory-1.html
+  name: CustomWebApplicationFactory<TProgram>
+  nameWithType: CustomWebApplicationFactory<TProgram>
+  fullName: HaikuApi.Tests.CustomWebApplicationFactory<TProgram>
+  nameWithType.vb: CustomWebApplicationFactory(Of TProgram)
+  fullName.vb: HaikuApi.Tests.CustomWebApplicationFactory(Of TProgram)
+  name.vb: CustomWebApplicationFactory(Of TProgram)
+  spec.csharp:
+  - uid: HaikuApi.Tests.CustomWebApplicationFactory`1
+    name: CustomWebApplicationFactory
+    href: HaikuApi.Tests.CustomWebApplicationFactory-1.html
+  - name: <
+  - name: TProgram
+  - name: '>'
+  spec.vb:
+  - uid: HaikuApi.Tests.CustomWebApplicationFactory`1
+    name: CustomWebApplicationFactory
+    href: HaikuApi.Tests.CustomWebApplicationFactory-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TProgram
+  - name: )

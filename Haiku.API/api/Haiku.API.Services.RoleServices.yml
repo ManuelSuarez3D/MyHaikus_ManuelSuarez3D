@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Haiku.API.Services.RoleServices
+  commentId: N:Haiku.API.Services.RoleServices
+  id: Haiku.API.Services.RoleServices
+  children:
+  - Haiku.API.Services.RoleServices.IRoleService
+  - Haiku.API.Services.RoleServices.RoleService
+  langs:
+  - csharp
+  - vb
+  name: Haiku.API.Services.RoleServices
+  nameWithType: Haiku.API.Services.RoleServices
+  fullName: Haiku.API.Services.RoleServices
+  type: Namespace
+  assemblies:
+  - Haiku.API
+references:
+- uid: Haiku.API.Services.RoleServices.IRoleService
+  commentId: T:Haiku.API.Services.RoleServices.IRoleService
+  parent: Haiku.API.Services.RoleServices
+  href: Haiku.API.Services.RoleServices.IRoleService.html
+  name: IRoleService
+  nameWithType: IRoleService
+  fullName: Haiku.API.Services.RoleServices.IRoleService
+- uid: Haiku.API.Services.RoleServices.RoleService
+  commentId: T:Haiku.API.Services.RoleServices.RoleService
+  href: Haiku.API.Services.RoleServices.RoleService.html
+  name: RoleService
+  nameWithType: RoleService
+  fullName: Haiku.API.Services.RoleServices.RoleService
+- uid: Haiku.API.Services.RoleServices
+  commentId: N:Haiku.API.Services.RoleServices
+  href: Haiku.html
+  name: Haiku.API.Services.RoleServices
+  nameWithType: Haiku.API.Services.RoleServices
+  fullName: Haiku.API.Services.RoleServices
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Services
+    name: Services
+    href: Haiku.API.Services.html
+  - name: .
+  - uid: Haiku.API.Services.RoleServices
+    name: RoleServices
+    href: Haiku.API.Services.RoleServices.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Services
+    name: Services
+    href: Haiku.API.Services.html
+  - name: .
+  - uid: Haiku.API.Services.RoleServices
+    name: RoleServices
+    href: Haiku.API.Services.RoleServices.html

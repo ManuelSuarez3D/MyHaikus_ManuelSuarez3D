@@ -1,0 +1,712 @@
+### YamlMime:ManagedReference
+items:
+- uid: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository
+  commentId: T:Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository
+  id: IUserProfileRepository
+  parent: Haiku.API.Repositories.UserProfileRepositories
+  children:
+  - Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.AddUserProfileAsync(Haiku.API.Models.UserProfile)
+  - Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetAllUserProfilesByUserIdsAsync(System.Collections.Generic.List{System.Int64})
+  - Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetTotalUserProfilesAsync
+  - Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetUserProfileByIdAsync(System.Int64)
+  - Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetUserProfileByUserIdAsync(System.Int64)
+  - Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.UpdateUserProfileAsync(Haiku.API.Models.UserProfile)
+  - Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.UserProfileExistsByIdAsync(System.Int64)
+  langs:
+  - csharp
+  - vb
+  name: IUserProfileRepository
+  nameWithType: IUserProfileRepository
+  fullName: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository
+  type: Interface
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Repositories/UserProfileRepositories/IUserProfileRepository.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: IUserProfileRepository
+    path: Haiku.API/Repositories/UserProfileRepositories/IUserProfileRepository.cs
+    startLine: 5
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Repositories.UserProfileRepositories
+  syntax:
+    content: public interface IUserProfileRepository
+    content.vb: Public Interface IUserProfileRepository
+- uid: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetAllUserProfilesByUserIdsAsync(System.Collections.Generic.List{System.Int64})
+  commentId: M:Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetAllUserProfilesByUserIdsAsync(System.Collections.Generic.List{System.Int64})
+  id: GetAllUserProfilesByUserIdsAsync(System.Collections.Generic.List{System.Int64})
+  parent: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAllUserProfilesByUserIdsAsync(List<long>)
+  nameWithType: IUserProfileRepository.GetAllUserProfilesByUserIdsAsync(List<long>)
+  fullName: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetAllUserProfilesByUserIdsAsync(System.Collections.Generic.List<long>)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Repositories/UserProfileRepositories/IUserProfileRepository.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: GetAllUserProfilesByUserIdsAsync
+    path: Haiku.API/Repositories/UserProfileRepositories/IUserProfileRepository.cs
+    startLine: 7
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Repositories.UserProfileRepositories
+  syntax:
+    content: Task<IEnumerable<UserProfile>> GetAllUserProfilesByUserIdsAsync(List<long> userIds)
+    parameters:
+    - id: userIds
+      type: System.Collections.Generic.List{System.Int64}
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Haiku.API.Models.UserProfile}}
+    content.vb: Function GetAllUserProfilesByUserIdsAsync(userIds As List(Of Long)) As Task(Of IEnumerable(Of UserProfile))
+  overload: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetAllUserProfilesByUserIdsAsync*
+  nameWithType.vb: IUserProfileRepository.GetAllUserProfilesByUserIdsAsync(List(Of Long))
+  fullName.vb: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetAllUserProfilesByUserIdsAsync(System.Collections.Generic.List(Of Long))
+  name.vb: GetAllUserProfilesByUserIdsAsync(List(Of Long))
+- uid: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetTotalUserProfilesAsync
+  commentId: M:Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetTotalUserProfilesAsync
+  id: GetTotalUserProfilesAsync
+  parent: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository
+  langs:
+  - csharp
+  - vb
+  name: GetTotalUserProfilesAsync()
+  nameWithType: IUserProfileRepository.GetTotalUserProfilesAsync()
+  fullName: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetTotalUserProfilesAsync()
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Repositories/UserProfileRepositories/IUserProfileRepository.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: GetTotalUserProfilesAsync
+    path: Haiku.API/Repositories/UserProfileRepositories/IUserProfileRepository.cs
+    startLine: 8
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Repositories.UserProfileRepositories
+  syntax:
+    content: Task<int> GetTotalUserProfilesAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+    content.vb: Function GetTotalUserProfilesAsync() As Task(Of Integer)
+  overload: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetTotalUserProfilesAsync*
+- uid: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetUserProfileByUserIdAsync(System.Int64)
+  commentId: M:Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetUserProfileByUserIdAsync(System.Int64)
+  id: GetUserProfileByUserIdAsync(System.Int64)
+  parent: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository
+  langs:
+  - csharp
+  - vb
+  name: GetUserProfileByUserIdAsync(long)
+  nameWithType: IUserProfileRepository.GetUserProfileByUserIdAsync(long)
+  fullName: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetUserProfileByUserIdAsync(long)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Repositories/UserProfileRepositories/IUserProfileRepository.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: GetUserProfileByUserIdAsync
+    path: Haiku.API/Repositories/UserProfileRepositories/IUserProfileRepository.cs
+    startLine: 9
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Repositories.UserProfileRepositories
+  syntax:
+    content: Task<UserProfile?> GetUserProfileByUserIdAsync(long userId)
+    parameters:
+    - id: userId
+      type: System.Int64
+    return:
+      type: System.Threading.Tasks.Task{Haiku.API.Models.UserProfile}
+    content.vb: Function GetUserProfileByUserIdAsync(userId As Long) As Task(Of UserProfile)
+  overload: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetUserProfileByUserIdAsync*
+  nameWithType.vb: IUserProfileRepository.GetUserProfileByUserIdAsync(Long)
+  fullName.vb: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetUserProfileByUserIdAsync(Long)
+  name.vb: GetUserProfileByUserIdAsync(Long)
+- uid: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetUserProfileByIdAsync(System.Int64)
+  commentId: M:Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetUserProfileByIdAsync(System.Int64)
+  id: GetUserProfileByIdAsync(System.Int64)
+  parent: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository
+  langs:
+  - csharp
+  - vb
+  name: GetUserProfileByIdAsync(long)
+  nameWithType: IUserProfileRepository.GetUserProfileByIdAsync(long)
+  fullName: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetUserProfileByIdAsync(long)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Repositories/UserProfileRepositories/IUserProfileRepository.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: GetUserProfileByIdAsync
+    path: Haiku.API/Repositories/UserProfileRepositories/IUserProfileRepository.cs
+    startLine: 10
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Repositories.UserProfileRepositories
+  syntax:
+    content: Task<UserProfile?> GetUserProfileByIdAsync(long userProfileId)
+    parameters:
+    - id: userProfileId
+      type: System.Int64
+    return:
+      type: System.Threading.Tasks.Task{Haiku.API.Models.UserProfile}
+    content.vb: Function GetUserProfileByIdAsync(userProfileId As Long) As Task(Of UserProfile)
+  overload: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetUserProfileByIdAsync*
+  nameWithType.vb: IUserProfileRepository.GetUserProfileByIdAsync(Long)
+  fullName.vb: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetUserProfileByIdAsync(Long)
+  name.vb: GetUserProfileByIdAsync(Long)
+- uid: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.AddUserProfileAsync(Haiku.API.Models.UserProfile)
+  commentId: M:Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.AddUserProfileAsync(Haiku.API.Models.UserProfile)
+  id: AddUserProfileAsync(Haiku.API.Models.UserProfile)
+  parent: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository
+  langs:
+  - csharp
+  - vb
+  name: AddUserProfileAsync(UserProfile)
+  nameWithType: IUserProfileRepository.AddUserProfileAsync(UserProfile)
+  fullName: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.AddUserProfileAsync(Haiku.API.Models.UserProfile)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Repositories/UserProfileRepositories/IUserProfileRepository.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: AddUserProfileAsync
+    path: Haiku.API/Repositories/UserProfileRepositories/IUserProfileRepository.cs
+    startLine: 11
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Repositories.UserProfileRepositories
+  syntax:
+    content: Task<UserProfile> AddUserProfileAsync(UserProfile userProfile)
+    parameters:
+    - id: userProfile
+      type: Haiku.API.Models.UserProfile
+    return:
+      type: System.Threading.Tasks.Task{Haiku.API.Models.UserProfile}
+    content.vb: Function AddUserProfileAsync(userProfile As UserProfile) As Task(Of UserProfile)
+  overload: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.AddUserProfileAsync*
+- uid: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.UpdateUserProfileAsync(Haiku.API.Models.UserProfile)
+  commentId: M:Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.UpdateUserProfileAsync(Haiku.API.Models.UserProfile)
+  id: UpdateUserProfileAsync(Haiku.API.Models.UserProfile)
+  parent: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository
+  langs:
+  - csharp
+  - vb
+  name: UpdateUserProfileAsync(UserProfile)
+  nameWithType: IUserProfileRepository.UpdateUserProfileAsync(UserProfile)
+  fullName: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.UpdateUserProfileAsync(Haiku.API.Models.UserProfile)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Repositories/UserProfileRepositories/IUserProfileRepository.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: UpdateUserProfileAsync
+    path: Haiku.API/Repositories/UserProfileRepositories/IUserProfileRepository.cs
+    startLine: 12
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Repositories.UserProfileRepositories
+  syntax:
+    content: Task<int> UpdateUserProfileAsync(UserProfile userProfile)
+    parameters:
+    - id: userProfile
+      type: Haiku.API.Models.UserProfile
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+    content.vb: Function UpdateUserProfileAsync(userProfile As UserProfile) As Task(Of Integer)
+  overload: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.UpdateUserProfileAsync*
+- uid: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.UserProfileExistsByIdAsync(System.Int64)
+  commentId: M:Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.UserProfileExistsByIdAsync(System.Int64)
+  id: UserProfileExistsByIdAsync(System.Int64)
+  parent: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository
+  langs:
+  - csharp
+  - vb
+  name: UserProfileExistsByIdAsync(long)
+  nameWithType: IUserProfileRepository.UserProfileExistsByIdAsync(long)
+  fullName: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.UserProfileExistsByIdAsync(long)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Repositories/UserProfileRepositories/IUserProfileRepository.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: UserProfileExistsByIdAsync
+    path: Haiku.API/Repositories/UserProfileRepositories/IUserProfileRepository.cs
+    startLine: 13
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Repositories.UserProfileRepositories
+  syntax:
+    content: Task<bool> UserProfileExistsByIdAsync(long userProfileId)
+    parameters:
+    - id: userProfileId
+      type: System.Int64
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Function UserProfileExistsByIdAsync(userProfileId As Long) As Task(Of Boolean)
+  overload: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.UserProfileExistsByIdAsync*
+  nameWithType.vb: IUserProfileRepository.UserProfileExistsByIdAsync(Long)
+  fullName.vb: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.UserProfileExistsByIdAsync(Long)
+  name.vb: UserProfileExistsByIdAsync(Long)
+references:
+- uid: Haiku.API.Repositories.UserProfileRepositories
+  commentId: N:Haiku.API.Repositories.UserProfileRepositories
+  href: Haiku.html
+  name: Haiku.API.Repositories.UserProfileRepositories
+  nameWithType: Haiku.API.Repositories.UserProfileRepositories
+  fullName: Haiku.API.Repositories.UserProfileRepositories
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Repositories
+    name: Repositories
+    href: Haiku.API.Repositories.html
+  - name: .
+  - uid: Haiku.API.Repositories.UserProfileRepositories
+    name: UserProfileRepositories
+    href: Haiku.API.Repositories.UserProfileRepositories.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Repositories
+    name: Repositories
+    href: Haiku.API.Repositories.html
+  - name: .
+  - uid: Haiku.API.Repositories.UserProfileRepositories
+    name: UserProfileRepositories
+    href: Haiku.API.Repositories.UserProfileRepositories.html
+- uid: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetAllUserProfilesByUserIdsAsync*
+  commentId: Overload:Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetAllUserProfilesByUserIdsAsync
+  href: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.html#Haiku_API_Repositories_UserProfileRepositories_IUserProfileRepository_GetAllUserProfilesByUserIdsAsync_System_Collections_Generic_List_System_Int64__
+  name: GetAllUserProfilesByUserIdsAsync
+  nameWithType: IUserProfileRepository.GetAllUserProfilesByUserIdsAsync
+  fullName: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetAllUserProfilesByUserIdsAsync
+- uid: System.Collections.Generic.List{System.Int64}
+  commentId: T:System.Collections.Generic.List{System.Int64}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<long>
+  nameWithType: List<long>
+  fullName: System.Collections.Generic.List<long>
+  nameWithType.vb: List(Of Long)
+  fullName.vb: System.Collections.Generic.List(Of Long)
+  name.vb: List(Of Long)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Haiku.API.Models.UserProfile}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Haiku.API.Models.UserProfile}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IEnumerable<UserProfile>>
+  nameWithType: Task<IEnumerable<UserProfile>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<Haiku.API.Models.UserProfile>>
+  nameWithType.vb: Task(Of IEnumerable(Of UserProfile))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of Haiku.API.Models.UserProfile))
+  name.vb: Task(Of IEnumerable(Of UserProfile))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Haiku.API.Models.UserProfile
+    name: UserProfile
+    href: Haiku.API.Models.UserProfile.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Haiku.API.Models.UserProfile
+    name: UserProfile
+    href: Haiku.API.Models.UserProfile.html
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetTotalUserProfilesAsync*
+  commentId: Overload:Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetTotalUserProfilesAsync
+  href: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.html#Haiku_API_Repositories_UserProfileRepositories_IUserProfileRepository_GetTotalUserProfilesAsync
+  name: GetTotalUserProfilesAsync
+  nameWithType: IUserProfileRepository.GetTotalUserProfilesAsync
+  fullName: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetTotalUserProfilesAsync
+- uid: System.Threading.Tasks.Task{System.Int32}
+  commentId: T:System.Threading.Tasks.Task{System.Int32}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<int>
+  nameWithType: Task<int>
+  fullName: System.Threading.Tasks.Task<int>
+  nameWithType.vb: Task(Of Integer)
+  fullName.vb: System.Threading.Tasks.Task(Of Integer)
+  name.vb: Task(Of Integer)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetUserProfileByUserIdAsync*
+  commentId: Overload:Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetUserProfileByUserIdAsync
+  href: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.html#Haiku_API_Repositories_UserProfileRepositories_IUserProfileRepository_GetUserProfileByUserIdAsync_System_Int64_
+  name: GetUserProfileByUserIdAsync
+  nameWithType: IUserProfileRepository.GetUserProfileByUserIdAsync
+  fullName: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetUserProfileByUserIdAsync
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Threading.Tasks.Task{Haiku.API.Models.UserProfile}
+  commentId: T:System.Threading.Tasks.Task{Haiku.API.Models.UserProfile}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<UserProfile>
+  nameWithType: Task<UserProfile>
+  fullName: System.Threading.Tasks.Task<Haiku.API.Models.UserProfile>
+  nameWithType.vb: Task(Of UserProfile)
+  fullName.vb: System.Threading.Tasks.Task(Of Haiku.API.Models.UserProfile)
+  name.vb: Task(Of UserProfile)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Haiku.API.Models.UserProfile
+    name: UserProfile
+    href: Haiku.API.Models.UserProfile.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Haiku.API.Models.UserProfile
+    name: UserProfile
+    href: Haiku.API.Models.UserProfile.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetUserProfileByIdAsync*
+  commentId: Overload:Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetUserProfileByIdAsync
+  href: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.html#Haiku_API_Repositories_UserProfileRepositories_IUserProfileRepository_GetUserProfileByIdAsync_System_Int64_
+  name: GetUserProfileByIdAsync
+  nameWithType: IUserProfileRepository.GetUserProfileByIdAsync
+  fullName: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.GetUserProfileByIdAsync
+- uid: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.AddUserProfileAsync*
+  commentId: Overload:Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.AddUserProfileAsync
+  href: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.html#Haiku_API_Repositories_UserProfileRepositories_IUserProfileRepository_AddUserProfileAsync_Haiku_API_Models_UserProfile_
+  name: AddUserProfileAsync
+  nameWithType: IUserProfileRepository.AddUserProfileAsync
+  fullName: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.AddUserProfileAsync
+- uid: Haiku.API.Models.UserProfile
+  commentId: T:Haiku.API.Models.UserProfile
+  parent: Haiku.API.Models
+  href: Haiku.API.Models.UserProfile.html
+  name: UserProfile
+  nameWithType: UserProfile
+  fullName: Haiku.API.Models.UserProfile
+- uid: Haiku.API.Models
+  commentId: N:Haiku.API.Models
+  href: Haiku.html
+  name: Haiku.API.Models
+  nameWithType: Haiku.API.Models
+  fullName: Haiku.API.Models
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Models
+    name: Models
+    href: Haiku.API.Models.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Models
+    name: Models
+    href: Haiku.API.Models.html
+- uid: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.UpdateUserProfileAsync*
+  commentId: Overload:Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.UpdateUserProfileAsync
+  href: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.html#Haiku_API_Repositories_UserProfileRepositories_IUserProfileRepository_UpdateUserProfileAsync_Haiku_API_Models_UserProfile_
+  name: UpdateUserProfileAsync
+  nameWithType: IUserProfileRepository.UpdateUserProfileAsync
+  fullName: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.UpdateUserProfileAsync
+- uid: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.UserProfileExistsByIdAsync*
+  commentId: Overload:Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.UserProfileExistsByIdAsync
+  href: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.html#Haiku_API_Repositories_UserProfileRepositories_IUserProfileRepository_UserProfileExistsByIdAsync_System_Int64_
+  name: UserProfileExistsByIdAsync
+  nameWithType: IUserProfileRepository.UserProfileExistsByIdAsync
+  fullName: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.UserProfileExistsByIdAsync
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )

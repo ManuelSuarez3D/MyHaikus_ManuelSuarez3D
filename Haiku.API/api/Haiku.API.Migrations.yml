@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Haiku.API.Migrations
+  commentId: N:Haiku.API.Migrations
+  id: Haiku.API.Migrations
+  children:
+  - Haiku.API.Migrations.Test
+  langs:
+  - csharp
+  - vb
+  name: Haiku.API.Migrations
+  nameWithType: Haiku.API.Migrations
+  fullName: Haiku.API.Migrations
+  type: Namespace
+  assemblies:
+  - Haiku.API
+references:
+- uid: Haiku.API.Migrations.Test
+  commentId: T:Haiku.API.Migrations.Test
+  href: Haiku.API.Migrations.Test.html
+  name: Test
+  nameWithType: Test
+  fullName: Haiku.API.Migrations.Test

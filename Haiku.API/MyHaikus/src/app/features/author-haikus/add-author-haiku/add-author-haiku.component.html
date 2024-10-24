@@ -1,0 +1,51 @@
+<div class="container mt-5 text-center">
+  <div class="row mt-5">
+    <div class="col-md-6 offset-md-3">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="mb-0"><i class="fas fa-pen-fancy ms-n2"></i> Add Author Haiku</h3>
+        </div>
+        <div class="card-body">
+          <div *ngIf="errorMessages.add" class="alert alert-danger mt-3">{{ errorMessages.add }}</div>
+        </div>
+        <div class="p-4">
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <span class="fw-bold text-muted" style="overflow: auto; white-space: nowrap;">
+                <i class="fas fa-pencil-alt me-1"></i> Title
+              </span>: Minimum length of 2 characters, maximum of 50 characters. If left empty, it defaults to "Untitled".
+            </li>
+            <li>
+              <span class="fw-bold text-muted" style="overflow: auto; white-space: nowrap;">
+                <i class="fas fa-pencil-alt me-1"></i> Line One
+              </span>: Total length of 5 syllables.
+            </li>
+            <li>
+              <span class="fw-bold text-muted" style="overflow: auto; white-space: nowrap;">
+                <i class="fas fa-pencil-alt me-1"></i> Line Two
+              </span>: Total length of 7 syllables.
+            </li>
+            <li>
+              <span class="fw-bold text-muted" style="overflow: auto; white-space: nowrap;">
+                <i class="fas fa-pencil-alt me-1"></i> Line Three
+              </span>: Total length of 5 syllables.
+            </li>
+          </ul>
+          <p class="lead">Fields marked with * are required.</p>
+        </div>
+        <ng-container *ngIf="loadingStates.add; else addTemplate">
+          <div class="d-flex justify-content-center align-items-center mt-3" style="height: 100px;">
+            <div class="spinner-border text-primary" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+        </ng-container>
+        <ng-template #addTemplate>
+          <div class="card-body">
+            <app-add-author-haiku-form (formSubmit)="addAuthorHaiku($event)"></app-add-author-haiku-form>
+          </div>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</div>

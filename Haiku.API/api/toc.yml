@@ -1,0 +1,242 @@
+### YamlMime:TableOfContent
+items:
+- uid: AuthorHaikuApi.Tests.UnitTests
+  name: AuthorHaikuApi.Tests.UnitTests
+  items:
+  - uid: AuthorHaikuApi.Tests.UnitTests.AuthorHaikuServiceTests
+    name: AuthorHaikuServiceTests
+- uid: Haiku.API.Controllers
+  name: Haiku.API.Controllers
+  items:
+  - uid: Haiku.API.Controllers.AuthorController
+    name: AuthorController
+  - uid: Haiku.API.Controllers.AuthorHaikuController
+    name: AuthorHaikuController
+  - uid: Haiku.API.Controllers.LoginController
+    name: LoginController
+  - uid: Haiku.API.Controllers.RegisterController
+    name: RegisterController
+  - uid: Haiku.API.Controllers.UserController
+    name: UserController
+  - uid: Haiku.API.Controllers.UserHaikuController
+    name: UserHaikuController
+  - uid: Haiku.API.Controllers.UserProfileController
+    name: UserProfileController
+- uid: Haiku.API.Database
+  name: Haiku.API.Database
+  items:
+  - uid: Haiku.API.Database.HaikuAPIContext
+    name: HaikuAPIContext
+- uid: Haiku.API.Dtos
+  name: Haiku.API.Dtos
+  items:
+  - uid: Haiku.API.Dtos.AuthorDto
+    name: AuthorDto
+  - uid: Haiku.API.Dtos.AuthorHaikuDto
+    name: AuthorHaikuDto
+  - uid: Haiku.API.Dtos.JWTokenDto
+    name: JWTokenDto
+  - uid: Haiku.API.Dtos.LoginDto
+    name: LoginDto
+  - uid: Haiku.API.Dtos.PaginationMetaDataDto
+    name: PaginationMetaDataDto
+  - uid: Haiku.API.Dtos.RegisterDto
+    name: RegisterDto
+  - uid: Haiku.API.Dtos.UserDto
+    name: UserDto
+  - uid: Haiku.API.Dtos.UserHaikuDto
+    name: UserHaikuDto
+  - uid: Haiku.API.Dtos.UserProfileDto
+    name: UserProfileDto
+- uid: Haiku.API.Exceptions
+  name: Haiku.API.Exceptions
+  items:
+  - uid: Haiku.API.Exceptions.NotFoundException
+    name: NotFoundException
+  - uid: Haiku.API.Exceptions.NotSavedException
+    name: NotSavedException
+  - uid: Haiku.API.Exceptions.UsernameAlreadyTakenException
+    name: UsernameAlreadyTakenException
+- uid: Haiku.API.Mapping
+  name: Haiku.API.Mapping
+  items:
+  - uid: Haiku.API.Mapping.AuthorHaikuMapping
+    name: AuthorHaikuMapping
+  - uid: Haiku.API.Mapping.AuthorMapping
+    name: AuthorMapping
+  - uid: Haiku.API.Mapping.UserHaikuMapping
+    name: UserHaikuMapping
+  - uid: Haiku.API.Mapping.UserMapping
+    name: UserMapping
+  - uid: Haiku.API.Mapping.UserProfileMapping
+    name: UserProfileMapping
+- uid: Haiku.API.Migrations
+  name: Haiku.API.Migrations
+  items:
+  - uid: Haiku.API.Migrations.Test
+    name: Test
+- uid: Haiku.API.Models
+  name: Haiku.API.Models
+  items:
+  - uid: Haiku.API.Models.Author
+    name: Author
+  - uid: Haiku.API.Models.AuthorHaiku
+    name: AuthorHaiku
+  - uid: Haiku.API.Models.ErrorDetails
+    name: ErrorDetails
+  - uid: Haiku.API.Models.JWToken
+    name: JWToken
+  - uid: Haiku.API.Models.JwtSettings
+    name: JwtSettings
+  - uid: Haiku.API.Models.Login
+    name: Login
+  - uid: Haiku.API.Models.PaginationMetaData
+    name: PaginationMetaData
+  - uid: Haiku.API.Models.Register
+    name: Register
+  - uid: Haiku.API.Models.Role
+    name: Role
+  - uid: Haiku.API.Models.User
+    name: User
+  - uid: Haiku.API.Models.UserHaiku
+    name: UserHaiku
+  - uid: Haiku.API.Models.UserProfile
+    name: UserProfile
+- uid: Haiku.API.Repositories.AuthorHaikuRepositories
+  name: Haiku.API.Repositories.AuthorHaikuRepositories
+  items:
+  - uid: Haiku.API.Repositories.AuthorHaikuRepositories.AuthorHaikuRepository
+    name: AuthorHaikuRepository
+  - uid: Haiku.API.Repositories.AuthorHaikuRepositories.IAuthorHaikuRepository
+    name: IAuthorHaikuRepository
+- uid: Haiku.API.Repositories.AuthorRepositories
+  name: Haiku.API.Repositories.AuthorRepositories
+  items:
+  - uid: Haiku.API.Repositories.AuthorRepositories.AuthorRepository
+    name: AuthorRepository
+  - uid: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository
+    name: IAuthorRepository
+- uid: Haiku.API.Repositories.RoleRepositories
+  name: Haiku.API.Repositories.RoleRepositories
+  items:
+  - uid: Haiku.API.Repositories.RoleRepositories.IRoleRepository
+    name: IRoleRepository
+  - uid: Haiku.API.Repositories.RoleRepositories.RoleRepository
+    name: RoleRepository
+- uid: Haiku.API.Repositories.UserHaikuRepositories
+  name: Haiku.API.Repositories.UserHaikuRepositories
+  items:
+  - uid: Haiku.API.Repositories.UserHaikuRepositories.IUserHaikuRepository
+    name: IUserHaikuRepository
+  - uid: Haiku.API.Repositories.UserHaikuRepositories.UserHaikuRepository
+    name: UserHaikuRepository
+- uid: Haiku.API.Repositories.UserProfileRepositories
+  name: Haiku.API.Repositories.UserProfileRepositories
+  items:
+  - uid: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository
+    name: IUserProfileRepository
+  - uid: Haiku.API.Repositories.UserProfileRepositories.UserProfileRepository
+    name: UserProfileRepository
+- uid: Haiku.API.Repositories.UserRepositories
+  name: Haiku.API.Repositories.UserRepositories
+  items:
+  - uid: Haiku.API.Repositories.UserRepositories.IUserRepository
+    name: IUserRepository
+  - uid: Haiku.API.Repositories.UserRepositories.UserRepository
+    name: UserRepository
+- uid: Haiku.API.Services.AuthServices
+  name: Haiku.API.Services.AuthServices
+  items:
+  - uid: Haiku.API.Services.AuthServices.AuthService
+    name: AuthService
+  - uid: Haiku.API.Services.AuthServices.IAuthService
+    name: IAuthService
+- uid: Haiku.API.Services.AuthorHaikuServices
+  name: Haiku.API.Services.AuthorHaikuServices
+  items:
+  - uid: Haiku.API.Services.AuthorHaikuServices.AuthorHaikuService
+    name: AuthorHaikuService
+  - uid: Haiku.API.Services.AuthorHaikuServices.IAuthorHaikuService
+    name: IAuthorHaikuService
+- uid: Haiku.API.Services.AuthorServices
+  name: Haiku.API.Services.AuthorServices
+  items:
+  - uid: Haiku.API.Services.AuthorServices.AuthorService
+    name: AuthorService
+  - uid: Haiku.API.Services.AuthorServices.IAuthorService
+    name: IAuthorService
+- uid: Haiku.API.Services.IUserProfileServices
+  name: Haiku.API.Services.IUserProfileServices
+  items:
+  - uid: Haiku.API.Services.IUserProfileServices.IUserProfileService
+    name: IUserProfileService
+- uid: Haiku.API.Services.PaginationService
+  name: Haiku.API.Services.PaginationService
+  items:
+  - uid: Haiku.API.Services.PaginationService.IPaginationService
+    name: IPaginationService
+  - uid: Haiku.API.Services.PaginationService.PaginationService
+    name: PaginationService
+- uid: Haiku.API.Services.RoleServices
+  name: Haiku.API.Services.RoleServices
+  items:
+  - uid: Haiku.API.Services.RoleServices.IRoleService
+    name: IRoleService
+  - uid: Haiku.API.Services.RoleServices.RoleService
+    name: RoleService
+- uid: Haiku.API.Services.UserHaikuServices
+  name: Haiku.API.Services.UserHaikuServices
+  items:
+  - uid: Haiku.API.Services.UserHaikuServices.IUserHaikuService
+    name: IUserHaikuService
+  - uid: Haiku.API.Services.UserHaikuServices.UserHaikuService
+    name: UserHaikuService
+- uid: Haiku.API.Services.UserProfileServices
+  name: Haiku.API.Services.UserProfileServices
+  items:
+  - uid: Haiku.API.Services.UserProfileServices.UserProfileService
+    name: UserProfileService
+- uid: Haiku.API.Services.UserServices
+  name: Haiku.API.Services.UserServices
+  items:
+  - uid: Haiku.API.Services.UserServices.IUserService
+    name: IUserService
+  - uid: Haiku.API.Services.UserServices.UserService
+    name: UserService
+- uid: Haiku.API.Services.XmlSerializationServices
+  name: Haiku.API.Services.XmlSerializationServices
+  items:
+  - uid: Haiku.API.Services.XmlSerializationServices.IXmlSerializationService
+    name: IXmlSerializationService
+- uid: Haiku.API.Utilities
+  name: Haiku.API.Utilities
+  items:
+  - uid: Haiku.API.Utilities.IUnitOfWork
+    name: IUnitOfWork
+  - uid: Haiku.API.Utilities.MinLengthIfNotEmptyAttribute
+    name: MinLengthIfNotEmptyAttribute
+  - uid: Haiku.API.Utilities.StringLengthIfNotEmptyAttribute
+    name: StringLengthIfNotEmptyAttribute
+  - uid: Haiku.API.Utilities.UnitOfWork
+    name: UnitOfWork
+- uid: Haiku.API.Utility
+  name: Haiku.API.Utility
+  items:
+  - uid: Haiku.API.Utility.SyllableCountAttribute
+    name: SyllableCountAttribute
+- uid: HaikuApi.Tests
+  name: HaikuApi.Tests
+  items:
+  - uid: HaikuApi.Tests.CustomWebApplicationFactory`1
+    name: CustomWebApplicationFactory<TProgram>
+- uid: HaikuApi.Tests.TestUtilities
+  name: HaikuApi.Tests.TestUtilities
+  items:
+  - uid: HaikuApi.Tests.TestUtilities.TestAuthHandler
+    name: TestAuthHandler
+- uid: HaikuApi.Tests.UnitTests
+  name: HaikuApi.Tests.UnitTests
+  items:
+  - uid: HaikuApi.Tests.UnitTests.AuthorServiceTests
+    name: AuthorServiceTests
+memberLayout: SamePage

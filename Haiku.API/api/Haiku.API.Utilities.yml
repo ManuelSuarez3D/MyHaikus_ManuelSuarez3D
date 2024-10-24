@@ -1,0 +1,77 @@
+### YamlMime:ManagedReference
+items:
+- uid: Haiku.API.Utilities
+  commentId: N:Haiku.API.Utilities
+  id: Haiku.API.Utilities
+  children:
+  - Haiku.API.Utilities.IUnitOfWork
+  - Haiku.API.Utilities.MinLengthIfNotEmptyAttribute
+  - Haiku.API.Utilities.StringLengthIfNotEmptyAttribute
+  - Haiku.API.Utilities.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: Haiku.API.Utilities
+  nameWithType: Haiku.API.Utilities
+  fullName: Haiku.API.Utilities
+  type: Namespace
+  assemblies:
+  - Haiku.API
+references:
+- uid: Haiku.API.Utilities.IUnitOfWork
+  commentId: T:Haiku.API.Utilities.IUnitOfWork
+  parent: Haiku.API.Utilities
+  href: Haiku.API.Utilities.IUnitOfWork.html
+  name: IUnitOfWork
+  nameWithType: IUnitOfWork
+  fullName: Haiku.API.Utilities.IUnitOfWork
+- uid: Haiku.API.Utilities.MinLengthIfNotEmptyAttribute
+  commentId: T:Haiku.API.Utilities.MinLengthIfNotEmptyAttribute
+  parent: Haiku.API.Utilities
+  href: Haiku.API.Utilities.MinLengthIfNotEmptyAttribute.html
+  name: MinLengthIfNotEmptyAttribute
+  nameWithType: MinLengthIfNotEmptyAttribute
+  fullName: Haiku.API.Utilities.MinLengthIfNotEmptyAttribute
+- uid: Haiku.API.Utilities.StringLengthIfNotEmptyAttribute
+  commentId: T:Haiku.API.Utilities.StringLengthIfNotEmptyAttribute
+  parent: Haiku.API.Utilities
+  href: Haiku.API.Utilities.StringLengthIfNotEmptyAttribute.html
+  name: StringLengthIfNotEmptyAttribute
+  nameWithType: StringLengthIfNotEmptyAttribute
+  fullName: Haiku.API.Utilities.StringLengthIfNotEmptyAttribute
+- uid: Haiku.API.Utilities.UnitOfWork
+  commentId: T:Haiku.API.Utilities.UnitOfWork
+  href: Haiku.API.Utilities.UnitOfWork.html
+  name: UnitOfWork
+  nameWithType: UnitOfWork
+  fullName: Haiku.API.Utilities.UnitOfWork
+- uid: Haiku.API.Utilities
+  commentId: N:Haiku.API.Utilities
+  href: Haiku.html
+  name: Haiku.API.Utilities
+  nameWithType: Haiku.API.Utilities
+  fullName: Haiku.API.Utilities
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Utilities
+    name: Utilities
+    href: Haiku.API.Utilities.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Utilities
+    name: Utilities
+    href: Haiku.API.Utilities.html

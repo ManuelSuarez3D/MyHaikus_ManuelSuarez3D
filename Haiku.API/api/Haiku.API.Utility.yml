@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: Haiku.API.Utility
+  commentId: N:Haiku.API.Utility
+  id: Haiku.API.Utility
+  children:
+  - Haiku.API.Utility.SyllableCountAttribute
+  langs:
+  - csharp
+  - vb
+  name: Haiku.API.Utility
+  nameWithType: Haiku.API.Utility
+  fullName: Haiku.API.Utility
+  type: Namespace
+  assemblies:
+  - Haiku.API
+references:
+- uid: Haiku.API.Utility.SyllableCountAttribute
+  commentId: T:Haiku.API.Utility.SyllableCountAttribute
+  parent: Haiku.API.Utility
+  href: Haiku.API.Utility.SyllableCountAttribute.html
+  name: SyllableCountAttribute
+  nameWithType: SyllableCountAttribute
+  fullName: Haiku.API.Utility.SyllableCountAttribute
+- uid: Haiku.API.Utility
+  commentId: N:Haiku.API.Utility
+  href: Haiku.html
+  name: Haiku.API.Utility
+  nameWithType: Haiku.API.Utility
+  fullName: Haiku.API.Utility
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Utility
+    name: Utility
+    href: Haiku.API.Utility.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Utility
+    name: Utility
+    href: Haiku.API.Utility.html

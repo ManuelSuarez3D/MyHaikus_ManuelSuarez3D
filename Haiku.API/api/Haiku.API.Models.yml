@@ -1,0 +1,136 @@
+### YamlMime:ManagedReference
+items:
+- uid: Haiku.API.Models
+  commentId: N:Haiku.API.Models
+  id: Haiku.API.Models
+  children:
+  - Haiku.API.Models.Author
+  - Haiku.API.Models.AuthorHaiku
+  - Haiku.API.Models.ErrorDetails
+  - Haiku.API.Models.JWToken
+  - Haiku.API.Models.JwtSettings
+  - Haiku.API.Models.Login
+  - Haiku.API.Models.PaginationMetaData
+  - Haiku.API.Models.Register
+  - Haiku.API.Models.Role
+  - Haiku.API.Models.User
+  - Haiku.API.Models.UserHaiku
+  - Haiku.API.Models.UserProfile
+  langs:
+  - csharp
+  - vb
+  name: Haiku.API.Models
+  nameWithType: Haiku.API.Models
+  fullName: Haiku.API.Models
+  type: Namespace
+  assemblies:
+  - Haiku.API
+references:
+- uid: Haiku.API.Models.Author
+  commentId: T:Haiku.API.Models.Author
+  parent: Haiku.API.Models
+  href: Haiku.API.Models.Author.html
+  name: Author
+  nameWithType: Author
+  fullName: Haiku.API.Models.Author
+- uid: Haiku.API.Models.AuthorHaiku
+  commentId: T:Haiku.API.Models.AuthorHaiku
+  parent: Haiku.API.Models
+  href: Haiku.API.Models.AuthorHaiku.html
+  name: AuthorHaiku
+  nameWithType: AuthorHaiku
+  fullName: Haiku.API.Models.AuthorHaiku
+- uid: Haiku.API.Models.ErrorDetails
+  commentId: T:Haiku.API.Models.ErrorDetails
+  href: Haiku.API.Models.ErrorDetails.html
+  name: ErrorDetails
+  nameWithType: ErrorDetails
+  fullName: Haiku.API.Models.ErrorDetails
+- uid: Haiku.API.Models.JWToken
+  commentId: T:Haiku.API.Models.JWToken
+  href: Haiku.API.Models.JWToken.html
+  name: JWToken
+  nameWithType: JWToken
+  fullName: Haiku.API.Models.JWToken
+- uid: Haiku.API.Models.JwtSettings
+  commentId: T:Haiku.API.Models.JwtSettings
+  href: Haiku.API.Models.JwtSettings.html
+  name: JwtSettings
+  nameWithType: JwtSettings
+  fullName: Haiku.API.Models.JwtSettings
+- uid: Haiku.API.Models.Login
+  commentId: T:Haiku.API.Models.Login
+  href: Haiku.API.Models.Login.html
+  name: Login
+  nameWithType: Login
+  fullName: Haiku.API.Models.Login
+- uid: Haiku.API.Models.PaginationMetaData
+  commentId: T:Haiku.API.Models.PaginationMetaData
+  href: Haiku.API.Models.PaginationMetaData.html
+  name: PaginationMetaData
+  nameWithType: PaginationMetaData
+  fullName: Haiku.API.Models.PaginationMetaData
+- uid: Haiku.API.Models.Register
+  commentId: T:Haiku.API.Models.Register
+  href: Haiku.API.Models.Register.html
+  name: Register
+  nameWithType: Register
+  fullName: Haiku.API.Models.Register
+- uid: Haiku.API.Models.Role
+  commentId: T:Haiku.API.Models.Role
+  parent: Haiku.API.Models
+  href: Haiku.API.Models.Role.html
+  name: Role
+  nameWithType: Role
+  fullName: Haiku.API.Models.Role
+- uid: Haiku.API.Models.User
+  commentId: T:Haiku.API.Models.User
+  parent: Haiku.API.Models
+  href: Haiku.API.Models.User.html
+  name: User
+  nameWithType: User
+  fullName: Haiku.API.Models.User
+- uid: Haiku.API.Models.UserHaiku
+  commentId: T:Haiku.API.Models.UserHaiku
+  parent: Haiku.API.Models
+  href: Haiku.API.Models.UserHaiku.html
+  name: UserHaiku
+  nameWithType: UserHaiku
+  fullName: Haiku.API.Models.UserHaiku
+- uid: Haiku.API.Models.UserProfile
+  commentId: T:Haiku.API.Models.UserProfile
+  parent: Haiku.API.Models
+  href: Haiku.API.Models.UserProfile.html
+  name: UserProfile
+  nameWithType: UserProfile
+  fullName: Haiku.API.Models.UserProfile
+- uid: Haiku.API.Models
+  commentId: N:Haiku.API.Models
+  href: Haiku.html
+  name: Haiku.API.Models
+  nameWithType: Haiku.API.Models
+  fullName: Haiku.API.Models
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Models
+    name: Models
+    href: Haiku.API.Models.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Models
+    name: Models
+    href: Haiku.API.Models.html

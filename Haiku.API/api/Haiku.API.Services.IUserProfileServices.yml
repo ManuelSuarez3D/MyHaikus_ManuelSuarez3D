@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: Haiku.API.Services.IUserProfileServices
+  commentId: N:Haiku.API.Services.IUserProfileServices
+  id: Haiku.API.Services.IUserProfileServices
+  children:
+  - Haiku.API.Services.IUserProfileServices.IUserProfileService
+  langs:
+  - csharp
+  - vb
+  name: Haiku.API.Services.IUserProfileServices
+  nameWithType: Haiku.API.Services.IUserProfileServices
+  fullName: Haiku.API.Services.IUserProfileServices
+  type: Namespace
+  assemblies:
+  - Haiku.API
+references:
+- uid: Haiku.API.Services.IUserProfileServices.IUserProfileService
+  commentId: T:Haiku.API.Services.IUserProfileServices.IUserProfileService
+  parent: Haiku.API.Services.IUserProfileServices
+  href: Haiku.API.Services.IUserProfileServices.IUserProfileService.html
+  name: IUserProfileService
+  nameWithType: IUserProfileService
+  fullName: Haiku.API.Services.IUserProfileServices.IUserProfileService
+- uid: Haiku.API.Services.IUserProfileServices
+  commentId: N:Haiku.API.Services.IUserProfileServices
+  href: Haiku.html
+  name: Haiku.API.Services.IUserProfileServices
+  nameWithType: Haiku.API.Services.IUserProfileServices
+  fullName: Haiku.API.Services.IUserProfileServices
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Services
+    name: Services
+    href: Haiku.API.Services.html
+  - name: .
+  - uid: Haiku.API.Services.IUserProfileServices
+    name: IUserProfileServices
+    href: Haiku.API.Services.IUserProfileServices.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Services
+    name: Services
+    href: Haiku.API.Services.html
+  - name: .
+  - uid: Haiku.API.Services.IUserProfileServices
+    name: IUserProfileServices
+    href: Haiku.API.Services.IUserProfileServices.html

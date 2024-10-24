@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: Haiku.API.Exceptions
+  commentId: N:Haiku.API.Exceptions
+  id: Haiku.API.Exceptions
+  children:
+  - Haiku.API.Exceptions.NotFoundException
+  - Haiku.API.Exceptions.NotSavedException
+  - Haiku.API.Exceptions.UsernameAlreadyTakenException
+  langs:
+  - csharp
+  - vb
+  name: Haiku.API.Exceptions
+  nameWithType: Haiku.API.Exceptions
+  fullName: Haiku.API.Exceptions
+  type: Namespace
+  assemblies:
+  - Haiku.API
+references:
+- uid: Haiku.API.Exceptions.NotFoundException
+  commentId: T:Haiku.API.Exceptions.NotFoundException
+  href: Haiku.API.Exceptions.NotFoundException.html
+  name: NotFoundException
+  nameWithType: NotFoundException
+  fullName: Haiku.API.Exceptions.NotFoundException
+- uid: Haiku.API.Exceptions.NotSavedException
+  commentId: T:Haiku.API.Exceptions.NotSavedException
+  href: Haiku.API.Exceptions.NotSavedException.html
+  name: NotSavedException
+  nameWithType: NotSavedException
+  fullName: Haiku.API.Exceptions.NotSavedException
+- uid: Haiku.API.Exceptions.UsernameAlreadyTakenException
+  commentId: T:Haiku.API.Exceptions.UsernameAlreadyTakenException
+  href: Haiku.API.Exceptions.UsernameAlreadyTakenException.html
+  name: UsernameAlreadyTakenException
+  nameWithType: UsernameAlreadyTakenException
+  fullName: Haiku.API.Exceptions.UsernameAlreadyTakenException

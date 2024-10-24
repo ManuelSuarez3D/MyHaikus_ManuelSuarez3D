@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Haiku.API.Services.UserProfileServices
+  commentId: N:Haiku.API.Services.UserProfileServices
+  id: Haiku.API.Services.UserProfileServices
+  children:
+  - Haiku.API.Services.UserProfileServices.UserProfileService
+  langs:
+  - csharp
+  - vb
+  name: Haiku.API.Services.UserProfileServices
+  nameWithType: Haiku.API.Services.UserProfileServices
+  fullName: Haiku.API.Services.UserProfileServices
+  type: Namespace
+  assemblies:
+  - Haiku.API
+references:
+- uid: Haiku.API.Services.UserProfileServices.UserProfileService
+  commentId: T:Haiku.API.Services.UserProfileServices.UserProfileService
+  href: Haiku.API.Services.UserProfileServices.UserProfileService.html
+  name: UserProfileService
+  nameWithType: UserProfileService
+  fullName: Haiku.API.Services.UserProfileServices.UserProfileService

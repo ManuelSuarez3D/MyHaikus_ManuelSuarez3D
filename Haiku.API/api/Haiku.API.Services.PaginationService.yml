@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Haiku.API.Services.PaginationService
+  commentId: N:Haiku.API.Services.PaginationService
+  id: Haiku.API.Services.PaginationService
+  children:
+  - Haiku.API.Services.PaginationService.IPaginationService
+  - Haiku.API.Services.PaginationService.PaginationService
+  langs:
+  - csharp
+  - vb
+  name: Haiku.API.Services.PaginationService
+  nameWithType: Haiku.API.Services.PaginationService
+  fullName: Haiku.API.Services.PaginationService
+  type: Namespace
+  assemblies:
+  - Haiku.API
+references:
+- uid: Haiku.API.Services.PaginationService.IPaginationService
+  commentId: T:Haiku.API.Services.PaginationService.IPaginationService
+  parent: Haiku.API.Services.PaginationService
+  href: Haiku.API.Services.PaginationService.IPaginationService.html
+  name: IPaginationService
+  nameWithType: IPaginationService
+  fullName: Haiku.API.Services.PaginationService.IPaginationService
+- uid: Haiku.API.Services.PaginationService.PaginationService
+  commentId: T:Haiku.API.Services.PaginationService.PaginationService
+  href: Haiku.API.Services.PaginationService.PaginationService.html
+  name: PaginationService
+  nameWithType: PaginationService
+  fullName: Haiku.API.Services.PaginationService.PaginationService
+- uid: Haiku.API.Services.PaginationService
+  commentId: N:Haiku.API.Services.PaginationService
+  href: Haiku.html
+  name: Haiku.API.Services.PaginationService
+  nameWithType: Haiku.API.Services.PaginationService
+  fullName: Haiku.API.Services.PaginationService
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Services
+    name: Services
+    href: Haiku.API.Services.html
+  - name: .
+  - uid: Haiku.API.Services.PaginationService
+    name: PaginationService
+    href: Haiku.API.Services.PaginationService.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Services
+    name: Services
+    href: Haiku.API.Services.html
+  - name: .
+  - uid: Haiku.API.Services.PaginationService
+    name: PaginationService
+    href: Haiku.API.Services.PaginationService.html

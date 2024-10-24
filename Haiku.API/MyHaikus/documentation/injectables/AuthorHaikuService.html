@@ -1,0 +1,1357 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>my-haikus documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+          <script>
+               // Blocking script to avoid flickering dark mode
+               // Dark mode toggle button
+               var useDark = window.matchMedia('(prefers-color-scheme: dark)');
+               var darkModeState = useDark.matches;
+               var $darkModeToggleSwitchers = document.querySelectorAll('.dark-mode-switch input');
+               var $darkModeToggles = document.querySelectorAll('.dark-mode-switch');
+               var darkModeStateLocal = localStorage.getItem('compodoc_darkmode-state');
+
+               function checkToggle(check) {
+                    for (var i = 0; i < $darkModeToggleSwitchers.length; i++) {
+                         $darkModeToggleSwitchers[i].checked = check;
+                    }
+               }
+
+               function toggleDarkMode(state) {
+                    if (window.localStorage) {
+                         localStorage.setItem('compodoc_darkmode-state', state);
+                    }
+
+                    checkToggle(state);
+
+                    const hasClass = document.body.classList.contains('dark');
+
+                    if (state) {
+                         for (var i = 0; i < $darkModeToggles.length; i++) {
+                              $darkModeToggles[i].classList.add('dark');
+                         }
+                         if (!hasClass) {
+                              document.body.classList.add('dark');
+                         }
+                    } else {
+                         for (var i = 0; i < $darkModeToggles.length; i++) {
+                              $darkModeToggles[i].classList.remove('dark');
+                         }
+                         if (hasClass) {
+                              document.body.classList.remove('dark');
+                         }
+                    }
+               }
+
+               useDark.addEventListener('change', function (evt) {
+                    toggleDarkMode(evt.matches);
+               });
+               if (darkModeStateLocal) {
+                    darkModeState = darkModeStateLocal === 'true';
+               }
+               toggleDarkMode(darkModeState);
+          </script>
+
+        <div class="navbar navbar-default navbar-fixed-top d-md-none p-0">
+               <div class="d-flex">
+                    <a href="../" class="navbar-brand">my-haikus documentation</a>
+                    <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+               </div>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="d-none d-md-block menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >AuthorHaikuService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/core/services/author-haiku.service.ts</code>
+        </p>
+
+
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>Service for managing author haikus, providing methods to retrieve, add, update, and delete author haiku data.</p>
+
+            </p>
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#authorAuthorHaikuApi" >authorAuthorHaikuApi</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#addAuthorHaiku" >addAuthorHaiku</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#authorHaikuUrl" >authorHaikuUrl</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#deleteAuthorHaiku" >deleteAuthorHaiku</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getAllAuthorHaikus" >getAllAuthorHaikus</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getAllAuthorHaikusByAuthorId" >getAllAuthorHaikusByAuthorId</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getAuthorHaikuById" >getAuthorHaikuById</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getHeaders" >getHeaders</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#updateAuthorHaiku" >updateAuthorHaiku</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(http: HttpClient, xmlSerializer: <a href="../injectables/XmlSerializerService.html" target="_self">XmlSerializerService</a>, errorHandler: <a href="../injectables/ErrorHandlingService.html" target="_self">ErrorHandlingService</a>, authService: <a href="../injectables/AuthorizationService.html" target="_self">AuthorizationService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/core/services/author-haiku.service.ts:19</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                    <code>HttpClient</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>xmlSerializer</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/XmlSerializerService.html" target="_self" >XmlSerializerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>errorHandler</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ErrorHandlingService.html" target="_self" >ErrorHandlingService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthorizationService.html" target="_self" >AuthorizationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addAuthorHaiku"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>addAuthorHaiku</b></span>
+                        <a href="#addAuthorHaiku"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>addAuthorHaiku(newAuthorHaikuDto: <a href="../interfaces/AuthorHaikuDto.html" target="_self">AuthorHaikuDto</a>)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="144"
+                                    class="link-to-prism">src/app/core/services/author-haiku.service.ts:144</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Adds a new author haiku to the system.</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                                <td>Description</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>newAuthorHaikuDto</td>
+                                            <td>
+                                                            <code><a href="../interfaces/AuthorHaikuDto.html" target="_self" >AuthorHaikuDto</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                            <td>
+                                                    <ul>
+<li>The data transfer object for the new author haiku.</li>
+</ul>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="../interfaces/AuthorHaikuDto.html" target="_self" >Observable&lt;AuthorHaikuDto&gt;</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                <ul>
+<li>An observable containing the added author haiku data.</li>
+</ul>
+
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="authorHaikuUrl"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>authorHaikuUrl</b></span>
+                        <a href="#authorHaikuUrl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>authorHaikuUrl(endpoint: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="56"
+                                    class="link-to-prism">src/app/core/services/author-haiku.service.ts:56</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Constructs the URL for author-haiku-related API endpoints.</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                                <td>Description</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>endpoint</td>
+                                            <td>
+                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                            <td>
+                                                    <ul>
+<li>The specific API endpoint to append to the base URL.</li>
+</ul>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                <ul>
+<li>The complete URL for the author API.</li>
+</ul>
+
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteAuthorHaiku"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>deleteAuthorHaiku</b></span>
+                        <a href="#deleteAuthorHaiku"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>deleteAuthorHaiku(authorHaikuId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="180"
+                                    class="link-to-prism">src/app/core/services/author-haiku.service.ts:180</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Deletes an author haiku by their ID.</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                                <td>Description</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>authorHaikuId</td>
+                                            <td>
+                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                            <td>
+                                                    <ul>
+<li>The ID of the author haiku to delete.</li>
+</ul>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>    <code>Observable&lt;void&gt;</code>
+
+                        </div>
+                            <div class="io-description">
+                                <ul>
+<li>An observable that completes when the deletion is successful.</li>
+</ul>
+
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAllAuthorHaikus"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>getAllAuthorHaikus</b></span>
+                        <a href="#getAllAuthorHaikus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getAllAuthorHaikus(currentPage: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, pageSize: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, searchOption: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="70"
+                                    class="link-to-prism">src/app/core/services/author-haiku.service.ts:70</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Retrieves a paginated list of author haikus.</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                                <td>Default value</td>
+                                                <td>Description</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>currentPage</td>
+                                            <td>
+                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+                                            <td>
+                                                    <code>1</code>
+                                            </td>
+
+                                            <td>
+                                                    <ul>
+<li>The current page number for pagination.</li>
+</ul>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                                <td>pageSize</td>
+                                            <td>
+                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+                                            <td>
+                                                    <code>10</code>
+                                            </td>
+
+                                            <td>
+                                                    <ul>
+<li>The number of author haikus to retrieve per page.</li>
+</ul>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                                <td>searchOption</td>
+                                            <td>
+                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+                                            <td>
+                                                    <code>&#x27;&#x27;</code>
+                                            </td>
+
+                                            <td>
+                                                    <ul>
+<li>An optional search term to filter author haikus.</li>
+</ul>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>    <code>Observable&lt;literal type&gt;</code>
+
+                        </div>
+                            <div class="io-description">
+                                <ul>
+<li>An observable containing the author haikus and pagination metadata.</li>
+</ul>
+
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAllAuthorHaikusByAuthorId"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>getAllAuthorHaikusByAuthorId</b></span>
+                        <a href="#getAllAuthorHaikusByAuthorId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getAllAuthorHaikusByAuthorId(authorId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, currentPage: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, pageSize: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, searchOption: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="99"
+                                    class="link-to-prism">src/app/core/services/author-haiku.service.ts:99</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Retrieves a paginated list of author haikus by author ID.</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                                <td>Default value</td>
+                                                <td>Description</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>authorId</td>
+                                            <td>
+                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+                                            <td>
+                                            </td>
+
+                                            <td>
+                                                    <ul>
+<li>The ID of the author.</li>
+</ul>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                                <td>currentPage</td>
+                                            <td>
+                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+                                            <td>
+                                                    <code>1</code>
+                                            </td>
+
+                                            <td>
+                                                    <ul>
+<li>The current page number for pagination.</li>
+</ul>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                                <td>pageSize</td>
+                                            <td>
+                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+                                            <td>
+                                                    <code>10</code>
+                                            </td>
+
+                                            <td>
+                                                    <ul>
+<li>The number of author haikus to retrieve per page.</li>
+</ul>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                                <td>searchOption</td>
+                                            <td>
+                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+                                            <td>
+                                                    <code>&#x27;&#x27;</code>
+                                            </td>
+
+                                            <td>
+                                                    <ul>
+<li>An optional search term to filter authors haikus.</li>
+</ul>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>    <code>Observable&lt;literal type&gt;</code>
+
+                        </div>
+                            <div class="io-description">
+                                <ul>
+<li>An observable containing the author haikus and pagination metadata.</li>
+</ul>
+
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAuthorHaikuById"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>getAuthorHaikuById</b></span>
+                        <a href="#getAuthorHaikuById"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getAuthorHaikuById(authorHaikuId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="126"
+                                    class="link-to-prism">src/app/core/services/author-haiku.service.ts:126</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Fetches an author haiku by their ID.</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                                <td>Description</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>authorHaikuId</td>
+                                            <td>
+                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                            <td>
+                                                    <ul>
+<li>The ID of the author haiku to retrieve.</li>
+</ul>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="../interfaces/AuthorHaikuDto.html" target="_self" >Observable&lt;AuthorHaikuDto&gt;</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                <ul>
+<li>An observable containing the author haiku data.</li>
+</ul>
+
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getHeaders"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>getHeaders</b></span>
+                        <a href="#getHeaders"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getHeaders()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="34"
+                                    class="link-to-prism">src/app/core/services/author-haiku.service.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Generates HTTP headers for the requests.</p>
+</div>
+
+                        <div class="io-description">
+                            <b>Returns : </b>    <code>HttpHeaders</code>
+
+                        </div>
+                            <div class="io-description">
+                                <ul>
+<li>The headers with content type and accept type set to XML.</li>
+</ul>
+
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateAuthorHaiku"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>updateAuthorHaiku</b></span>
+                        <a href="#updateAuthorHaiku"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateAuthorHaiku(authorHaikuId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, updatedAuthorHaikuDto: <a href="../interfaces/AuthorHaikuDto.html" target="_self">AuthorHaikuDto</a>)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="163"
+                                    class="link-to-prism">src/app/core/services/author-haiku.service.ts:163</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Updates an existing author haiku&#39;s information.</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                                <td>Description</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>authorHaikuId</td>
+                                            <td>
+                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                            <td>
+                                                    <ul>
+<li>The ID of the author haiku to update.</li>
+</ul>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                                <td>updatedAuthorHaikuDto</td>
+                                            <td>
+                                                            <code><a href="../interfaces/AuthorHaikuDto.html" target="_self" >AuthorHaikuDto</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                            <td>
+                                                    <ul>
+<li>The updated data transfer object for the author haiku.</li>
+</ul>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>    <code>Observable&lt;void&gt;</code>
+
+                        </div>
+                            <div class="io-description">
+                                <ul>
+<li>An observable that completes when the update is successful.</li>
+</ul>
+
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="authorAuthorHaikuApi"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>authorAuthorHaikuApi</b></span>
+                        <a href="#authorAuthorHaikuApi"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;authorHaiku&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/core/services/author-haiku.service.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { HttpClient, HttpErrorResponse, HttpHeaders } from &#x27;@angular/common/http&#x27;;
+import { Injectable } from &#x27;@angular/core&#x27;;
+import { Observable, throwError } from &#x27;rxjs&#x27;;
+import { catchError, map } from &#x27;rxjs/operators&#x27;;
+import { AuthorHaikuDto } from &#x27;../../shared/models/authorHaikuDto.model&#x27;;
+import { environment } from &#x27;../../../environments/environment.development&#x27;;
+import { ErrorHandlingService } from &#x27;../utilities/error-handling.service&#x27;;
+import { XmlSerializerService } from &#x27;../utilities/xml-serializer.service&#x27;;
+import { PaginationMetaDataDto } from &#x27;../../shared/models/paginationMetaDataDto.model&#x27;;
+import { AuthorizationService } from &#x27;./authorization.service&#x27;;
+
+/**
+ * Service for managing author haikus, providing methods to retrieve, add, update, and delete author haiku data.
+*/
+@Injectable({
+  providedIn: &#x27;root&#x27;,
+})
+export class AuthorHaikuService {
+  private authorAuthorHaikuApi &#x3D; &#x27;authorHaiku&#x27;;
+
+  constructor(
+    private http: HttpClient,
+    private xmlSerializer: XmlSerializerService,
+    private errorHandler: ErrorHandlingService,
+    private authService: AuthorizationService
+  ) { }
+
+  /**
+   * Generates HTTP headers for the requests.
+   *
+   * @private
+   * @returns {HttpHeaders} - The headers with content type and accept type set to XML.
+  */
+  private getHeaders(): HttpHeaders {
+    const token &#x3D; this.authService.getToken();
+
+    let headers &#x3D; new HttpHeaders({
+      &#x27;Content-Type&#x27;: &#x27;application/xml&#x27;,
+      &#x27;Accept&#x27;: &#x27;application/xml&#x27;
+    });
+
+    if (token) {
+      headers &#x3D; headers.set(&#x27;Authorization&#x27;, &#x60;Bearer ${token}&#x60;);
+    }
+
+    return headers;
+  }
+
+  /**
+   * Constructs the URL for author-haiku-related API endpoints.
+   *
+   * @private
+   * @param {string} endpoint - The specific API endpoint to append to the base URL.
+   * @returns {string} - The complete URL for the author API.
+  */
+  private authorHaikuUrl(endpoint: string): string {
+    return &#x60;${environment.apiBaseUrl}/${this.authorAuthorHaikuApi}/${endpoint}&#x60;;
+  }
+
+  /**
+   * Retrieves a paginated list of author haikus.
+   *
+   * @param {number} [currentPage&#x3D;1] - The current page number for pagination.
+   * @param {number} [pageSize&#x3D;10] - The number of author haikus to retrieve per page.
+   * @param {string} [searchOption&#x3D;&#x27;&#x27;] - An optional search term to filter author haikus.
+   * @returns {Observable&lt;{ authorHaikus: AuthorHaikuDto[]; paginationMetadata: PaginationMetaDataDto }&gt;} - An observable containing the author haikus and pagination metadata.
+   *
+   * @throws {HttpErrorResponse} - Throws an error if the request fails.
+  */
+  public getAllAuthorHaikus(
+    currentPage: number &#x3D; 1,
+    pageSize: number &#x3D; 10,
+    searchOption: string &#x3D; &#x27;&#x27;
+  ): Observable&lt;{ authorHaikus: AuthorHaikuDto[]; paginationMetadata: PaginationMetaDataDto }&gt; {
+    const url &#x3D; this.authorHaikuUrl(&#x60;?currentPage&#x3D;${currentPage}&amp;pageSize&#x3D;${pageSize}&amp;searchOption&#x3D;${encodeURIComponent(searchOption)}&#x60;);
+
+    return this.http.get&lt;string&gt;(url, { headers: this.getHeaders(), responseType: &#x27;text&#x27; as &#x27;json&#x27;, observe: &#x27;response&#x27; })
+      .pipe(
+        map(response &#x3D;&gt; {
+          const authorHaikus &#x3D; this.xmlSerializer.deserializeArray&lt;AuthorHaikuDto&gt;(response.body || &#x27;&#x27;, &#x27;AuthorHaikuDto&#x27;) || [];
+          const paginationData &#x3D; response.headers.get(&#x27;x-pagination&#x27;) ? this.xmlSerializer.deserializePaginationMetaData(response.headers.get(&#x27;x-pagination&#x27;)!) : { totalCount: 0, totalPages: 1 };
+          return { authorHaikus, paginationMetadata: { ...paginationData, pageSize, currentPage } };
+        }),
+        catchError((error: HttpErrorResponse) &#x3D;&gt; this.errorHandler.handleError(error, &#x27;fetching AuthorHaikus&#x27;))
+      );
+  }
+
+  /**
+   * Retrieves a paginated list of author haikus by author ID.
+   *
+   * @param {number} [authorId] - The ID of the author.
+   * @param {number} [currentPage&#x3D;1] - The current page number for pagination.
+   * @param {number} [pageSize&#x3D;10] - The number of author haikus to retrieve per page.
+   * @param {string} [searchOption&#x3D;&#x27;&#x27;] - An optional search term to filter authors haikus.
+   * @returns {Observable&lt;{ authorHaikus: AuthorHaikuDto[]; paginationMetadata: PaginationMetaDataDto }&gt;} - An observable containing the author haikus and pagination metadata.
+   *
+   * @throws {HttpErrorResponse} - Throws an error if the request fails.
+  */
+  public getAllAuthorHaikusByAuthorId(
+    authorId: number,
+    currentPage: number &#x3D; 1,
+    pageSize: number &#x3D; 10,
+    searchOption: string &#x3D; &#x27;&#x27;
+  ): Observable&lt;{ authorHaikus: AuthorHaikuDto[]; paginationMetadata: PaginationMetaDataDto }&gt; {
+    const url &#x3D; this.authorHaikuUrl(&#x60;author/${authorId}?currentPage&#x3D;${currentPage}&amp;pageSize&#x3D;${pageSize}&amp;searchOption&#x3D;${encodeURIComponent(searchOption)}&#x60;);
+
+    return this.http.get&lt;string&gt;(url, { headers: this.getHeaders(), responseType: &#x27;text&#x27; as &#x27;json&#x27;, observe: &#x27;response&#x27; })
+      .pipe(
+        map(response &#x3D;&gt; {
+          const authorHaikus &#x3D; this.xmlSerializer.deserializeArray&lt;AuthorHaikuDto&gt;(response.body || &#x27;&#x27;, &#x27;AuthorHaikuDto&#x27;) || [];
+          const paginationData &#x3D; response.headers.get(&#x27;x-pagination&#x27;) ? this.xmlSerializer.deserializePaginationMetaData(response.headers.get(&#x27;x-pagination&#x27;)!) : { totalCount: 0, totalPages: 1 };
+          return { authorHaikus, paginationMetadata: { ...paginationData, pageSize, currentPage } };
+        }),
+        catchError((error: HttpErrorResponse) &#x3D;&gt; this.errorHandler.handleError(error, &#x27;fetching AuthorHaikus by Author&#x27;))
+      );
+  }
+
+  /**
+   * Fetches an author haiku by their ID.
+   *
+   * @param {number} authorHaikuId - The ID of the author haiku to retrieve.
+   * @returns {Observable&lt;AuthorHaikuDto&gt;} - An observable containing the author haiku data.
+   *
+   * @throws {HttpErrorResponse} - Throws an error if the request fails.
+  */
+  public getAuthorHaikuById(authorHaikuId: number): Observable&lt;AuthorHaikuDto&gt; {
+    const url &#x3D; this.authorHaikuUrl(&#x60;${authorHaikuId}&#x60;);
+
+    return this.http.get&lt;string&gt;(url, { headers: this.getHeaders(), responseType: &#x27;text&#x27; as &#x27;json&#x27; })
+      .pipe(
+        map(responseXml &#x3D;&gt; { return this.xmlSerializer.deserialize&lt;AuthorHaikuDto&gt;(responseXml) }),
+        catchError((error: HttpErrorResponse) &#x3D;&gt; this.errorHandler.handleError(error, &#x27;fetching AuthorHaiku&#x27;))
+      );
+  }
+
+  /**
+   * Adds a new author haiku to the system.
+   *
+   * @param {AuthorDto} newAuthorHaikuDto - The data transfer object for the new author haiku.
+   * @returns {Observable&lt;AuthorHaikuDto&gt;} - An observable containing the added author haiku data.
+   *
+   * @throws {HttpErrorResponse} - Throws an error if the request fails.
+  */
+  public addAuthorHaiku(newAuthorHaikuDto: AuthorHaikuDto): Observable&lt;AuthorHaikuDto&gt; {
+    const url &#x3D; this.authorHaikuUrl(&#x60;&#x60;);
+
+    return this.http.post&lt;string&gt;(url, this.xmlSerializer.serialize(newAuthorHaikuDto, &#x27;AuthorHaikuDto&#x27;), { headers: this.getHeaders(), responseType: &#x27;text&#x27; as &#x27;json&#x27; })
+      .pipe(
+        map(responseXml &#x3D;&gt; { return this.xmlSerializer.deserialize&lt;AuthorHaikuDto&gt;(responseXml) }),
+        catchError((error: HttpErrorResponse) &#x3D;&gt; this.errorHandler.handleError(error, &#x27;adding AuthorHaiku&#x27;))
+      );
+  }
+
+  /**
+   * Updates an existing author haiku&#x27;s information.
+   *
+   * @param {number} authorHaikuId - The ID of the author haiku to update.
+   * @param {AuthorDto} updatedAuthorHaikuDto - The updated data transfer object for the author haiku.
+   * @returns {Observable&lt;void&gt;} - An observable that completes when the update is successful.
+   *
+   * @throws {HttpErrorResponse} - Throws an error if the request fails.
+  */
+  public updateAuthorHaiku(authorHaikuId: number, updatedAuthorHaikuDto: AuthorHaikuDto): Observable&lt;void&gt; {
+    const url &#x3D; this.authorHaikuUrl(&#x60;${authorHaikuId}&#x60;);
+
+    return this.http.put&lt;void&gt;(url, this.xmlSerializer.serialize(updatedAuthorHaikuDto, &#x27;AuthorHaikuDto&#x27;), { headers: this.getHeaders(), responseType: &#x27;text&#x27; as &#x27;json&#x27; })
+      .pipe(
+        catchError((error: HttpErrorResponse) &#x3D;&gt; this.errorHandler.handleError(error, &#x27;updating AuthorHaiku&#x27;))
+      );
+  }
+
+  /**
+   * Deletes an author haiku by their ID.
+   *
+   * @param {number} authorHaikuId - The ID of the author haiku to delete.
+   * @returns {Observable&lt;void&gt;} - An observable that completes when the deletion is successful.
+   *
+   * @throws {HttpErrorResponse} - Throws an error if the request fails.
+  */
+  public deleteAuthorHaiku(authorHaikuId: number): Observable&lt;void&gt; {
+    const url &#x3D; this.authorHaikuUrl(&#x60;${authorHaikuId}&#x60;);
+
+    return this.http.delete&lt;void&gt;(url, { headers: this.getHeaders() })
+      .pipe(
+        catchError((error: HttpErrorResponse) &#x3D;&gt; this.errorHandler.handleError(error, &#x27;deleting AuthorHaiku&#x27;))
+      );
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'AuthorHaikuService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script>
+               $darkModeToggleSwitchers = document.querySelectorAll('.dark-mode-switch input');
+               checkToggle(darkModeState);
+               if ($darkModeToggleSwitchers.length > 0) {
+                    for (var i = 0; i < $darkModeToggleSwitchers.length; i++) {
+                         $darkModeToggleSwitchers[i].addEventListener('change', function (event) {
+                              darkModeState = !darkModeState;
+                              toggleDarkMode(darkModeState);
+                         });
+                    }
+               }
+          </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

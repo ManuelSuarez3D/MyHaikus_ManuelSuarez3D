@@ -1,0 +1,65 @@
+### YamlMime:ManagedReference
+items:
+- uid: Haiku.API.Controllers
+  commentId: N:Haiku.API.Controllers
+  id: Haiku.API.Controllers
+  children:
+  - Haiku.API.Controllers.AuthorController
+  - Haiku.API.Controllers.AuthorHaikuController
+  - Haiku.API.Controllers.LoginController
+  - Haiku.API.Controllers.RegisterController
+  - Haiku.API.Controllers.UserController
+  - Haiku.API.Controllers.UserHaikuController
+  - Haiku.API.Controllers.UserProfileController
+  langs:
+  - csharp
+  - vb
+  name: Haiku.API.Controllers
+  nameWithType: Haiku.API.Controllers
+  fullName: Haiku.API.Controllers
+  type: Namespace
+  assemblies:
+  - Haiku.API
+references:
+- uid: Haiku.API.Controllers.AuthorController
+  commentId: T:Haiku.API.Controllers.AuthorController
+  href: Haiku.API.Controllers.AuthorController.html
+  name: AuthorController
+  nameWithType: AuthorController
+  fullName: Haiku.API.Controllers.AuthorController
+- uid: Haiku.API.Controllers.AuthorHaikuController
+  commentId: T:Haiku.API.Controllers.AuthorHaikuController
+  href: Haiku.API.Controllers.AuthorHaikuController.html
+  name: AuthorHaikuController
+  nameWithType: AuthorHaikuController
+  fullName: Haiku.API.Controllers.AuthorHaikuController
+- uid: Haiku.API.Controllers.LoginController
+  commentId: T:Haiku.API.Controllers.LoginController
+  href: Haiku.API.Controllers.LoginController.html
+  name: LoginController
+  nameWithType: LoginController
+  fullName: Haiku.API.Controllers.LoginController
+- uid: Haiku.API.Controllers.RegisterController
+  commentId: T:Haiku.API.Controllers.RegisterController
+  href: Haiku.API.Controllers.RegisterController.html
+  name: RegisterController
+  nameWithType: RegisterController
+  fullName: Haiku.API.Controllers.RegisterController
+- uid: Haiku.API.Controllers.UserController
+  commentId: T:Haiku.API.Controllers.UserController
+  href: Haiku.API.Controllers.UserController.html
+  name: UserController
+  nameWithType: UserController
+  fullName: Haiku.API.Controllers.UserController
+- uid: Haiku.API.Controllers.UserHaikuController
+  commentId: T:Haiku.API.Controllers.UserHaikuController
+  href: Haiku.API.Controllers.UserHaikuController.html
+  name: UserHaikuController
+  nameWithType: UserHaikuController
+  fullName: Haiku.API.Controllers.UserHaikuController
+- uid: Haiku.API.Controllers.UserProfileController
+  commentId: T:Haiku.API.Controllers.UserProfileController
+  href: Haiku.API.Controllers.UserProfileController.html
+  name: UserProfileController
+  nameWithType: UserProfileController
+  fullName: Haiku.API.Controllers.UserProfileController

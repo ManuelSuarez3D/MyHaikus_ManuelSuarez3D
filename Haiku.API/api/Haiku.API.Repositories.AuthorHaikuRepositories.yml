@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Haiku.API.Repositories.AuthorHaikuRepositories
+  commentId: N:Haiku.API.Repositories.AuthorHaikuRepositories
+  id: Haiku.API.Repositories.AuthorHaikuRepositories
+  children:
+  - Haiku.API.Repositories.AuthorHaikuRepositories.AuthorHaikuRepository
+  - Haiku.API.Repositories.AuthorHaikuRepositories.IAuthorHaikuRepository
+  langs:
+  - csharp
+  - vb
+  name: Haiku.API.Repositories.AuthorHaikuRepositories
+  nameWithType: Haiku.API.Repositories.AuthorHaikuRepositories
+  fullName: Haiku.API.Repositories.AuthorHaikuRepositories
+  type: Namespace
+  assemblies:
+  - Haiku.API
+references:
+- uid: Haiku.API.Repositories.AuthorHaikuRepositories.AuthorHaikuRepository
+  commentId: T:Haiku.API.Repositories.AuthorHaikuRepositories.AuthorHaikuRepository
+  href: Haiku.API.Repositories.AuthorHaikuRepositories.AuthorHaikuRepository.html
+  name: AuthorHaikuRepository
+  nameWithType: AuthorHaikuRepository
+  fullName: Haiku.API.Repositories.AuthorHaikuRepositories.AuthorHaikuRepository
+- uid: Haiku.API.Repositories.AuthorHaikuRepositories.IAuthorHaikuRepository
+  commentId: T:Haiku.API.Repositories.AuthorHaikuRepositories.IAuthorHaikuRepository
+  parent: Haiku.API.Repositories.AuthorHaikuRepositories
+  href: Haiku.API.Repositories.AuthorHaikuRepositories.IAuthorHaikuRepository.html
+  name: IAuthorHaikuRepository
+  nameWithType: IAuthorHaikuRepository
+  fullName: Haiku.API.Repositories.AuthorHaikuRepositories.IAuthorHaikuRepository
+- uid: Haiku.API.Repositories.AuthorHaikuRepositories
+  commentId: N:Haiku.API.Repositories.AuthorHaikuRepositories
+  href: Haiku.html
+  name: Haiku.API.Repositories.AuthorHaikuRepositories
+  nameWithType: Haiku.API.Repositories.AuthorHaikuRepositories
+  fullName: Haiku.API.Repositories.AuthorHaikuRepositories
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Repositories
+    name: Repositories
+    href: Haiku.API.Repositories.html
+  - name: .
+  - uid: Haiku.API.Repositories.AuthorHaikuRepositories
+    name: AuthorHaikuRepositories
+    href: Haiku.API.Repositories.AuthorHaikuRepositories.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Repositories
+    name: Repositories
+    href: Haiku.API.Repositories.html
+  - name: .
+  - uid: Haiku.API.Repositories.AuthorHaikuRepositories
+    name: AuthorHaikuRepositories
+    href: Haiku.API.Repositories.AuthorHaikuRepositories.html

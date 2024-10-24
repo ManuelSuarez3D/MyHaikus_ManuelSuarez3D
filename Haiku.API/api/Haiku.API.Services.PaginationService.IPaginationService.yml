@@ -1,0 +1,167 @@
+### YamlMime:ManagedReference
+items:
+- uid: Haiku.API.Services.PaginationService.IPaginationService
+  commentId: T:Haiku.API.Services.PaginationService.IPaginationService
+  id: IPaginationService
+  parent: Haiku.API.Services.PaginationService
+  children:
+  - Haiku.API.Services.PaginationService.IPaginationService.GetPaginationMetaData(System.Int32,System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: IPaginationService
+  nameWithType: IPaginationService
+  fullName: Haiku.API.Services.PaginationService.IPaginationService
+  type: Interface
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Services/PaginationServices/IPaginationService.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: IPaginationService
+    path: Haiku.API/Services/PaginationServices/IPaginationService.cs
+    startLine: 5
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Services.PaginationService
+  syntax:
+    content: public interface IPaginationService
+    content.vb: Public Interface IPaginationService
+- uid: Haiku.API.Services.PaginationService.IPaginationService.GetPaginationMetaData(System.Int32,System.Int32,System.Int32)
+  commentId: M:Haiku.API.Services.PaginationService.IPaginationService.GetPaginationMetaData(System.Int32,System.Int32,System.Int32)
+  id: GetPaginationMetaData(System.Int32,System.Int32,System.Int32)
+  parent: Haiku.API.Services.PaginationService.IPaginationService
+  langs:
+  - csharp
+  - vb
+  name: GetPaginationMetaData(int, int, int)
+  nameWithType: IPaginationService.GetPaginationMetaData(int, int, int)
+  fullName: Haiku.API.Services.PaginationService.IPaginationService.GetPaginationMetaData(int, int, int)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Services/PaginationServices/IPaginationService.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: GetPaginationMetaData
+    path: Haiku.API/Services/PaginationServices/IPaginationService.cs
+    startLine: 7
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Services.PaginationService
+  syntax:
+    content: PaginationMetaDataDto GetPaginationMetaData(int totalLogs, int pageSize, int pageNumber)
+    parameters:
+    - id: totalLogs
+      type: System.Int32
+    - id: pageSize
+      type: System.Int32
+    - id: pageNumber
+      type: System.Int32
+    return:
+      type: Haiku.API.Dtos.PaginationMetaDataDto
+    content.vb: Function GetPaginationMetaData(totalLogs As Integer, pageSize As Integer, pageNumber As Integer) As PaginationMetaDataDto
+  overload: Haiku.API.Services.PaginationService.IPaginationService.GetPaginationMetaData*
+  nameWithType.vb: IPaginationService.GetPaginationMetaData(Integer, Integer, Integer)
+  fullName.vb: Haiku.API.Services.PaginationService.IPaginationService.GetPaginationMetaData(Integer, Integer, Integer)
+  name.vb: GetPaginationMetaData(Integer, Integer, Integer)
+references:
+- uid: Haiku.API.Services.PaginationService
+  commentId: N:Haiku.API.Services.PaginationService
+  href: Haiku.html
+  name: Haiku.API.Services.PaginationService
+  nameWithType: Haiku.API.Services.PaginationService
+  fullName: Haiku.API.Services.PaginationService
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Services
+    name: Services
+    href: Haiku.API.Services.html
+  - name: .
+  - uid: Haiku.API.Services.PaginationService
+    name: PaginationService
+    href: Haiku.API.Services.PaginationService.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Services
+    name: Services
+    href: Haiku.API.Services.html
+  - name: .
+  - uid: Haiku.API.Services.PaginationService
+    name: PaginationService
+    href: Haiku.API.Services.PaginationService.html
+- uid: Haiku.API.Services.PaginationService.IPaginationService.GetPaginationMetaData*
+  commentId: Overload:Haiku.API.Services.PaginationService.IPaginationService.GetPaginationMetaData
+  href: Haiku.API.Services.PaginationService.IPaginationService.html#Haiku_API_Services_PaginationService_IPaginationService_GetPaginationMetaData_System_Int32_System_Int32_System_Int32_
+  name: GetPaginationMetaData
+  nameWithType: IPaginationService.GetPaginationMetaData
+  fullName: Haiku.API.Services.PaginationService.IPaginationService.GetPaginationMetaData
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Haiku.API.Dtos.PaginationMetaDataDto
+  commentId: T:Haiku.API.Dtos.PaginationMetaDataDto
+  parent: Haiku.API.Dtos
+  href: Haiku.API.Dtos.PaginationMetaDataDto.html
+  name: PaginationMetaDataDto
+  nameWithType: PaginationMetaDataDto
+  fullName: Haiku.API.Dtos.PaginationMetaDataDto
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Haiku.API.Dtos
+  commentId: N:Haiku.API.Dtos
+  href: Haiku.html
+  name: Haiku.API.Dtos
+  nameWithType: Haiku.API.Dtos
+  fullName: Haiku.API.Dtos
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Dtos
+    name: Dtos
+    href: Haiku.API.Dtos.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Dtos
+    name: Dtos
+    href: Haiku.API.Dtos.html

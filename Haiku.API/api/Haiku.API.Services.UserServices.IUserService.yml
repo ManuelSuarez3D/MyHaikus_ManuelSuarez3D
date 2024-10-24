@@ -1,0 +1,781 @@
+### YamlMime:ManagedReference
+items:
+- uid: Haiku.API.Services.UserServices.IUserService
+  commentId: T:Haiku.API.Services.UserServices.IUserService
+  id: IUserService
+  parent: Haiku.API.Services.UserServices
+  children:
+  - Haiku.API.Services.UserServices.IUserService.AddUserAsync(Haiku.API.Dtos.RegisterDto)
+  - Haiku.API.Services.UserServices.IUserService.AuthenticateUserAsync(System.String,System.String)
+  - Haiku.API.Services.UserServices.IUserService.DeleteUserByIdAsync(System.Int64)
+  - Haiku.API.Services.UserServices.IUserService.GetPaginatedUsersAsync(System.Int32,System.Int32,System.String)
+  - Haiku.API.Services.UserServices.IUserService.GetTotalUsersAsync(System.String)
+  - Haiku.API.Services.UserServices.IUserService.GetUserByIdAsync(System.Int64)
+  - Haiku.API.Services.UserServices.IUserService.UpdateUserAsync(System.Int64,Haiku.API.Dtos.UserDto)
+  - Haiku.API.Services.UserServices.IUserService.UserExistsByIdAsync(System.Int64)
+  - Haiku.API.Services.UserServices.IUserService.UsernameExistsAsync(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IUserService
+  nameWithType: IUserService
+  fullName: Haiku.API.Services.UserServices.IUserService
+  type: Interface
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Services/UserServices/IUserService .cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: IUserService
+    path: Haiku.API/Services/UserServices/IUserService .cs
+    startLine: 5
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Services.UserServices
+  syntax:
+    content: public interface IUserService
+    content.vb: Public Interface IUserService
+- uid: Haiku.API.Services.UserServices.IUserService.GetPaginatedUsersAsync(System.Int32,System.Int32,System.String)
+  commentId: M:Haiku.API.Services.UserServices.IUserService.GetPaginatedUsersAsync(System.Int32,System.Int32,System.String)
+  id: GetPaginatedUsersAsync(System.Int32,System.Int32,System.String)
+  parent: Haiku.API.Services.UserServices.IUserService
+  langs:
+  - csharp
+  - vb
+  name: GetPaginatedUsersAsync(int, int, string)
+  nameWithType: IUserService.GetPaginatedUsersAsync(int, int, string)
+  fullName: Haiku.API.Services.UserServices.IUserService.GetPaginatedUsersAsync(int, int, string)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Services/UserServices/IUserService .cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: GetPaginatedUsersAsync
+    path: Haiku.API/Services/UserServices/IUserService .cs
+    startLine: 7
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Services.UserServices
+  syntax:
+    content: Task<IEnumerable<UserDto>> GetPaginatedUsersAsync(int pageNumber, int pageSize, string searchOption)
+    parameters:
+    - id: pageNumber
+      type: System.Int32
+    - id: pageSize
+      type: System.Int32
+    - id: searchOption
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Haiku.API.Dtos.UserDto}}
+    content.vb: Function GetPaginatedUsersAsync(pageNumber As Integer, pageSize As Integer, searchOption As String) As Task(Of IEnumerable(Of UserDto))
+  overload: Haiku.API.Services.UserServices.IUserService.GetPaginatedUsersAsync*
+  nameWithType.vb: IUserService.GetPaginatedUsersAsync(Integer, Integer, String)
+  fullName.vb: Haiku.API.Services.UserServices.IUserService.GetPaginatedUsersAsync(Integer, Integer, String)
+  name.vb: GetPaginatedUsersAsync(Integer, Integer, String)
+- uid: Haiku.API.Services.UserServices.IUserService.GetTotalUsersAsync(System.String)
+  commentId: M:Haiku.API.Services.UserServices.IUserService.GetTotalUsersAsync(System.String)
+  id: GetTotalUsersAsync(System.String)
+  parent: Haiku.API.Services.UserServices.IUserService
+  langs:
+  - csharp
+  - vb
+  name: GetTotalUsersAsync(string)
+  nameWithType: IUserService.GetTotalUsersAsync(string)
+  fullName: Haiku.API.Services.UserServices.IUserService.GetTotalUsersAsync(string)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Services/UserServices/IUserService .cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: GetTotalUsersAsync
+    path: Haiku.API/Services/UserServices/IUserService .cs
+    startLine: 8
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Services.UserServices
+  syntax:
+    content: Task<int> GetTotalUsersAsync(string searchOption)
+    parameters:
+    - id: searchOption
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+    content.vb: Function GetTotalUsersAsync(searchOption As String) As Task(Of Integer)
+  overload: Haiku.API.Services.UserServices.IUserService.GetTotalUsersAsync*
+  nameWithType.vb: IUserService.GetTotalUsersAsync(String)
+  fullName.vb: Haiku.API.Services.UserServices.IUserService.GetTotalUsersAsync(String)
+  name.vb: GetTotalUsersAsync(String)
+- uid: Haiku.API.Services.UserServices.IUserService.GetUserByIdAsync(System.Int64)
+  commentId: M:Haiku.API.Services.UserServices.IUserService.GetUserByIdAsync(System.Int64)
+  id: GetUserByIdAsync(System.Int64)
+  parent: Haiku.API.Services.UserServices.IUserService
+  langs:
+  - csharp
+  - vb
+  name: GetUserByIdAsync(long)
+  nameWithType: IUserService.GetUserByIdAsync(long)
+  fullName: Haiku.API.Services.UserServices.IUserService.GetUserByIdAsync(long)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Services/UserServices/IUserService .cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: GetUserByIdAsync
+    path: Haiku.API/Services/UserServices/IUserService .cs
+    startLine: 9
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Services.UserServices
+  syntax:
+    content: Task<UserDto> GetUserByIdAsync(long userId)
+    parameters:
+    - id: userId
+      type: System.Int64
+    return:
+      type: System.Threading.Tasks.Task{Haiku.API.Dtos.UserDto}
+    content.vb: Function GetUserByIdAsync(userId As Long) As Task(Of UserDto)
+  overload: Haiku.API.Services.UserServices.IUserService.GetUserByIdAsync*
+  nameWithType.vb: IUserService.GetUserByIdAsync(Long)
+  fullName.vb: Haiku.API.Services.UserServices.IUserService.GetUserByIdAsync(Long)
+  name.vb: GetUserByIdAsync(Long)
+- uid: Haiku.API.Services.UserServices.IUserService.AuthenticateUserAsync(System.String,System.String)
+  commentId: M:Haiku.API.Services.UserServices.IUserService.AuthenticateUserAsync(System.String,System.String)
+  id: AuthenticateUserAsync(System.String,System.String)
+  parent: Haiku.API.Services.UserServices.IUserService
+  langs:
+  - csharp
+  - vb
+  name: AuthenticateUserAsync(string, string)
+  nameWithType: IUserService.AuthenticateUserAsync(string, string)
+  fullName: Haiku.API.Services.UserServices.IUserService.AuthenticateUserAsync(string, string)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Services/UserServices/IUserService .cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: AuthenticateUserAsync
+    path: Haiku.API/Services/UserServices/IUserService .cs
+    startLine: 10
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Services.UserServices
+  syntax:
+    content: Task<User> AuthenticateUserAsync(string username, string password)
+    parameters:
+    - id: username
+      type: System.String
+    - id: password
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Haiku.API.Models.User}
+    content.vb: Function AuthenticateUserAsync(username As String, password As String) As Task(Of User)
+  overload: Haiku.API.Services.UserServices.IUserService.AuthenticateUserAsync*
+  nameWithType.vb: IUserService.AuthenticateUserAsync(String, String)
+  fullName.vb: Haiku.API.Services.UserServices.IUserService.AuthenticateUserAsync(String, String)
+  name.vb: AuthenticateUserAsync(String, String)
+- uid: Haiku.API.Services.UserServices.IUserService.AddUserAsync(Haiku.API.Dtos.RegisterDto)
+  commentId: M:Haiku.API.Services.UserServices.IUserService.AddUserAsync(Haiku.API.Dtos.RegisterDto)
+  id: AddUserAsync(Haiku.API.Dtos.RegisterDto)
+  parent: Haiku.API.Services.UserServices.IUserService
+  langs:
+  - csharp
+  - vb
+  name: AddUserAsync(RegisterDto)
+  nameWithType: IUserService.AddUserAsync(RegisterDto)
+  fullName: Haiku.API.Services.UserServices.IUserService.AddUserAsync(Haiku.API.Dtos.RegisterDto)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Services/UserServices/IUserService .cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: AddUserAsync
+    path: Haiku.API/Services/UserServices/IUserService .cs
+    startLine: 11
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Services.UserServices
+  syntax:
+    content: Task<UserDto> AddUserAsync(RegisterDto newRegisterDto)
+    parameters:
+    - id: newRegisterDto
+      type: Haiku.API.Dtos.RegisterDto
+    return:
+      type: System.Threading.Tasks.Task{Haiku.API.Dtos.UserDto}
+    content.vb: Function AddUserAsync(newRegisterDto As RegisterDto) As Task(Of UserDto)
+  overload: Haiku.API.Services.UserServices.IUserService.AddUserAsync*
+- uid: Haiku.API.Services.UserServices.IUserService.UpdateUserAsync(System.Int64,Haiku.API.Dtos.UserDto)
+  commentId: M:Haiku.API.Services.UserServices.IUserService.UpdateUserAsync(System.Int64,Haiku.API.Dtos.UserDto)
+  id: UpdateUserAsync(System.Int64,Haiku.API.Dtos.UserDto)
+  parent: Haiku.API.Services.UserServices.IUserService
+  langs:
+  - csharp
+  - vb
+  name: UpdateUserAsync(long, UserDto)
+  nameWithType: IUserService.UpdateUserAsync(long, UserDto)
+  fullName: Haiku.API.Services.UserServices.IUserService.UpdateUserAsync(long, Haiku.API.Dtos.UserDto)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Services/UserServices/IUserService .cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: UpdateUserAsync
+    path: Haiku.API/Services/UserServices/IUserService .cs
+    startLine: 12
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Services.UserServices
+  syntax:
+    content: Task UpdateUserAsync(long userId, UserDto updatedUserDto)
+    parameters:
+    - id: userId
+      type: System.Int64
+    - id: updatedUserDto
+      type: Haiku.API.Dtos.UserDto
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function UpdateUserAsync(userId As Long, updatedUserDto As UserDto) As Task
+  overload: Haiku.API.Services.UserServices.IUserService.UpdateUserAsync*
+  nameWithType.vb: IUserService.UpdateUserAsync(Long, UserDto)
+  fullName.vb: Haiku.API.Services.UserServices.IUserService.UpdateUserAsync(Long, Haiku.API.Dtos.UserDto)
+  name.vb: UpdateUserAsync(Long, UserDto)
+- uid: Haiku.API.Services.UserServices.IUserService.DeleteUserByIdAsync(System.Int64)
+  commentId: M:Haiku.API.Services.UserServices.IUserService.DeleteUserByIdAsync(System.Int64)
+  id: DeleteUserByIdAsync(System.Int64)
+  parent: Haiku.API.Services.UserServices.IUserService
+  langs:
+  - csharp
+  - vb
+  name: DeleteUserByIdAsync(long)
+  nameWithType: IUserService.DeleteUserByIdAsync(long)
+  fullName: Haiku.API.Services.UserServices.IUserService.DeleteUserByIdAsync(long)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Services/UserServices/IUserService .cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: DeleteUserByIdAsync
+    path: Haiku.API/Services/UserServices/IUserService .cs
+    startLine: 13
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Services.UserServices
+  syntax:
+    content: Task DeleteUserByIdAsync(long userId)
+    parameters:
+    - id: userId
+      type: System.Int64
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function DeleteUserByIdAsync(userId As Long) As Task
+  overload: Haiku.API.Services.UserServices.IUserService.DeleteUserByIdAsync*
+  nameWithType.vb: IUserService.DeleteUserByIdAsync(Long)
+  fullName.vb: Haiku.API.Services.UserServices.IUserService.DeleteUserByIdAsync(Long)
+  name.vb: DeleteUserByIdAsync(Long)
+- uid: Haiku.API.Services.UserServices.IUserService.UserExistsByIdAsync(System.Int64)
+  commentId: M:Haiku.API.Services.UserServices.IUserService.UserExistsByIdAsync(System.Int64)
+  id: UserExistsByIdAsync(System.Int64)
+  parent: Haiku.API.Services.UserServices.IUserService
+  langs:
+  - csharp
+  - vb
+  name: UserExistsByIdAsync(long)
+  nameWithType: IUserService.UserExistsByIdAsync(long)
+  fullName: Haiku.API.Services.UserServices.IUserService.UserExistsByIdAsync(long)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Services/UserServices/IUserService .cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: UserExistsByIdAsync
+    path: Haiku.API/Services/UserServices/IUserService .cs
+    startLine: 14
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Services.UserServices
+  syntax:
+    content: Task<bool> UserExistsByIdAsync(long userId)
+    parameters:
+    - id: userId
+      type: System.Int64
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Function UserExistsByIdAsync(userId As Long) As Task(Of Boolean)
+  overload: Haiku.API.Services.UserServices.IUserService.UserExistsByIdAsync*
+  nameWithType.vb: IUserService.UserExistsByIdAsync(Long)
+  fullName.vb: Haiku.API.Services.UserServices.IUserService.UserExistsByIdAsync(Long)
+  name.vb: UserExistsByIdAsync(Long)
+- uid: Haiku.API.Services.UserServices.IUserService.UsernameExistsAsync(System.String)
+  commentId: M:Haiku.API.Services.UserServices.IUserService.UsernameExistsAsync(System.String)
+  id: UsernameExistsAsync(System.String)
+  parent: Haiku.API.Services.UserServices.IUserService
+  langs:
+  - csharp
+  - vb
+  name: UsernameExistsAsync(string)
+  nameWithType: IUserService.UsernameExistsAsync(string)
+  fullName: Haiku.API.Services.UserServices.IUserService.UsernameExistsAsync(string)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Services/UserServices/IUserService .cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: UsernameExistsAsync
+    path: Haiku.API/Services/UserServices/IUserService .cs
+    startLine: 15
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Services.UserServices
+  syntax:
+    content: Task<bool> UsernameExistsAsync(string username)
+    parameters:
+    - id: username
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Function UsernameExistsAsync(username As String) As Task(Of Boolean)
+  overload: Haiku.API.Services.UserServices.IUserService.UsernameExistsAsync*
+  nameWithType.vb: IUserService.UsernameExistsAsync(String)
+  fullName.vb: Haiku.API.Services.UserServices.IUserService.UsernameExistsAsync(String)
+  name.vb: UsernameExistsAsync(String)
+references:
+- uid: Haiku.API.Services.UserServices
+  commentId: N:Haiku.API.Services.UserServices
+  href: Haiku.html
+  name: Haiku.API.Services.UserServices
+  nameWithType: Haiku.API.Services.UserServices
+  fullName: Haiku.API.Services.UserServices
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Services
+    name: Services
+    href: Haiku.API.Services.html
+  - name: .
+  - uid: Haiku.API.Services.UserServices
+    name: UserServices
+    href: Haiku.API.Services.UserServices.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Services
+    name: Services
+    href: Haiku.API.Services.html
+  - name: .
+  - uid: Haiku.API.Services.UserServices
+    name: UserServices
+    href: Haiku.API.Services.UserServices.html
+- uid: Haiku.API.Services.UserServices.IUserService.GetPaginatedUsersAsync*
+  commentId: Overload:Haiku.API.Services.UserServices.IUserService.GetPaginatedUsersAsync
+  href: Haiku.API.Services.UserServices.IUserService.html#Haiku_API_Services_UserServices_IUserService_GetPaginatedUsersAsync_System_Int32_System_Int32_System_String_
+  name: GetPaginatedUsersAsync
+  nameWithType: IUserService.GetPaginatedUsersAsync
+  fullName: Haiku.API.Services.UserServices.IUserService.GetPaginatedUsersAsync
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Haiku.API.Dtos.UserDto}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Haiku.API.Dtos.UserDto}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IEnumerable<UserDto>>
+  nameWithType: Task<IEnumerable<UserDto>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<Haiku.API.Dtos.UserDto>>
+  nameWithType.vb: Task(Of IEnumerable(Of UserDto))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of Haiku.API.Dtos.UserDto))
+  name.vb: Task(Of IEnumerable(Of UserDto))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Haiku.API.Dtos.UserDto
+    name: UserDto
+    href: Haiku.API.Dtos.UserDto.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Haiku.API.Dtos.UserDto
+    name: UserDto
+    href: Haiku.API.Dtos.UserDto.html
+  - name: )
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Haiku.API.Services.UserServices.IUserService.GetTotalUsersAsync*
+  commentId: Overload:Haiku.API.Services.UserServices.IUserService.GetTotalUsersAsync
+  href: Haiku.API.Services.UserServices.IUserService.html#Haiku_API_Services_UserServices_IUserService_GetTotalUsersAsync_System_String_
+  name: GetTotalUsersAsync
+  nameWithType: IUserService.GetTotalUsersAsync
+  fullName: Haiku.API.Services.UserServices.IUserService.GetTotalUsersAsync
+- uid: System.Threading.Tasks.Task{System.Int32}
+  commentId: T:System.Threading.Tasks.Task{System.Int32}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<int>
+  nameWithType: Task<int>
+  fullName: System.Threading.Tasks.Task<int>
+  nameWithType.vb: Task(Of Integer)
+  fullName.vb: System.Threading.Tasks.Task(Of Integer)
+  name.vb: Task(Of Integer)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Haiku.API.Services.UserServices.IUserService.GetUserByIdAsync*
+  commentId: Overload:Haiku.API.Services.UserServices.IUserService.GetUserByIdAsync
+  href: Haiku.API.Services.UserServices.IUserService.html#Haiku_API_Services_UserServices_IUserService_GetUserByIdAsync_System_Int64_
+  name: GetUserByIdAsync
+  nameWithType: IUserService.GetUserByIdAsync
+  fullName: Haiku.API.Services.UserServices.IUserService.GetUserByIdAsync
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Threading.Tasks.Task{Haiku.API.Dtos.UserDto}
+  commentId: T:System.Threading.Tasks.Task{Haiku.API.Dtos.UserDto}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<UserDto>
+  nameWithType: Task<UserDto>
+  fullName: System.Threading.Tasks.Task<Haiku.API.Dtos.UserDto>
+  nameWithType.vb: Task(Of UserDto)
+  fullName.vb: System.Threading.Tasks.Task(Of Haiku.API.Dtos.UserDto)
+  name.vb: Task(Of UserDto)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Haiku.API.Dtos.UserDto
+    name: UserDto
+    href: Haiku.API.Dtos.UserDto.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Haiku.API.Dtos.UserDto
+    name: UserDto
+    href: Haiku.API.Dtos.UserDto.html
+  - name: )
+- uid: Haiku.API.Services.UserServices.IUserService.AuthenticateUserAsync*
+  commentId: Overload:Haiku.API.Services.UserServices.IUserService.AuthenticateUserAsync
+  href: Haiku.API.Services.UserServices.IUserService.html#Haiku_API_Services_UserServices_IUserService_AuthenticateUserAsync_System_String_System_String_
+  name: AuthenticateUserAsync
+  nameWithType: IUserService.AuthenticateUserAsync
+  fullName: Haiku.API.Services.UserServices.IUserService.AuthenticateUserAsync
+- uid: System.Threading.Tasks.Task{Haiku.API.Models.User}
+  commentId: T:System.Threading.Tasks.Task{Haiku.API.Models.User}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<User>
+  nameWithType: Task<User>
+  fullName: System.Threading.Tasks.Task<Haiku.API.Models.User>
+  nameWithType.vb: Task(Of User)
+  fullName.vb: System.Threading.Tasks.Task(Of Haiku.API.Models.User)
+  name.vb: Task(Of User)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Haiku.API.Models.User
+    name: User
+    href: Haiku.API.Models.User.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Haiku.API.Models.User
+    name: User
+    href: Haiku.API.Models.User.html
+  - name: )
+- uid: Haiku.API.Services.UserServices.IUserService.AddUserAsync*
+  commentId: Overload:Haiku.API.Services.UserServices.IUserService.AddUserAsync
+  href: Haiku.API.Services.UserServices.IUserService.html#Haiku_API_Services_UserServices_IUserService_AddUserAsync_Haiku_API_Dtos_RegisterDto_
+  name: AddUserAsync
+  nameWithType: IUserService.AddUserAsync
+  fullName: Haiku.API.Services.UserServices.IUserService.AddUserAsync
+- uid: Haiku.API.Dtos.RegisterDto
+  commentId: T:Haiku.API.Dtos.RegisterDto
+  parent: Haiku.API.Dtos
+  href: Haiku.API.Dtos.RegisterDto.html
+  name: RegisterDto
+  nameWithType: RegisterDto
+  fullName: Haiku.API.Dtos.RegisterDto
+- uid: Haiku.API.Dtos
+  commentId: N:Haiku.API.Dtos
+  href: Haiku.html
+  name: Haiku.API.Dtos
+  nameWithType: Haiku.API.Dtos
+  fullName: Haiku.API.Dtos
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Dtos
+    name: Dtos
+    href: Haiku.API.Dtos.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Dtos
+    name: Dtos
+    href: Haiku.API.Dtos.html
+- uid: Haiku.API.Services.UserServices.IUserService.UpdateUserAsync*
+  commentId: Overload:Haiku.API.Services.UserServices.IUserService.UpdateUserAsync
+  href: Haiku.API.Services.UserServices.IUserService.html#Haiku_API_Services_UserServices_IUserService_UpdateUserAsync_System_Int64_Haiku_API_Dtos_UserDto_
+  name: UpdateUserAsync
+  nameWithType: IUserService.UpdateUserAsync
+  fullName: Haiku.API.Services.UserServices.IUserService.UpdateUserAsync
+- uid: Haiku.API.Dtos.UserDto
+  commentId: T:Haiku.API.Dtos.UserDto
+  parent: Haiku.API.Dtos
+  href: Haiku.API.Dtos.UserDto.html
+  name: UserDto
+  nameWithType: UserDto
+  fullName: Haiku.API.Dtos.UserDto
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Haiku.API.Services.UserServices.IUserService.DeleteUserByIdAsync*
+  commentId: Overload:Haiku.API.Services.UserServices.IUserService.DeleteUserByIdAsync
+  href: Haiku.API.Services.UserServices.IUserService.html#Haiku_API_Services_UserServices_IUserService_DeleteUserByIdAsync_System_Int64_
+  name: DeleteUserByIdAsync
+  nameWithType: IUserService.DeleteUserByIdAsync
+  fullName: Haiku.API.Services.UserServices.IUserService.DeleteUserByIdAsync
+- uid: Haiku.API.Services.UserServices.IUserService.UserExistsByIdAsync*
+  commentId: Overload:Haiku.API.Services.UserServices.IUserService.UserExistsByIdAsync
+  href: Haiku.API.Services.UserServices.IUserService.html#Haiku_API_Services_UserServices_IUserService_UserExistsByIdAsync_System_Int64_
+  name: UserExistsByIdAsync
+  nameWithType: IUserService.UserExistsByIdAsync
+  fullName: Haiku.API.Services.UserServices.IUserService.UserExistsByIdAsync
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Haiku.API.Services.UserServices.IUserService.UsernameExistsAsync*
+  commentId: Overload:Haiku.API.Services.UserServices.IUserService.UsernameExistsAsync
+  href: Haiku.API.Services.UserServices.IUserService.html#Haiku_API_Services_UserServices_IUserService_UsernameExistsAsync_System_String_
+  name: UsernameExistsAsync
+  nameWithType: IUserService.UsernameExistsAsync
+  fullName: Haiku.API.Services.UserServices.IUserService.UsernameExistsAsync

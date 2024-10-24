@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Haiku.API.Repositories.RoleRepositories
+  commentId: N:Haiku.API.Repositories.RoleRepositories
+  id: Haiku.API.Repositories.RoleRepositories
+  children:
+  - Haiku.API.Repositories.RoleRepositories.IRoleRepository
+  - Haiku.API.Repositories.RoleRepositories.RoleRepository
+  langs:
+  - csharp
+  - vb
+  name: Haiku.API.Repositories.RoleRepositories
+  nameWithType: Haiku.API.Repositories.RoleRepositories
+  fullName: Haiku.API.Repositories.RoleRepositories
+  type: Namespace
+  assemblies:
+  - Haiku.API
+references:
+- uid: Haiku.API.Repositories.RoleRepositories.IRoleRepository
+  commentId: T:Haiku.API.Repositories.RoleRepositories.IRoleRepository
+  parent: Haiku.API.Repositories.RoleRepositories
+  href: Haiku.API.Repositories.RoleRepositories.IRoleRepository.html
+  name: IRoleRepository
+  nameWithType: IRoleRepository
+  fullName: Haiku.API.Repositories.RoleRepositories.IRoleRepository
+- uid: Haiku.API.Repositories.RoleRepositories.RoleRepository
+  commentId: T:Haiku.API.Repositories.RoleRepositories.RoleRepository
+  href: Haiku.API.Repositories.RoleRepositories.RoleRepository.html
+  name: RoleRepository
+  nameWithType: RoleRepository
+  fullName: Haiku.API.Repositories.RoleRepositories.RoleRepository
+- uid: Haiku.API.Repositories.RoleRepositories
+  commentId: N:Haiku.API.Repositories.RoleRepositories
+  href: Haiku.html
+  name: Haiku.API.Repositories.RoleRepositories
+  nameWithType: Haiku.API.Repositories.RoleRepositories
+  fullName: Haiku.API.Repositories.RoleRepositories
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Repositories
+    name: Repositories
+    href: Haiku.API.Repositories.html
+  - name: .
+  - uid: Haiku.API.Repositories.RoleRepositories
+    name: RoleRepositories
+    href: Haiku.API.Repositories.RoleRepositories.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Repositories
+    name: Repositories
+    href: Haiku.API.Repositories.html
+  - name: .
+  - uid: Haiku.API.Repositories.RoleRepositories
+    name: RoleRepositories
+    href: Haiku.API.Repositories.RoleRepositories.html

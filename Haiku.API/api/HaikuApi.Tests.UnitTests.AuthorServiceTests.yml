@@ -1,0 +1,602 @@
+### YamlMime:ManagedReference
+items:
+- uid: HaikuApi.Tests.UnitTests.AuthorServiceTests
+  commentId: T:HaikuApi.Tests.UnitTests.AuthorServiceTests
+  id: AuthorServiceTests
+  parent: HaikuApi.Tests.UnitTests
+  children:
+  - HaikuApi.Tests.UnitTests.AuthorServiceTests.#ctor(Xunit.Abstractions.ITestOutputHelper)
+  - HaikuApi.Tests.UnitTests.AuthorServiceTests.CreateAuthorAsync_AddAuthor
+  - HaikuApi.Tests.UnitTests.AuthorServiceTests.DeleteAuthorAsync_DeleteAuthor
+  - HaikuApi.Tests.UnitTests.AuthorServiceTests.GetAuthorAsync_ReturnAuthor
+  - HaikuApi.Tests.UnitTests.AuthorServiceTests.UpdateAuthorAsync_UpdateAuthor
+  langs:
+  - csharp
+  - vb
+  name: AuthorServiceTests
+  nameWithType: AuthorServiceTests
+  fullName: HaikuApi.Tests.UnitTests.AuthorServiceTests
+  type: Class
+  source:
+    remote:
+      path: Haiku.API/HaikuApi.Tests/UnitTests/AuthorServiceTests.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: AuthorServiceTests
+    path: HaikuApi.Tests/UnitTests/AuthorServiceTests.cs
+    startLine: 18
+  assemblies:
+  - HaikuApi.Tests
+  namespace: HaikuApi.Tests.UnitTests
+  syntax:
+    content: public class AuthorServiceTests
+    content.vb: Public Class AuthorServiceTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: HaikuApi.Tests.UnitTests.AuthorServiceTests.#ctor(Xunit.Abstractions.ITestOutputHelper)
+  commentId: M:HaikuApi.Tests.UnitTests.AuthorServiceTests.#ctor(Xunit.Abstractions.ITestOutputHelper)
+  id: '#ctor(Xunit.Abstractions.ITestOutputHelper)'
+  parent: HaikuApi.Tests.UnitTests.AuthorServiceTests
+  langs:
+  - csharp
+  - vb
+  name: AuthorServiceTests(ITestOutputHelper)
+  nameWithType: AuthorServiceTests.AuthorServiceTests(ITestOutputHelper)
+  fullName: HaikuApi.Tests.UnitTests.AuthorServiceTests.AuthorServiceTests(Xunit.Abstractions.ITestOutputHelper)
+  type: Constructor
+  source:
+    remote:
+      path: Haiku.API/HaikuApi.Tests/UnitTests/AuthorServiceTests.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: .ctor
+    path: HaikuApi.Tests/UnitTests/AuthorServiceTests.cs
+    startLine: 27
+  assemblies:
+  - HaikuApi.Tests
+  namespace: HaikuApi.Tests.UnitTests
+  syntax:
+    content: public AuthorServiceTests(ITestOutputHelper output)
+    parameters:
+    - id: output
+      type: Xunit.Abstractions.ITestOutputHelper
+    content.vb: Public Sub New(output As ITestOutputHelper)
+  overload: HaikuApi.Tests.UnitTests.AuthorServiceTests.#ctor*
+  nameWithType.vb: AuthorServiceTests.New(ITestOutputHelper)
+  fullName.vb: HaikuApi.Tests.UnitTests.AuthorServiceTests.New(Xunit.Abstractions.ITestOutputHelper)
+  name.vb: New(ITestOutputHelper)
+- uid: HaikuApi.Tests.UnitTests.AuthorServiceTests.GetAuthorAsync_ReturnAuthor
+  commentId: M:HaikuApi.Tests.UnitTests.AuthorServiceTests.GetAuthorAsync_ReturnAuthor
+  id: GetAuthorAsync_ReturnAuthor
+  parent: HaikuApi.Tests.UnitTests.AuthorServiceTests
+  langs:
+  - csharp
+  - vb
+  name: GetAuthorAsync_ReturnAuthor()
+  nameWithType: AuthorServiceTests.GetAuthorAsync_ReturnAuthor()
+  fullName: HaikuApi.Tests.UnitTests.AuthorServiceTests.GetAuthorAsync_ReturnAuthor()
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/HaikuApi.Tests/UnitTests/AuthorServiceTests.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: GetAuthorAsync_ReturnAuthor
+    path: HaikuApi.Tests/UnitTests/AuthorServiceTests.cs
+    startLine: 34
+  assemblies:
+  - HaikuApi.Tests
+  namespace: HaikuApi.Tests.UnitTests
+  syntax:
+    content: >-
+      [Fact]
+
+      public Task GetAuthorAsync_ReturnAuthor()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Fact>
+
+      Public Function GetAuthorAsync_ReturnAuthor() As Task
+  overload: HaikuApi.Tests.UnitTests.AuthorServiceTests.GetAuthorAsync_ReturnAuthor*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: HaikuApi.Tests.UnitTests.AuthorServiceTests.CreateAuthorAsync_AddAuthor
+  commentId: M:HaikuApi.Tests.UnitTests.AuthorServiceTests.CreateAuthorAsync_AddAuthor
+  id: CreateAuthorAsync_AddAuthor
+  parent: HaikuApi.Tests.UnitTests.AuthorServiceTests
+  langs:
+  - csharp
+  - vb
+  name: CreateAuthorAsync_AddAuthor()
+  nameWithType: AuthorServiceTests.CreateAuthorAsync_AddAuthor()
+  fullName: HaikuApi.Tests.UnitTests.AuthorServiceTests.CreateAuthorAsync_AddAuthor()
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/HaikuApi.Tests/UnitTests/AuthorServiceTests.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: CreateAuthorAsync_AddAuthor
+    path: HaikuApi.Tests/UnitTests/AuthorServiceTests.cs
+    startLine: 72
+  assemblies:
+  - HaikuApi.Tests
+  namespace: HaikuApi.Tests.UnitTests
+  syntax:
+    content: >-
+      [Fact]
+
+      public Task CreateAuthorAsync_AddAuthor()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Fact>
+
+      Public Function CreateAuthorAsync_AddAuthor() As Task
+  overload: HaikuApi.Tests.UnitTests.AuthorServiceTests.CreateAuthorAsync_AddAuthor*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: HaikuApi.Tests.UnitTests.AuthorServiceTests.UpdateAuthorAsync_UpdateAuthor
+  commentId: M:HaikuApi.Tests.UnitTests.AuthorServiceTests.UpdateAuthorAsync_UpdateAuthor
+  id: UpdateAuthorAsync_UpdateAuthor
+  parent: HaikuApi.Tests.UnitTests.AuthorServiceTests
+  langs:
+  - csharp
+  - vb
+  name: UpdateAuthorAsync_UpdateAuthor()
+  nameWithType: AuthorServiceTests.UpdateAuthorAsync_UpdateAuthor()
+  fullName: HaikuApi.Tests.UnitTests.AuthorServiceTests.UpdateAuthorAsync_UpdateAuthor()
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/HaikuApi.Tests/UnitTests/AuthorServiceTests.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: UpdateAuthorAsync_UpdateAuthor
+    path: HaikuApi.Tests/UnitTests/AuthorServiceTests.cs
+    startLine: 107
+  assemblies:
+  - HaikuApi.Tests
+  namespace: HaikuApi.Tests.UnitTests
+  syntax:
+    content: >-
+      [Fact]
+
+      public Task UpdateAuthorAsync_UpdateAuthor()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Fact>
+
+      Public Function UpdateAuthorAsync_UpdateAuthor() As Task
+  overload: HaikuApi.Tests.UnitTests.AuthorServiceTests.UpdateAuthorAsync_UpdateAuthor*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: HaikuApi.Tests.UnitTests.AuthorServiceTests.DeleteAuthorAsync_DeleteAuthor
+  commentId: M:HaikuApi.Tests.UnitTests.AuthorServiceTests.DeleteAuthorAsync_DeleteAuthor
+  id: DeleteAuthorAsync_DeleteAuthor
+  parent: HaikuApi.Tests.UnitTests.AuthorServiceTests
+  langs:
+  - csharp
+  - vb
+  name: DeleteAuthorAsync_DeleteAuthor()
+  nameWithType: AuthorServiceTests.DeleteAuthorAsync_DeleteAuthor()
+  fullName: HaikuApi.Tests.UnitTests.AuthorServiceTests.DeleteAuthorAsync_DeleteAuthor()
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/HaikuApi.Tests/UnitTests/AuthorServiceTests.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: DeleteAuthorAsync_DeleteAuthor
+    path: HaikuApi.Tests/UnitTests/AuthorServiceTests.cs
+    startLine: 150
+  assemblies:
+  - HaikuApi.Tests
+  namespace: HaikuApi.Tests.UnitTests
+  syntax:
+    content: >-
+      [Fact]
+
+      public Task DeleteAuthorAsync_DeleteAuthor()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Fact>
+
+      Public Function DeleteAuthorAsync_DeleteAuthor() As Task
+  overload: HaikuApi.Tests.UnitTests.AuthorServiceTests.DeleteAuthorAsync_DeleteAuthor*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+references:
+- uid: HaikuApi.Tests.UnitTests
+  commentId: N:HaikuApi.Tests.UnitTests
+  href: HaikuApi.html
+  name: HaikuApi.Tests.UnitTests
+  nameWithType: HaikuApi.Tests.UnitTests
+  fullName: HaikuApi.Tests.UnitTests
+  spec.csharp:
+  - uid: HaikuApi
+    name: HaikuApi
+    href: HaikuApi.html
+  - name: .
+  - uid: HaikuApi.Tests
+    name: Tests
+    href: HaikuApi.Tests.html
+  - name: .
+  - uid: HaikuApi.Tests.UnitTests
+    name: UnitTests
+    href: HaikuApi.Tests.UnitTests.html
+  spec.vb:
+  - uid: HaikuApi
+    name: HaikuApi
+    href: HaikuApi.html
+  - name: .
+  - uid: HaikuApi.Tests
+    name: Tests
+    href: HaikuApi.Tests.html
+  - name: .
+  - uid: HaikuApi.Tests.UnitTests
+    name: UnitTests
+    href: HaikuApi.Tests.UnitTests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HaikuApi.Tests.UnitTests.AuthorServiceTests.#ctor*
+  commentId: Overload:HaikuApi.Tests.UnitTests.AuthorServiceTests.#ctor
+  href: HaikuApi.Tests.UnitTests.AuthorServiceTests.html#HaikuApi_Tests_UnitTests_AuthorServiceTests__ctor_Xunit_Abstractions_ITestOutputHelper_
+  name: AuthorServiceTests
+  nameWithType: AuthorServiceTests.AuthorServiceTests
+  fullName: HaikuApi.Tests.UnitTests.AuthorServiceTests.AuthorServiceTests
+  nameWithType.vb: AuthorServiceTests.New
+  fullName.vb: HaikuApi.Tests.UnitTests.AuthorServiceTests.New
+  name.vb: New
+- uid: Xunit.Abstractions.ITestOutputHelper
+  commentId: T:Xunit.Abstractions.ITestOutputHelper
+  parent: Xunit.Abstractions
+  isExternal: true
+  name: ITestOutputHelper
+  nameWithType: ITestOutputHelper
+  fullName: Xunit.Abstractions.ITestOutputHelper
+- uid: Xunit.Abstractions
+  commentId: N:Xunit.Abstractions
+  isExternal: true
+  name: Xunit.Abstractions
+  nameWithType: Xunit.Abstractions
+  fullName: Xunit.Abstractions
+  spec.csharp:
+  - uid: Xunit
+    name: Xunit
+    isExternal: true
+  - name: .
+  - uid: Xunit.Abstractions
+    name: Abstractions
+    isExternal: true
+  spec.vb:
+  - uid: Xunit
+    name: Xunit
+    isExternal: true
+  - name: .
+  - uid: Xunit.Abstractions
+    name: Abstractions
+    isExternal: true
+- uid: HaikuApi.Tests.UnitTests.AuthorServiceTests.GetAuthorAsync_ReturnAuthor*
+  commentId: Overload:HaikuApi.Tests.UnitTests.AuthorServiceTests.GetAuthorAsync_ReturnAuthor
+  href: HaikuApi.Tests.UnitTests.AuthorServiceTests.html#HaikuApi_Tests_UnitTests_AuthorServiceTests_GetAuthorAsync_ReturnAuthor
+  name: GetAuthorAsync_ReturnAuthor
+  nameWithType: AuthorServiceTests.GetAuthorAsync_ReturnAuthor
+  fullName: HaikuApi.Tests.UnitTests.AuthorServiceTests.GetAuthorAsync_ReturnAuthor
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: HaikuApi.Tests.UnitTests.AuthorServiceTests.CreateAuthorAsync_AddAuthor*
+  commentId: Overload:HaikuApi.Tests.UnitTests.AuthorServiceTests.CreateAuthorAsync_AddAuthor
+  href: HaikuApi.Tests.UnitTests.AuthorServiceTests.html#HaikuApi_Tests_UnitTests_AuthorServiceTests_CreateAuthorAsync_AddAuthor
+  name: CreateAuthorAsync_AddAuthor
+  nameWithType: AuthorServiceTests.CreateAuthorAsync_AddAuthor
+  fullName: HaikuApi.Tests.UnitTests.AuthorServiceTests.CreateAuthorAsync_AddAuthor
+- uid: HaikuApi.Tests.UnitTests.AuthorServiceTests.UpdateAuthorAsync_UpdateAuthor*
+  commentId: Overload:HaikuApi.Tests.UnitTests.AuthorServiceTests.UpdateAuthorAsync_UpdateAuthor
+  href: HaikuApi.Tests.UnitTests.AuthorServiceTests.html#HaikuApi_Tests_UnitTests_AuthorServiceTests_UpdateAuthorAsync_UpdateAuthor
+  name: UpdateAuthorAsync_UpdateAuthor
+  nameWithType: AuthorServiceTests.UpdateAuthorAsync_UpdateAuthor
+  fullName: HaikuApi.Tests.UnitTests.AuthorServiceTests.UpdateAuthorAsync_UpdateAuthor
+- uid: HaikuApi.Tests.UnitTests.AuthorServiceTests.DeleteAuthorAsync_DeleteAuthor*
+  commentId: Overload:HaikuApi.Tests.UnitTests.AuthorServiceTests.DeleteAuthorAsync_DeleteAuthor
+  href: HaikuApi.Tests.UnitTests.AuthorServiceTests.html#HaikuApi_Tests_UnitTests_AuthorServiceTests_DeleteAuthorAsync_DeleteAuthor
+  name: DeleteAuthorAsync_DeleteAuthor
+  nameWithType: AuthorServiceTests.DeleteAuthorAsync_DeleteAuthor
+  fullName: HaikuApi.Tests.UnitTests.AuthorServiceTests.DeleteAuthorAsync_DeleteAuthor

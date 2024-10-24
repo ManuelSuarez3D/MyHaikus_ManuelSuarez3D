@@ -1,0 +1,60 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <div class="form-group text-start">
+    <label for="username" class="fw-semibold mb-1">Username*</label>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">
+          <i class="fas fa-user fa-lg custom-icon-color"></i>
+        </span>
+      </div>
+      <input type="text"
+             id="username"
+             formControlName="username"
+             [ngClass]="{'is-invalid': hasError('username')}"
+             class="form-control input"
+             placeholder="Enter your Username..."
+             required />
+    </div>
+    <small *ngIf="hasError('username', 'required')" class="text-danger">
+      Username is required!
+    </small>
+    <small *ngIf="hasError('username', 'minlength')" class="text-danger">
+      Username must be at least 4 characters long.
+    </small>
+    <small *ngIf="hasError('username', 'maxlength')" class="text-danger">
+      Username cannot be more than 20 characters long.
+    </small>
+  </div>
+
+  <div class="form-group text-start mt-3">
+    <label for="password" class="fw-semibold mb-1">Password*</label>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">
+          <i class="fas fa-lock fa-lg custom-icon-color"></i>
+        </span>
+      </div>
+      <input type="password"
+             id="password"
+             formControlName="password"
+             [ngClass]="{'is-invalid': hasError('password')}"
+             class="form-control input"
+             placeholder="Enter your Password..."
+             required />
+    </div>
+    <small *ngIf="hasError('password', 'required')" class="text-danger">
+      Password is required!
+    </small>
+    <small *ngIf="hasError('password', 'minlength')" class="text-danger">
+      Password must be at least 8 characters long.
+    </small>
+    <small *ngIf="hasError('password', 'maxlength')" class="text-danger">
+      Password cannot be more than 30 characters long.
+    </small>
+  </div>
+
+  <div class="form-group text-center">
+    <button type="submit" class="btn btn-outline-primary mt-3 me-2">Login</button>
+    <a [routerLink]="['/home']" class="btn btn-outline-primary mt-3">Cancel</a>
+  </div>
+</form>

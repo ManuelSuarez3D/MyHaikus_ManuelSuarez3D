@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: Haiku.API.Services.XmlSerializationServices
+  commentId: N:Haiku.API.Services.XmlSerializationServices
+  id: Haiku.API.Services.XmlSerializationServices
+  children:
+  - Haiku.API.Services.XmlSerializationServices.IXmlSerializationService
+  langs:
+  - csharp
+  - vb
+  name: Haiku.API.Services.XmlSerializationServices
+  nameWithType: Haiku.API.Services.XmlSerializationServices
+  fullName: Haiku.API.Services.XmlSerializationServices
+  type: Namespace
+  assemblies:
+  - Haiku.API
+references:
+- uid: Haiku.API.Services.XmlSerializationServices.IXmlSerializationService
+  commentId: T:Haiku.API.Services.XmlSerializationServices.IXmlSerializationService
+  parent: Haiku.API.Services.XmlSerializationServices
+  href: Haiku.API.Services.XmlSerializationServices.IXmlSerializationService.html
+  name: IXmlSerializationService
+  nameWithType: IXmlSerializationService
+  fullName: Haiku.API.Services.XmlSerializationServices.IXmlSerializationService
+- uid: Haiku.API.Services.XmlSerializationServices
+  commentId: N:Haiku.API.Services.XmlSerializationServices
+  href: Haiku.html
+  name: Haiku.API.Services.XmlSerializationServices
+  nameWithType: Haiku.API.Services.XmlSerializationServices
+  fullName: Haiku.API.Services.XmlSerializationServices
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Services
+    name: Services
+    href: Haiku.API.Services.html
+  - name: .
+  - uid: Haiku.API.Services.XmlSerializationServices
+    name: XmlSerializationServices
+    href: Haiku.API.Services.XmlSerializationServices.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Services
+    name: Services
+    href: Haiku.API.Services.html
+  - name: .
+  - uid: Haiku.API.Services.XmlSerializationServices
+    name: XmlSerializationServices
+    href: Haiku.API.Services.XmlSerializationServices.html

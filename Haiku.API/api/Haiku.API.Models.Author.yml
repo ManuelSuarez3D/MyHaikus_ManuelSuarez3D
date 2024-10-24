@@ -1,0 +1,666 @@
+### YamlMime:ManagedReference
+items:
+- uid: Haiku.API.Models.Author
+  commentId: T:Haiku.API.Models.Author
+  id: Author
+  parent: Haiku.API.Models
+  children:
+  - Haiku.API.Models.Author.AuthorHaikus
+  - Haiku.API.Models.Author.Bio
+  - Haiku.API.Models.Author.Id
+  - Haiku.API.Models.Author.Name
+  langs:
+  - csharp
+  - vb
+  name: Author
+  nameWithType: Author
+  fullName: Haiku.API.Models.Author
+  type: Class
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Models/Author.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: Author
+    path: Haiku.API/Models/Author.cs
+    startLine: 5
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Models
+  syntax:
+    content: public class Author
+    content.vb: Public Class Author
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Haiku.API.Models.Author.Id
+  commentId: P:Haiku.API.Models.Author.Id
+  id: Id
+  parent: Haiku.API.Models.Author
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: Author.Id
+  fullName: Haiku.API.Models.Author.Id
+  type: Property
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Models/Author.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: Id
+    path: Haiku.API/Models/Author.cs
+    startLine: 7
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Models
+  syntax:
+    content: >-
+      [Key]
+
+      [Column]
+
+      public long Id { get; set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: >-
+      <Key>
+
+      <Column>
+
+      Public Property Id As Long
+  overload: Haiku.API.Models.Author.Id*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.KeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.KeyAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.Schema.ColumnAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.ColumnAttribute.#ctor
+    arguments: []
+- uid: Haiku.API.Models.Author.Name
+  commentId: P:Haiku.API.Models.Author.Name
+  id: Name
+  parent: Haiku.API.Models.Author
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Author.Name
+  fullName: Haiku.API.Models.Author.Name
+  type: Property
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Models/Author.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: Name
+    path: Haiku.API/Models/Author.cs
+    startLine: 11
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Models
+  syntax:
+    content: >-
+      [Required]
+
+      [Column]
+
+      [StringLength(50, ErrorMessage = "Name length can't be more than 50 characters.")]
+
+      [MinLength(2, ErrorMessage = "Name length must be at least 2 characters.")]
+
+      public required string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required>
+
+      <Column>
+
+      <StringLength(50, ErrorMessage:="Name length can't be more than 50 characters.")>
+
+      <MinLength(2, ErrorMessage:="Name length must be at least 2 characters.")>
+
+      Public Property Name As String
+  overload: Haiku.API.Models.Author.Name*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.Schema.ColumnAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.ColumnAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.StringLengthAttribute
+    ctor: System.ComponentModel.DataAnnotations.StringLengthAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 50
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: Name length can't be more than 50 characters.
+  - type: System.ComponentModel.DataAnnotations.MinLengthAttribute
+    ctor: System.ComponentModel.DataAnnotations.MinLengthAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: Name length must be at least 2 characters.
+- uid: Haiku.API.Models.Author.Bio
+  commentId: P:Haiku.API.Models.Author.Bio
+  id: Bio
+  parent: Haiku.API.Models.Author
+  langs:
+  - csharp
+  - vb
+  name: Bio
+  nameWithType: Author.Bio
+  fullName: Haiku.API.Models.Author.Bio
+  type: Property
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Models/Author.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: Bio
+    path: Haiku.API/Models/Author.cs
+    startLine: 17
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Models
+  syntax:
+    content: >-
+      [Column]
+
+      [StringLength(1000, ErrorMessage = "Bio length can't be more than 300 characters.")]
+
+      [MinLength(4, ErrorMessage = "Name length must be at least 4 characters.")]
+
+      public string? Bio { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Column>
+
+      <StringLength(1000, ErrorMessage:="Bio length can't be more than 300 characters.")>
+
+      <MinLength(4, ErrorMessage:="Name length must be at least 4 characters.")>
+
+      Public Property Bio As String
+  overload: Haiku.API.Models.Author.Bio*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.ColumnAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.ColumnAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.StringLengthAttribute
+    ctor: System.ComponentModel.DataAnnotations.StringLengthAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1000
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: Bio length can't be more than 300 characters.
+  - type: System.ComponentModel.DataAnnotations.MinLengthAttribute
+    ctor: System.ComponentModel.DataAnnotations.MinLengthAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 4
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: Name length must be at least 4 characters.
+- uid: Haiku.API.Models.Author.AuthorHaikus
+  commentId: P:Haiku.API.Models.Author.AuthorHaikus
+  id: AuthorHaikus
+  parent: Haiku.API.Models.Author
+  langs:
+  - csharp
+  - vb
+  name: AuthorHaikus
+  nameWithType: Author.AuthorHaikus
+  fullName: Haiku.API.Models.Author.AuthorHaikus
+  type: Property
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Models/Author.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: AuthorHaikus
+    path: Haiku.API/Models/Author.cs
+    startLine: 22
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Models
+  syntax:
+    content: public virtual ICollection<AuthorHaiku> AuthorHaikus { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{Haiku.API.Models.AuthorHaiku}
+    content.vb: Public Overridable Property AuthorHaikus As ICollection(Of AuthorHaiku)
+  overload: Haiku.API.Models.Author.AuthorHaikus*
+references:
+- uid: Haiku.API.Models
+  commentId: N:Haiku.API.Models
+  href: Haiku.html
+  name: Haiku.API.Models
+  nameWithType: Haiku.API.Models
+  fullName: Haiku.API.Models
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Models
+    name: Models
+    href: Haiku.API.Models.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Models
+    name: Models
+    href: Haiku.API.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Haiku.API.Models.Author.Id*
+  commentId: Overload:Haiku.API.Models.Author.Id
+  href: Haiku.API.Models.Author.html#Haiku_API_Models_Author_Id
+  name: Id
+  nameWithType: Author.Id
+  fullName: Haiku.API.Models.Author.Id
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: Haiku.API.Models.Author.Name*
+  commentId: Overload:Haiku.API.Models.Author.Name
+  href: Haiku.API.Models.Author.html#Haiku_API_Models_Author_Name
+  name: Name
+  nameWithType: Author.Name
+  fullName: Haiku.API.Models.Author.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Haiku.API.Models.Author.Bio*
+  commentId: Overload:Haiku.API.Models.Author.Bio
+  href: Haiku.API.Models.Author.html#Haiku_API_Models_Author_Bio
+  name: Bio
+  nameWithType: Author.Bio
+  fullName: Haiku.API.Models.Author.Bio
+- uid: Haiku.API.Models.Author.AuthorHaikus*
+  commentId: Overload:Haiku.API.Models.Author.AuthorHaikus
+  href: Haiku.API.Models.Author.html#Haiku_API_Models_Author_AuthorHaikus
+  name: AuthorHaikus
+  nameWithType: Author.AuthorHaikus
+  fullName: Haiku.API.Models.Author.AuthorHaikus
+- uid: System.Collections.Generic.ICollection{Haiku.API.Models.AuthorHaiku}
+  commentId: T:System.Collections.Generic.ICollection{Haiku.API.Models.AuthorHaiku}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<AuthorHaiku>
+  nameWithType: ICollection<AuthorHaiku>
+  fullName: System.Collections.Generic.ICollection<Haiku.API.Models.AuthorHaiku>
+  nameWithType.vb: ICollection(Of AuthorHaiku)
+  fullName.vb: System.Collections.Generic.ICollection(Of Haiku.API.Models.AuthorHaiku)
+  name.vb: ICollection(Of AuthorHaiku)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: Haiku.API.Models.AuthorHaiku
+    name: AuthorHaiku
+    href: Haiku.API.Models.AuthorHaiku.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Haiku.API.Models.AuthorHaiku
+    name: AuthorHaiku
+    href: Haiku.API.Models.AuthorHaiku.html
+  - name: )
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

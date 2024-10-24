@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: Haiku.API.Database
+  commentId: N:Haiku.API.Database
+  id: Haiku.API.Database
+  children:
+  - Haiku.API.Database.HaikuAPIContext
+  langs:
+  - csharp
+  - vb
+  name: Haiku.API.Database
+  nameWithType: Haiku.API.Database
+  fullName: Haiku.API.Database
+  type: Namespace
+  assemblies:
+  - Haiku.API
+references:
+- uid: Haiku.API.Database.HaikuAPIContext
+  commentId: T:Haiku.API.Database.HaikuAPIContext
+  parent: Haiku.API.Database
+  href: Haiku.API.Database.HaikuAPIContext.html
+  name: HaikuAPIContext
+  nameWithType: HaikuAPIContext
+  fullName: Haiku.API.Database.HaikuAPIContext
+- uid: Haiku.API.Database
+  commentId: N:Haiku.API.Database
+  href: Haiku.html
+  name: Haiku.API.Database
+  nameWithType: Haiku.API.Database
+  fullName: Haiku.API.Database
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Database
+    name: Database
+    href: Haiku.API.Database.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Database
+    name: Database
+    href: Haiku.API.Database.html

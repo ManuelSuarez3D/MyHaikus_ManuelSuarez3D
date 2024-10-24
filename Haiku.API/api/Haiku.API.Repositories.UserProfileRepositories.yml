@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Haiku.API.Repositories.UserProfileRepositories
+  commentId: N:Haiku.API.Repositories.UserProfileRepositories
+  id: Haiku.API.Repositories.UserProfileRepositories
+  children:
+  - Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository
+  - Haiku.API.Repositories.UserProfileRepositories.UserProfileRepository
+  langs:
+  - csharp
+  - vb
+  name: Haiku.API.Repositories.UserProfileRepositories
+  nameWithType: Haiku.API.Repositories.UserProfileRepositories
+  fullName: Haiku.API.Repositories.UserProfileRepositories
+  type: Namespace
+  assemblies:
+  - Haiku.API
+references:
+- uid: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository
+  commentId: T:Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository
+  parent: Haiku.API.Repositories.UserProfileRepositories
+  href: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.html
+  name: IUserProfileRepository
+  nameWithType: IUserProfileRepository
+  fullName: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository
+- uid: Haiku.API.Repositories.UserProfileRepositories.UserProfileRepository
+  commentId: T:Haiku.API.Repositories.UserProfileRepositories.UserProfileRepository
+  href: Haiku.API.Repositories.UserProfileRepositories.UserProfileRepository.html
+  name: UserProfileRepository
+  nameWithType: UserProfileRepository
+  fullName: Haiku.API.Repositories.UserProfileRepositories.UserProfileRepository
+- uid: Haiku.API.Repositories.UserProfileRepositories
+  commentId: N:Haiku.API.Repositories.UserProfileRepositories
+  href: Haiku.html
+  name: Haiku.API.Repositories.UserProfileRepositories
+  nameWithType: Haiku.API.Repositories.UserProfileRepositories
+  fullName: Haiku.API.Repositories.UserProfileRepositories
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Repositories
+    name: Repositories
+    href: Haiku.API.Repositories.html
+  - name: .
+  - uid: Haiku.API.Repositories.UserProfileRepositories
+    name: UserProfileRepositories
+    href: Haiku.API.Repositories.UserProfileRepositories.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Repositories
+    name: Repositories
+    href: Haiku.API.Repositories.html
+  - name: .
+  - uid: Haiku.API.Repositories.UserProfileRepositories
+    name: UserProfileRepositories
+    href: Haiku.API.Repositories.UserProfileRepositories.html

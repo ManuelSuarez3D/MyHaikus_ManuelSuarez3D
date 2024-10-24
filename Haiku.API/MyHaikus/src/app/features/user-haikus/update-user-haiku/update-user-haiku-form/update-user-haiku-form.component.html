@@ -1,0 +1,94 @@
+<form [formGroup]="updateUserHaikuForm" (ngSubmit)="onSubmit()">
+
+  <div class="form-group text-start">
+    <label for="title" class="fw-semibold mb-1">Title</label>
+    <div class="input-group">
+      <span class="input-group-text">
+        <i class="fa-solid fa-t custom-icon-color"></i>
+      </span>
+      <input type="text"
+             id="title"
+             [ngClass]="{'is-invalid': hasError('title')}"
+             class="form-control input"
+             formControlName="title"
+             placeholder="Enter a Title..." />
+    </div>
+    <small *ngIf="hasError('title', 'minlength')" class="text-danger">
+      Title length can't be less than 2, if not left empty.
+    </small>
+    <small *ngIf="hasError('title', 'maxlength')" class="text-danger">
+      Title length can't be more than 50.
+    </small>
+  </div>
+
+  <div class="form-group text-start mt-3">
+    <label for="lineOne" class="fw-semibold mb-1">Line One*</label>
+    <div class="input-group">
+      <span class="input-group-text">
+        <i class="fa-solid fa-pen-to-square custom-icon-color"></i>
+      </span>
+      <input type="text"
+             id="lineOne"
+             [ngClass]="{'is-invalid': hasError('lineOne')}"
+             class="form-control input"
+             formControlName="lineOne"
+             placeholder="Enter a Line One..."
+             required />
+    </div>
+    <small *ngIf="hasError('lineOne', 'required')" class="text-danger">
+      Line One is required!
+    </small>
+    <small *ngIf="hasError('lineOne', 'syllablecountvalidator')" class="text-danger">
+      Line One must have 5 syllables.
+    </small>
+  </div>
+
+  <div class="form-group text-start mt-3">
+    <label for="lineTwo" class="fw-semibold mb-1">Line Two*</label>
+    <div class="input-group">
+      <span class="input-group-text">
+        <i class="fa-solid fa-pen-to-square custom-icon-color"></i>
+      </span>
+      <input type="text"
+             id="lineTwo"
+             [ngClass]="{'is-invalid': hasError('lineTwo')}"
+             class="form-control input"
+             formControlName="lineTwo"
+             placeholder="Enter a Line Two..."
+             required />
+    </div>
+    <small *ngIf="hasError('lineTwo', 'required')" class="text-danger">
+      Line Two is required!
+    </small>
+    <small *ngIf="hasError('lineTwo', 'syllablecountvalidator')" class="text-danger">
+      Line Two must have 7 syllables.
+    </small>
+  </div>
+
+  <div class="form-group text-start mt-3">
+    <label for="lineThree" class="fw-semibold mb-1">Line Three*</label>
+    <div class="input-group">
+      <span class="input-group-text">
+        <i class="fa-solid fa-pen-to-square custom-icon-color"></i>
+      </span>
+      <input type="text"
+             id="lineThree"
+             [ngClass]="{'is-invalid': hasError('lineThree')}"
+             class="form-control input"
+             formControlName="lineThree"
+             placeholder="Enter a Line Three..."
+             required />
+    </div>
+    <small *ngIf="hasError('lineThree', 'required')" class="text-danger">
+      Line Three is required!
+    </small>
+    <small *ngIf="hasError('lineThree', 'syllablecountvalidator')" class="text-danger">
+      Line Three must have 5 syllables.
+    </small>
+  </div>
+
+  <ng-container *appIsAuthorized="['Admin', 'User']">
+    <button type="submit" class="btn btn-primary mt-3 me-2">Confirm</button>
+  </ng-container>
+  <a [routerLink]="['/all-user-haikus']" class="btn btn-outline-primary mt-3">Cancel</a>
+</form>

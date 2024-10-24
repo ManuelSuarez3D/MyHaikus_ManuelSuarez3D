@@ -1,0 +1,51 @@
+### YamlMime:ManagedReference
+items:
+- uid: Haiku.API.Mapping
+  commentId: N:Haiku.API.Mapping
+  id: Haiku.API.Mapping
+  children:
+  - Haiku.API.Mapping.AuthorHaikuMapping
+  - Haiku.API.Mapping.AuthorMapping
+  - Haiku.API.Mapping.UserHaikuMapping
+  - Haiku.API.Mapping.UserMapping
+  - Haiku.API.Mapping.UserProfileMapping
+  langs:
+  - csharp
+  - vb
+  name: Haiku.API.Mapping
+  nameWithType: Haiku.API.Mapping
+  fullName: Haiku.API.Mapping
+  type: Namespace
+  assemblies:
+  - Haiku.API
+references:
+- uid: Haiku.API.Mapping.AuthorHaikuMapping
+  commentId: T:Haiku.API.Mapping.AuthorHaikuMapping
+  href: Haiku.API.Mapping.AuthorHaikuMapping.html
+  name: AuthorHaikuMapping
+  nameWithType: AuthorHaikuMapping
+  fullName: Haiku.API.Mapping.AuthorHaikuMapping
+- uid: Haiku.API.Mapping.AuthorMapping
+  commentId: T:Haiku.API.Mapping.AuthorMapping
+  href: Haiku.API.Mapping.AuthorMapping.html
+  name: AuthorMapping
+  nameWithType: AuthorMapping
+  fullName: Haiku.API.Mapping.AuthorMapping
+- uid: Haiku.API.Mapping.UserHaikuMapping
+  commentId: T:Haiku.API.Mapping.UserHaikuMapping
+  href: Haiku.API.Mapping.UserHaikuMapping.html
+  name: UserHaikuMapping
+  nameWithType: UserHaikuMapping
+  fullName: Haiku.API.Mapping.UserHaikuMapping
+- uid: Haiku.API.Mapping.UserMapping
+  commentId: T:Haiku.API.Mapping.UserMapping
+  href: Haiku.API.Mapping.UserMapping.html
+  name: UserMapping
+  nameWithType: UserMapping
+  fullName: Haiku.API.Mapping.UserMapping
+- uid: Haiku.API.Mapping.UserProfileMapping
+  commentId: T:Haiku.API.Mapping.UserProfileMapping
+  href: Haiku.API.Mapping.UserProfileMapping.html
+  name: UserProfileMapping
+  nameWithType: UserProfileMapping
+  fullName: Haiku.API.Mapping.UserProfileMapping

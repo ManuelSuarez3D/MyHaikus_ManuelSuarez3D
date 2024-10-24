@@ -1,0 +1,632 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UserHaikuService | Haiku.API.Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UserHaikuService | Haiku.API.Documentation ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D/new/main/apiSpec/new?filename=Haiku_API_Services_UserHaikuServices_UserHaikuService.md&amp;value=---%0Auid%3A%20Haiku.API.Services.UserHaikuServices.UserHaikuService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Haiku.API.Documentation">
+            Haiku.API.Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Haiku.API.Services.UserHaikuServices.UserHaikuService">
+
+
+
+  <h1 id="Haiku_API_Services_UserHaikuServices_UserHaikuService" data-uid="Haiku.API.Services.UserHaikuServices.UserHaikuService" class="text-break">
+Class UserHaikuService  <a class="header-action link-secondary" title="View source" href="https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D/blob/main/Haiku.API/Haiku.API/Services/UserHaikuServices/UserHaikuService.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Haiku.html">Haiku</a>.<a class="xref" href="Haiku.API.html">API</a>.<a class="xref" href="Haiku.API.Services.html">Services</a>.<a class="xref" href="Haiku.API.Services.UserHaikuServices.html">UserHaikuServices</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Haiku.API.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UserHaikuService : IUserHaikuService</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">UserHaikuService</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Haiku.API.Services.UserHaikuServices.IUserHaikuService.html">IUserHaikuService</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Haiku_API_Services_UserHaikuServices_UserHaikuService__ctor_" data-uid="Haiku.API.Services.UserHaikuServices.UserHaikuService.#ctor*"></a>
+
+  <h3 id="Haiku_API_Services_UserHaikuServices_UserHaikuService__ctor_Haiku_API_Repositories_UserHaikuRepositories_IUserHaikuRepository_Haiku_API_Services_UserServices_IUserService_Microsoft_Extensions_Logging_ILogger_Haiku_API_Services_UserHaikuServices_UserHaikuService__AutoMapper_IMapper_" data-uid="Haiku.API.Services.UserHaikuServices.UserHaikuService.#ctor(Haiku.API.Repositories.UserHaikuRepositories.IUserHaikuRepository,Haiku.API.Services.UserServices.IUserService,Microsoft.Extensions.Logging.ILogger{Haiku.API.Services.UserHaikuServices.UserHaikuService},AutoMapper.IMapper)">
+  UserHaikuService(IUserHaikuRepository, IUserService, ILogger&lt;UserHaikuService&gt;, IMapper)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D/blob/main/Haiku.API/Haiku.API/Services/UserHaikuServices/UserHaikuService.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserHaikuService(IUserHaikuRepository userHaikuRepository, IUserService userService, ILogger&lt;UserHaikuService&gt; logger, IMapper mapper)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userHaikuRepository</code> <a class="xref" href="Haiku.API.Repositories.UserHaikuRepositories.IUserHaikuRepository.html">IUserHaikuRepository</a></dt>
+    <dd></dd>
+    <dt><code>userService</code> <a class="xref" href="Haiku.API.Services.UserServices.IUserService.html">IUserService</a></dt>
+    <dd></dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Haiku.API.Services.UserHaikuServices.UserHaikuService.html">UserHaikuService</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>mapper</code> <span class="xref">IMapper</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Haiku_API_Services_UserHaikuServices_UserHaikuService_AddUserHaikuAsync_" data-uid="Haiku.API.Services.UserHaikuServices.UserHaikuService.AddUserHaikuAsync*"></a>
+
+  <h3 id="Haiku_API_Services_UserHaikuServices_UserHaikuService_AddUserHaikuAsync_Haiku_API_Dtos_UserHaikuDto_" data-uid="Haiku.API.Services.UserHaikuServices.UserHaikuService.AddUserHaikuAsync(Haiku.API.Dtos.UserHaikuDto)">
+  AddUserHaikuAsync(UserHaikuDto)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D/blob/main/Haiku.API/Haiku.API/Services/UserHaikuServices/UserHaikuService.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a new <a class="xref" href="Haiku.API.Models.UserHaiku.html">UserHaiku</a> to the repository.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;UserHaikuDto&gt; AddUserHaikuAsync(UserHaikuDto newUserHaikuDto)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newUserHaikuDto</code> <a class="xref" href="Haiku.API.Dtos.UserHaikuDto.html">UserHaikuDto</a></dt>
+    <dd><p>The DTO containing the details of the <a class="xref" href="Haiku.API.Models.UserHaiku.html">UserHaiku</a> to add.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Haiku.API.Dtos.UserHaikuDto.html">UserHaikuDto</a>&gt;</dt>
+    <dd><p>A task that represents the asynchronous operation. The task result contains the created <a class="xref" href="Haiku.API.Dtos.UserHaikuDto.html">UserHaikuDto</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Haiku.API.Exceptions.NotFoundException.html">NotFoundException</a></dt>
+    <dd><p>Thrown when the <a class="xref" href="Haiku.API.Models.User.html">User</a> with the specified ID is not found.</p>
+</dd>
+    <dt><a class="xref" href="Haiku.API.Exceptions.NotSavedException.html">NotSavedException</a></dt>
+    <dd><p>Thrown when the <a class="xref" href="Haiku.API.Models.UserHaiku.html">UserHaiku</a> could be updated.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Haiku_API_Services_UserHaikuServices_UserHaikuService_DeleteUserHaikuByIdAsync_" data-uid="Haiku.API.Services.UserHaikuServices.UserHaikuService.DeleteUserHaikuByIdAsync*"></a>
+
+  <h3 id="Haiku_API_Services_UserHaikuServices_UserHaikuService_DeleteUserHaikuByIdAsync_System_Int64_" data-uid="Haiku.API.Services.UserHaikuServices.UserHaikuService.DeleteUserHaikuByIdAsync(System.Int64)">
+  DeleteUserHaikuByIdAsync(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D/blob/main/Haiku.API/Haiku.API/Services/UserHaikuServices/UserHaikuService.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deletes an <a class="xref" href="Haiku.API.Models.UserHaiku.html">UserHaiku</a> from the repository by its ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DeleteUserHaikuByIdAsync(long userHaikuId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userHaikuId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>The ID of the <a class="xref" href="Haiku.API.Models.UserHaiku.html">UserHaiku</a> to delete.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task that represents the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Haiku.API.Exceptions.NotFoundException.html">NotFoundException</a></dt>
+    <dd><p>Thrown when the <a class="xref" href="Haiku.API.Models.UserHaiku.html">UserHaiku</a> with the specified ID is not found.</p>
+</dd>
+    <dt><a class="xref" href="Haiku.API.Exceptions.NotSavedException.html">NotSavedException</a></dt>
+    <dd><p>Thrown when the <a class="xref" href="Haiku.API.Models.UserHaiku.html">UserHaiku</a> could not be deleted.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Haiku_API_Services_UserHaikuServices_UserHaikuService_GetPaginatedUserHaikusAsync_" data-uid="Haiku.API.Services.UserHaikuServices.UserHaikuService.GetPaginatedUserHaikusAsync*"></a>
+
+  <h3 id="Haiku_API_Services_UserHaikuServices_UserHaikuService_GetPaginatedUserHaikusAsync_System_Int32_System_Int32_System_String_" data-uid="Haiku.API.Services.UserHaikuServices.UserHaikuService.GetPaginatedUserHaikusAsync(System.Int32,System.Int32,System.String)">
+  GetPaginatedUserHaikusAsync(int, int, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D/blob/main/Haiku.API/Haiku.API/Services/UserHaikuServices/UserHaikuService.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a paginated list of <a class="xref" href="Haiku.API.Dtos.UserHaikuDto.html">UserHaikuDto</a>'s based on the page number, page size, and optional search criteria.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;UserHaikuDto&gt;&gt; GetPaginatedUserHaikusAsync(int pageNumber, int pageSize, string searchOption)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pageNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The current page number. Defaults to 1 if a value less than 1 is provided.</p>
+</dd>
+    <dt><code>pageSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of items per page.</p>
+</dd>
+    <dt><code>searchOption</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>An optional search string to filter <a class="xref" href="Haiku.API.Models.UserHaiku.html">UserHaiku</a>'s by their title.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Haiku.API.Dtos.UserHaikuDto.html">UserHaikuDto</a>&gt;&gt;</dt>
+    <dd><p>A task that represents the asynchronous operation. The task result contains an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of paginated <a class="xref" href="Haiku.API.Models.UserHaiku.html">UserHaiku</a>'s.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Haiku_API_Services_UserHaikuServices_UserHaikuService_GetPaginatedUserHaikusByUserIdAsync_" data-uid="Haiku.API.Services.UserHaikuServices.UserHaikuService.GetPaginatedUserHaikusByUserIdAsync*"></a>
+
+  <h3 id="Haiku_API_Services_UserHaikuServices_UserHaikuService_GetPaginatedUserHaikusByUserIdAsync_System_Int64_System_Int32_System_Int32_System_String_" data-uid="Haiku.API.Services.UserHaikuServices.UserHaikuService.GetPaginatedUserHaikusByUserIdAsync(System.Int64,System.Int32,System.Int32,System.String)">
+  GetPaginatedUserHaikusByUserIdAsync(long, int, int, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D/blob/main/Haiku.API/Haiku.API/Services/UserHaikuServices/UserHaikuService.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a paginated list of <a class="xref" href="Haiku.API.Dtos.UserHaikuDto.html">UserHaikuDto</a>'s based on the <a class="xref" href="Haiku.API.Models.User.html">User</a>'s ID, page number, page size, and optional search criteria.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;UserHaikuDto&gt;&gt; GetPaginatedUserHaikusByUserIdAsync(long userId, int pageNumber, int pageSize, string searchOption)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>The ID of the <a class="xref" href="Haiku.API.Models.User.html">User</a> whose <a class="xref" href="Haiku.API.Models.UserHaiku.html">UserHaiku</a>'s are being retrieved.</p>
+</dd>
+    <dt><code>pageNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The current page number. Defaults to 1 if a value less than 1 is provided.</p>
+</dd>
+    <dt><code>pageSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of items per page.</p>
+</dd>
+    <dt><code>searchOption</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>An optional search string to filter <a class="xref" href="Haiku.API.Models.UserHaiku.html">UserHaiku</a>'s by their title.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Haiku.API.Dtos.UserHaikuDto.html">UserHaikuDto</a>&gt;&gt;</dt>
+    <dd><p>A task that represents the asynchronous operation. The task result contains an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of paginated <a class="xref" href="Haiku.API.Models.UserHaiku.html">UserHaiku</a>'s by the specified <a class="xref" href="Haiku.API.Models.User.html">User</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Haiku_API_Services_UserHaikuServices_UserHaikuService_GetTotalUserHaikusAsync_" data-uid="Haiku.API.Services.UserHaikuServices.UserHaikuService.GetTotalUserHaikusAsync*"></a>
+
+  <h3 id="Haiku_API_Services_UserHaikuServices_UserHaikuService_GetTotalUserHaikusAsync_System_String_" data-uid="Haiku.API.Services.UserHaikuServices.UserHaikuService.GetTotalUserHaikusAsync(System.String)">
+  GetTotalUserHaikusAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D/blob/main/Haiku.API/Haiku.API/Services/UserHaikuServices/UserHaikuService.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the total count of all <a class="xref" href="Haiku.API.Models.UserHaiku.html">UserHaiku</a>'s, optionally filtered by a search string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; GetTotalUserHaikusAsync(string searchOption)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>searchOption</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>An optional search string to filter <a class="xref" href="Haiku.API.Models.UserHaiku.html">UserHaiku</a>'s by their title.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd><p>A task that represents the asynchronous operation. The task result contains the total number of <a class="xref" href="Haiku.API.Models.UserHaiku.html">UserHaiku</a>'s.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Haiku_API_Services_UserHaikuServices_UserHaikuService_GetTotalUserHaikusByUserIdAsync_" data-uid="Haiku.API.Services.UserHaikuServices.UserHaikuService.GetTotalUserHaikusByUserIdAsync*"></a>
+
+  <h3 id="Haiku_API_Services_UserHaikuServices_UserHaikuService_GetTotalUserHaikusByUserIdAsync_System_Int64_System_String_" data-uid="Haiku.API.Services.UserHaikuServices.UserHaikuService.GetTotalUserHaikusByUserIdAsync(System.Int64,System.String)">
+  GetTotalUserHaikusByUserIdAsync(long, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D/blob/main/Haiku.API/Haiku.API/Services/UserHaikuServices/UserHaikuService.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the total count of <a class="xref" href="Haiku.API.Models.UserHaiku.html">UserHaiku</a>'s associated with a specific <a class="xref" href="Haiku.API.Models.Author.html">Author</a>, filtered by an optional search criteria.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; GetTotalUserHaikusByUserIdAsync(long userId, string searchOption)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>The ID of the <a class="xref" href="Haiku.API.Models.User.html">User</a> whose <a class="xref" href="Haiku.API.Models.UserHaiku.html">UserHaiku</a>'s are being counted.</p>
+</dd>
+    <dt><code>searchOption</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>An optional search string to filter <a class="xref" href="Haiku.API.Models.UserHaiku.html">UserHaiku</a>'s by their title.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd><p>A task that represents the asynchronous operation. The task result contains the total number of <a class="xref" href="Haiku.API.Models.UserHaiku.html">UserHaiku</a>'s  by the specified <a class="xref" href="Haiku.API.Models.User.html">User</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Haiku_API_Services_UserHaikuServices_UserHaikuService_GetUserHaikuByIdAsync_" data-uid="Haiku.API.Services.UserHaikuServices.UserHaikuService.GetUserHaikuByIdAsync*"></a>
+
+  <h3 id="Haiku_API_Services_UserHaikuServices_UserHaikuService_GetUserHaikuByIdAsync_System_Int64_" data-uid="Haiku.API.Services.UserHaikuServices.UserHaikuService.GetUserHaikuByIdAsync(System.Int64)">
+  GetUserHaikuByIdAsync(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D/blob/main/Haiku.API/Haiku.API/Services/UserHaikuServices/UserHaikuService.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves an <a class="xref" href="Haiku.API.Dtos.UserHaikuDto.html">UserHaikuDto</a> by its unique identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;UserHaikuDto&gt; GetUserHaikuByIdAsync(long userHaikuId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userHaikuId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>The unique identifier of the <a class="xref" href="Haiku.API.Models.UserHaiku.html">UserHaiku</a> to retrieve.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Haiku.API.Dtos.UserHaikuDto.html">UserHaikuDto</a>&gt;</dt>
+    <dd><p>A task that represents the asynchronous operation. The task result contains the corresponding <a class="xref" href="Haiku.API.Dtos.UserHaikuDto.html">UserHaikuDto</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Haiku.API.Exceptions.NotFoundException.html">NotFoundException</a></dt>
+    <dd><p>Thrown when the <a class="xref" href="Haiku.API.Models.UserHaiku.html">UserHaiku</a> with the specified ID is not found.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Haiku_API_Services_UserHaikuServices_UserHaikuService_UpdateUserHaikuAsync_" data-uid="Haiku.API.Services.UserHaikuServices.UserHaikuService.UpdateUserHaikuAsync*"></a>
+
+  <h3 id="Haiku_API_Services_UserHaikuServices_UserHaikuService_UpdateUserHaikuAsync_System_Int64_Haiku_API_Dtos_UserHaikuDto_" data-uid="Haiku.API.Services.UserHaikuServices.UserHaikuService.UpdateUserHaikuAsync(System.Int64,Haiku.API.Dtos.UserHaikuDto)">
+  UpdateUserHaikuAsync(long, UserHaikuDto)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D/blob/main/Haiku.API/Haiku.API/Services/UserHaikuServices/UserHaikuService.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates an existing <a class="xref" href="Haiku.API.Models.UserHaiku.html">UserHaiku</a> in the repository.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task UpdateUserHaikuAsync(long userHaikuId, UserHaikuDto updatedUserHaikuDto)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userHaikuId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>The ID of the <a class="xref" href="Haiku.API.Models.UserHaiku.html">UserHaiku</a> to update.</p>
+</dd>
+    <dt><code>updatedUserHaikuDto</code> <a class="xref" href="Haiku.API.Dtos.UserHaikuDto.html">UserHaikuDto</a></dt>
+    <dd><p>The DTO containing the updated details of the <a class="xref" href="Haiku.API.Models.UserHaiku.html">UserHaiku</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task that represents the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Haiku.API.Exceptions.NotFoundException.html">NotFoundException</a></dt>
+    <dd><p>Thrown when the <a class="xref" href="Haiku.API.Models.UserHaiku.html">UserHaiku</a> with the specified ID is not found.</p>
+</dd>
+    <dt><a class="xref" href="Haiku.API.Exceptions.NotSavedException.html">NotSavedException</a></dt>
+    <dd><p>Thrown when the <a class="xref" href="Haiku.API.Models.UserHaiku.html">UserHaiku</a> could not be updated.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Haiku_API_Services_UserHaikuServices_UserHaikuService_UserHaikuExistsByIdAsync_" data-uid="Haiku.API.Services.UserHaikuServices.UserHaikuService.UserHaikuExistsByIdAsync*"></a>
+
+  <h3 id="Haiku_API_Services_UserHaikuServices_UserHaikuService_UserHaikuExistsByIdAsync_System_Int64_" data-uid="Haiku.API.Services.UserHaikuServices.UserHaikuService.UserHaikuExistsByIdAsync(System.Int64)">
+  UserHaikuExistsByIdAsync(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D/blob/main/Haiku.API/Haiku.API/Services/UserHaikuServices/UserHaikuService.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if an <a class="xref" href="Haiku.API.Models.UserHaiku.html">UserHaiku</a> exists in the repository by its ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; UserHaikuExistsByIdAsync(long userHaikuId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userHaikuId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p>The ID of the <a class="xref" href="Haiku.API.Models.UserHaiku.html">UserHaiku</a> to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>A task that represents the asynchronous operation. The task result contains a boolean value indicating whether the <a class="xref" href="Haiku.API.Models.UserHaiku.html">UserHaiku</a> exists.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D/blob/main/Haiku.API/Haiku.API/Services/UserHaikuServices/UserHaikuService.cs/#L10" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

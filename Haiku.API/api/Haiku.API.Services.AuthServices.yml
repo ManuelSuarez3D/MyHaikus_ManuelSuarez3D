@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Haiku.API.Services.AuthServices
+  commentId: N:Haiku.API.Services.AuthServices
+  id: Haiku.API.Services.AuthServices
+  children:
+  - Haiku.API.Services.AuthServices.AuthService
+  - Haiku.API.Services.AuthServices.IAuthService
+  langs:
+  - csharp
+  - vb
+  name: Haiku.API.Services.AuthServices
+  nameWithType: Haiku.API.Services.AuthServices
+  fullName: Haiku.API.Services.AuthServices
+  type: Namespace
+  assemblies:
+  - Haiku.API
+references:
+- uid: Haiku.API.Services.AuthServices.AuthService
+  commentId: T:Haiku.API.Services.AuthServices.AuthService
+  href: Haiku.API.Services.AuthServices.AuthService.html
+  name: AuthService
+  nameWithType: AuthService
+  fullName: Haiku.API.Services.AuthServices.AuthService
+- uid: Haiku.API.Services.AuthServices.IAuthService
+  commentId: T:Haiku.API.Services.AuthServices.IAuthService
+  parent: Haiku.API.Services.AuthServices
+  href: Haiku.API.Services.AuthServices.IAuthService.html
+  name: IAuthService
+  nameWithType: IAuthService
+  fullName: Haiku.API.Services.AuthServices.IAuthService
+- uid: Haiku.API.Services.AuthServices
+  commentId: N:Haiku.API.Services.AuthServices
+  href: Haiku.html
+  name: Haiku.API.Services.AuthServices
+  nameWithType: Haiku.API.Services.AuthServices
+  fullName: Haiku.API.Services.AuthServices
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Services
+    name: Services
+    href: Haiku.API.Services.html
+  - name: .
+  - uid: Haiku.API.Services.AuthServices
+    name: AuthServices
+    href: Haiku.API.Services.AuthServices.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Services
+    name: Services
+    href: Haiku.API.Services.html
+  - name: .
+  - uid: Haiku.API.Services.AuthServices
+    name: AuthServices
+    href: Haiku.API.Services.AuthServices.html

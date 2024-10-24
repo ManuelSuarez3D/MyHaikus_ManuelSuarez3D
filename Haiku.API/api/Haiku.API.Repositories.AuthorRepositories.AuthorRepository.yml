@@ -1,0 +1,1275 @@
+### YamlMime:ManagedReference
+items:
+- uid: Haiku.API.Repositories.AuthorRepositories.AuthorRepository
+  commentId: T:Haiku.API.Repositories.AuthorRepositories.AuthorRepository
+  id: AuthorRepository
+  parent: Haiku.API.Repositories.AuthorRepositories
+  children:
+  - Haiku.API.Repositories.AuthorRepositories.AuthorRepository.#ctor(Haiku.API.Database.HaikuAPIContext)
+  - Haiku.API.Repositories.AuthorRepositories.AuthorRepository.AddAuthorAsync(Haiku.API.Models.Author)
+  - Haiku.API.Repositories.AuthorRepositories.AuthorRepository.AuthorExistsByIdAsync(System.Int64)
+  - Haiku.API.Repositories.AuthorRepositories.AuthorRepository.DeleteAuthorByIdAsync(System.Int64)
+  - Haiku.API.Repositories.AuthorRepositories.AuthorRepository.GetAuthorByIdAsync(System.Int64)
+  - Haiku.API.Repositories.AuthorRepositories.AuthorRepository.GetPaginatedAuthorsAsync(System.Int32,System.Int32,System.String)
+  - Haiku.API.Repositories.AuthorRepositories.AuthorRepository.GetTotalAuthorsAsync(System.String)
+  - Haiku.API.Repositories.AuthorRepositories.AuthorRepository.UpdateAuthorAsync(Haiku.API.Models.Author)
+  langs:
+  - csharp
+  - vb
+  name: AuthorRepository
+  nameWithType: AuthorRepository
+  fullName: Haiku.API.Repositories.AuthorRepositories.AuthorRepository
+  type: Class
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Repositories/AuthorRepositories/AuthorRepository.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: AuthorRepository
+    path: Haiku.API/Repositories/AuthorRepositories/AuthorRepository.cs
+    startLine: 8
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Repositories.AuthorRepositories
+  syntax:
+    content: 'public class AuthorRepository : IAuthorRepository'
+    content.vb: Public Class AuthorRepository Implements IAuthorRepository
+  inheritance:
+  - System.Object
+  implements:
+  - Haiku.API.Repositories.AuthorRepositories.IAuthorRepository
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.#ctor(Haiku.API.Database.HaikuAPIContext)
+  commentId: M:Haiku.API.Repositories.AuthorRepositories.AuthorRepository.#ctor(Haiku.API.Database.HaikuAPIContext)
+  id: '#ctor(Haiku.API.Database.HaikuAPIContext)'
+  parent: Haiku.API.Repositories.AuthorRepositories.AuthorRepository
+  langs:
+  - csharp
+  - vb
+  name: AuthorRepository(HaikuAPIContext)
+  nameWithType: AuthorRepository.AuthorRepository(HaikuAPIContext)
+  fullName: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.AuthorRepository(Haiku.API.Database.HaikuAPIContext)
+  type: Constructor
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Repositories/AuthorRepositories/AuthorRepository.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: .ctor
+    path: Haiku.API/Repositories/AuthorRepositories/AuthorRepository.cs
+    startLine: 12
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Repositories.AuthorRepositories
+  syntax:
+    content: public AuthorRepository(HaikuAPIContext context)
+    parameters:
+    - id: context
+      type: Haiku.API.Database.HaikuAPIContext
+    content.vb: Public Sub New(context As HaikuAPIContext)
+  overload: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.#ctor*
+  nameWithType.vb: AuthorRepository.New(HaikuAPIContext)
+  fullName.vb: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.New(Haiku.API.Database.HaikuAPIContext)
+  name.vb: New(HaikuAPIContext)
+- uid: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.GetPaginatedAuthorsAsync(System.Int32,System.Int32,System.String)
+  commentId: M:Haiku.API.Repositories.AuthorRepositories.AuthorRepository.GetPaginatedAuthorsAsync(System.Int32,System.Int32,System.String)
+  id: GetPaginatedAuthorsAsync(System.Int32,System.Int32,System.String)
+  parent: Haiku.API.Repositories.AuthorRepositories.AuthorRepository
+  langs:
+  - csharp
+  - vb
+  name: GetPaginatedAuthorsAsync(int, int, string)
+  nameWithType: AuthorRepository.GetPaginatedAuthorsAsync(int, int, string)
+  fullName: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.GetPaginatedAuthorsAsync(int, int, string)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Repositories/AuthorRepositories/AuthorRepository.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: GetPaginatedAuthorsAsync
+    path: Haiku.API/Repositories/AuthorRepositories/AuthorRepository.cs
+    startLine: 24
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Repositories.AuthorRepositories
+  summary: Retrieves a paginated list of <xref href="Haiku.API.Models.Author" data-throw-if-not-resolved="false"></xref> entities.
+  example: []
+  syntax:
+    content: public Task<IEnumerable<Author>> GetPaginatedAuthorsAsync(int pageNumber, int pageSize, string searchOption)
+    parameters:
+    - id: pageNumber
+      type: System.Int32
+      description: The page number. Must be greater than 0.
+    - id: pageSize
+      type: System.Int32
+      description: The number of Authors per page. Must be greater than 0.
+    - id: searchOption
+      type: System.String
+      description: An optional search term to filter the <xref href="Haiku.API.Models.Author" data-throw-if-not-resolved="false"></xref> entities by name.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Haiku.API.Models.Author}}
+      description: <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> containing Authors, with pageSize amount per page. Returns an empty collection if no Authors are found.
+    content.vb: Public Function GetPaginatedAuthorsAsync(pageNumber As Integer, pageSize As Integer, searchOption As String) As Task(Of IEnumerable(Of Author))
+  overload: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.GetPaginatedAuthorsAsync*
+  implements:
+  - Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.GetPaginatedAuthorsAsync(System.Int32,System.Int32,System.String)
+  nameWithType.vb: AuthorRepository.GetPaginatedAuthorsAsync(Integer, Integer, String)
+  fullName.vb: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.GetPaginatedAuthorsAsync(Integer, Integer, String)
+  name.vb: GetPaginatedAuthorsAsync(Integer, Integer, String)
+- uid: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.GetTotalAuthorsAsync(System.String)
+  commentId: M:Haiku.API.Repositories.AuthorRepositories.AuthorRepository.GetTotalAuthorsAsync(System.String)
+  id: GetTotalAuthorsAsync(System.String)
+  parent: Haiku.API.Repositories.AuthorRepositories.AuthorRepository
+  langs:
+  - csharp
+  - vb
+  name: GetTotalAuthorsAsync(string)
+  nameWithType: AuthorRepository.GetTotalAuthorsAsync(string)
+  fullName: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.GetTotalAuthorsAsync(string)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Repositories/AuthorRepositories/AuthorRepository.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: GetTotalAuthorsAsync
+    path: Haiku.API/Repositories/AuthorRepositories/AuthorRepository.cs
+    startLine: 46
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Repositories.AuthorRepositories
+  summary: >-
+    Retrieves the total count of <xref href="Haiku.API.Models.Author" data-throw-if-not-resolved="false"></xref> entities in the database,
+
+    optionally filtered by a search term for the name.
+  example: []
+  syntax:
+    content: public Task<int> GetTotalAuthorsAsync(string searchOption)
+    parameters:
+    - id: searchOption
+      type: System.String
+      description: An optional search term to filter the <xref href="Haiku.API.Models.Author" data-throw-if-not-resolved="false"></xref> entities by name.
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+      description: A task that represents the asynchronous operation. The task result contains the total count of <xref href="Haiku.API.Models.Author" data-throw-if-not-resolved="false"></xref> entities.
+    content.vb: Public Function GetTotalAuthorsAsync(searchOption As String) As Task(Of Integer)
+  overload: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.GetTotalAuthorsAsync*
+  implements:
+  - Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.GetTotalAuthorsAsync(System.String)
+  nameWithType.vb: AuthorRepository.GetTotalAuthorsAsync(String)
+  fullName.vb: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.GetTotalAuthorsAsync(String)
+  name.vb: GetTotalAuthorsAsync(String)
+- uid: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.GetAuthorByIdAsync(System.Int64)
+  commentId: M:Haiku.API.Repositories.AuthorRepositories.AuthorRepository.GetAuthorByIdAsync(System.Int64)
+  id: GetAuthorByIdAsync(System.Int64)
+  parent: Haiku.API.Repositories.AuthorRepositories.AuthorRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAuthorByIdAsync(long)
+  nameWithType: AuthorRepository.GetAuthorByIdAsync(long)
+  fullName: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.GetAuthorByIdAsync(long)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Repositories/AuthorRepositories/AuthorRepository.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: GetAuthorByIdAsync
+    path: Haiku.API/Repositories/AuthorRepositories/AuthorRepository.cs
+    startLine: 63
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Repositories.AuthorRepositories
+  summary: Retrieves an <xref href="Haiku.API.Models.Author" data-throw-if-not-resolved="false"></xref> entity by its unique identifier.
+  example: []
+  syntax:
+    content: public Task<Author?> GetAuthorByIdAsync(long authorId)
+    parameters:
+    - id: authorId
+      type: System.Int64
+    return:
+      type: System.Threading.Tasks.Task{Haiku.API.Models.Author}
+      description: A task that represents the asynchronous operation. The task result contains the <xref href="Haiku.API.Models.Author" data-throw-if-not-resolved="false"></xref> entity if found; otherwise, <code>null</code>.
+    content.vb: Public Function GetAuthorByIdAsync(authorId As Long) As Task(Of Author)
+  overload: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.GetAuthorByIdAsync*
+  implements:
+  - Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.GetAuthorByIdAsync(System.Int64)
+  nameWithType.vb: AuthorRepository.GetAuthorByIdAsync(Long)
+  fullName.vb: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.GetAuthorByIdAsync(Long)
+  name.vb: GetAuthorByIdAsync(Long)
+- uid: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.AddAuthorAsync(Haiku.API.Models.Author)
+  commentId: M:Haiku.API.Repositories.AuthorRepositories.AuthorRepository.AddAuthorAsync(Haiku.API.Models.Author)
+  id: AddAuthorAsync(Haiku.API.Models.Author)
+  parent: Haiku.API.Repositories.AuthorRepositories.AuthorRepository
+  langs:
+  - csharp
+  - vb
+  name: AddAuthorAsync(Author)
+  nameWithType: AuthorRepository.AddAuthorAsync(Author)
+  fullName: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.AddAuthorAsync(Haiku.API.Models.Author)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Repositories/AuthorRepositories/AuthorRepository.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: AddAuthorAsync
+    path: Haiku.API/Repositories/AuthorRepositories/AuthorRepository.cs
+    startLine: 73
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Repositories.AuthorRepositories
+  summary: Adds a new <xref href="Haiku.API.Models.Author" data-throw-if-not-resolved="false"></xref> to the database asynchronously.
+  example: []
+  syntax:
+    content: public Task<Author> AddAuthorAsync(Author newAuthor)
+    parameters:
+    - id: newAuthor
+      type: Haiku.API.Models.Author
+      description: The <xref href="Haiku.API.Models.Author" data-throw-if-not-resolved="false"></xref> entity to be added.
+    return:
+      type: System.Threading.Tasks.Task{Haiku.API.Models.Author}
+      description: A task that represents the asynchronous operation. The task result contains the added <xref href="Haiku.API.Models.Author" data-throw-if-not-resolved="false"></xref> entity.
+    content.vb: Public Function AddAuthorAsync(newAuthor As Author) As Task(Of Author)
+  overload: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.AddAuthorAsync*
+  implements:
+  - Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.AddAuthorAsync(Haiku.API.Models.Author)
+- uid: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.UpdateAuthorAsync(Haiku.API.Models.Author)
+  commentId: M:Haiku.API.Repositories.AuthorRepositories.AuthorRepository.UpdateAuthorAsync(Haiku.API.Models.Author)
+  id: UpdateAuthorAsync(Haiku.API.Models.Author)
+  parent: Haiku.API.Repositories.AuthorRepositories.AuthorRepository
+  langs:
+  - csharp
+  - vb
+  name: UpdateAuthorAsync(Author)
+  nameWithType: AuthorRepository.UpdateAuthorAsync(Author)
+  fullName: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.UpdateAuthorAsync(Haiku.API.Models.Author)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Repositories/AuthorRepositories/AuthorRepository.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: UpdateAuthorAsync
+    path: Haiku.API/Repositories/AuthorRepositories/AuthorRepository.cs
+    startLine: 85
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Repositories.AuthorRepositories
+  summary: Updates an existing <xref href="Haiku.API.Models.Author" data-throw-if-not-resolved="false"></xref> entry.
+  example: []
+  syntax:
+    content: public Task<int> UpdateAuthorAsync(Author updatedAuthor)
+    parameters:
+    - id: updatedAuthor
+      type: Haiku.API.Models.Author
+      description: The <xref href="Haiku.API.Models.Author" data-throw-if-not-resolved="false"></xref> entry to update. Must not be null.
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+      description: Integer result indicating number of rows affected, if <xref href="Haiku.API.Models.Author" data-throw-if-not-resolved="false"></xref> was updated.
+    content.vb: Public Function UpdateAuthorAsync(updatedAuthor As Author) As Task(Of Integer)
+  overload: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.UpdateAuthorAsync*
+  implements:
+  - Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.UpdateAuthorAsync(Haiku.API.Models.Author)
+- uid: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.DeleteAuthorByIdAsync(System.Int64)
+  commentId: M:Haiku.API.Repositories.AuthorRepositories.AuthorRepository.DeleteAuthorByIdAsync(System.Int64)
+  id: DeleteAuthorByIdAsync(System.Int64)
+  parent: Haiku.API.Repositories.AuthorRepositories.AuthorRepository
+  langs:
+  - csharp
+  - vb
+  name: DeleteAuthorByIdAsync(long)
+  nameWithType: AuthorRepository.DeleteAuthorByIdAsync(long)
+  fullName: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.DeleteAuthorByIdAsync(long)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Repositories/AuthorRepositories/AuthorRepository.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: DeleteAuthorByIdAsync
+    path: Haiku.API/Repositories/AuthorRepositories/AuthorRepository.cs
+    startLine: 97
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Repositories.AuthorRepositories
+  summary: Deletes an existing <xref href="Haiku.API.Models.Author" data-throw-if-not-resolved="false"></xref> entry.
+  example: []
+  syntax:
+    content: public Task<int> DeleteAuthorByIdAsync(long authorId)
+    parameters:
+    - id: authorId
+      type: System.Int64
+      description: The ID of the <xref href="Haiku.API.Models.Author" data-throw-if-not-resolved="false"></xref> entry to delete.
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+      description: Integer result indicating number of rows affected, if <xref href="Haiku.API.Models.Author" data-throw-if-not-resolved="false"></xref> was deleted.
+    content.vb: Public Function DeleteAuthorByIdAsync(authorId As Long) As Task(Of Integer)
+  overload: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.DeleteAuthorByIdAsync*
+  implements:
+  - Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.DeleteAuthorByIdAsync(System.Int64)
+  nameWithType.vb: AuthorRepository.DeleteAuthorByIdAsync(Long)
+  fullName.vb: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.DeleteAuthorByIdAsync(Long)
+  name.vb: DeleteAuthorByIdAsync(Long)
+- uid: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.AuthorExistsByIdAsync(System.Int64)
+  commentId: M:Haiku.API.Repositories.AuthorRepositories.AuthorRepository.AuthorExistsByIdAsync(System.Int64)
+  id: AuthorExistsByIdAsync(System.Int64)
+  parent: Haiku.API.Repositories.AuthorRepositories.AuthorRepository
+  langs:
+  - csharp
+  - vb
+  name: AuthorExistsByIdAsync(long)
+  nameWithType: AuthorRepository.AuthorExistsByIdAsync(long)
+  fullName: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.AuthorExistsByIdAsync(long)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Repositories/AuthorRepositories/AuthorRepository.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: AuthorExistsByIdAsync
+    path: Haiku.API/Repositories/AuthorRepositories/AuthorRepository.cs
+    startLine: 113
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Repositories.AuthorRepositories
+  summary: Checks if an <xref href="Haiku.API.Models.Author" data-throw-if-not-resolved="false"></xref> entity exists by its ID asynchronously.
+  example: []
+  syntax:
+    content: public Task<bool> AuthorExistsByIdAsync(long authorId)
+    parameters:
+    - id: authorId
+      type: System.Int64
+      description: The ID of the <xref href="Haiku.API.Models.Author" data-throw-if-not-resolved="false"></xref> entity to check for existence.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: A task that represents the asynchronous operation. The task result contains a boolean value indicating whether the <xref href="Haiku.API.Models.Author" data-throw-if-not-resolved="false"></xref> exists.
+    content.vb: Public Function AuthorExistsByIdAsync(authorId As Long) As Task(Of Boolean)
+  overload: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.AuthorExistsByIdAsync*
+  implements:
+  - Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.AuthorExistsByIdAsync(System.Int64)
+  nameWithType.vb: AuthorRepository.AuthorExistsByIdAsync(Long)
+  fullName.vb: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.AuthorExistsByIdAsync(Long)
+  name.vb: AuthorExistsByIdAsync(Long)
+references:
+- uid: Haiku.API.Repositories.AuthorRepositories
+  commentId: N:Haiku.API.Repositories.AuthorRepositories
+  href: Haiku.html
+  name: Haiku.API.Repositories.AuthorRepositories
+  nameWithType: Haiku.API.Repositories.AuthorRepositories
+  fullName: Haiku.API.Repositories.AuthorRepositories
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Repositories
+    name: Repositories
+    href: Haiku.API.Repositories.html
+  - name: .
+  - uid: Haiku.API.Repositories.AuthorRepositories
+    name: AuthorRepositories
+    href: Haiku.API.Repositories.AuthorRepositories.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Repositories
+    name: Repositories
+    href: Haiku.API.Repositories.html
+  - name: .
+  - uid: Haiku.API.Repositories.AuthorRepositories
+    name: AuthorRepositories
+    href: Haiku.API.Repositories.AuthorRepositories.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository
+  commentId: T:Haiku.API.Repositories.AuthorRepositories.IAuthorRepository
+  parent: Haiku.API.Repositories.AuthorRepositories
+  href: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.html
+  name: IAuthorRepository
+  nameWithType: IAuthorRepository
+  fullName: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.#ctor*
+  commentId: Overload:Haiku.API.Repositories.AuthorRepositories.AuthorRepository.#ctor
+  href: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.html#Haiku_API_Repositories_AuthorRepositories_AuthorRepository__ctor_Haiku_API_Database_HaikuAPIContext_
+  name: AuthorRepository
+  nameWithType: AuthorRepository.AuthorRepository
+  fullName: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.AuthorRepository
+  nameWithType.vb: AuthorRepository.New
+  fullName.vb: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.New
+  name.vb: New
+- uid: Haiku.API.Database.HaikuAPIContext
+  commentId: T:Haiku.API.Database.HaikuAPIContext
+  parent: Haiku.API.Database
+  href: Haiku.API.Database.HaikuAPIContext.html
+  name: HaikuAPIContext
+  nameWithType: HaikuAPIContext
+  fullName: Haiku.API.Database.HaikuAPIContext
+- uid: Haiku.API.Database
+  commentId: N:Haiku.API.Database
+  href: Haiku.html
+  name: Haiku.API.Database
+  nameWithType: Haiku.API.Database
+  fullName: Haiku.API.Database
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Database
+    name: Database
+    href: Haiku.API.Database.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Database
+    name: Database
+    href: Haiku.API.Database.html
+- uid: Haiku.API.Models.Author
+  commentId: T:Haiku.API.Models.Author
+  parent: Haiku.API.Models
+  href: Haiku.API.Models.Author.html
+  name: Author
+  nameWithType: Author
+  fullName: Haiku.API.Models.Author
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.GetPaginatedAuthorsAsync*
+  commentId: Overload:Haiku.API.Repositories.AuthorRepositories.AuthorRepository.GetPaginatedAuthorsAsync
+  href: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.html#Haiku_API_Repositories_AuthorRepositories_AuthorRepository_GetPaginatedAuthorsAsync_System_Int32_System_Int32_System_String_
+  name: GetPaginatedAuthorsAsync
+  nameWithType: AuthorRepository.GetPaginatedAuthorsAsync
+  fullName: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.GetPaginatedAuthorsAsync
+- uid: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.GetPaginatedAuthorsAsync(System.Int32,System.Int32,System.String)
+  commentId: M:Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.GetPaginatedAuthorsAsync(System.Int32,System.Int32,System.String)
+  parent: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository
+  isExternal: true
+  href: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.html#Haiku_API_Repositories_AuthorRepositories_IAuthorRepository_GetPaginatedAuthorsAsync_System_Int32_System_Int32_System_String_
+  name: GetPaginatedAuthorsAsync(int, int, string)
+  nameWithType: IAuthorRepository.GetPaginatedAuthorsAsync(int, int, string)
+  fullName: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.GetPaginatedAuthorsAsync(int, int, string)
+  nameWithType.vb: IAuthorRepository.GetPaginatedAuthorsAsync(Integer, Integer, String)
+  fullName.vb: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.GetPaginatedAuthorsAsync(Integer, Integer, String)
+  name.vb: GetPaginatedAuthorsAsync(Integer, Integer, String)
+  spec.csharp:
+  - uid: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.GetPaginatedAuthorsAsync(System.Int32,System.Int32,System.String)
+    name: GetPaginatedAuthorsAsync
+    href: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.html#Haiku_API_Repositories_AuthorRepositories_IAuthorRepository_GetPaginatedAuthorsAsync_System_Int32_System_Int32_System_String_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.GetPaginatedAuthorsAsync(System.Int32,System.Int32,System.String)
+    name: GetPaginatedAuthorsAsync
+    href: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.html#Haiku_API_Repositories_AuthorRepositories_IAuthorRepository_GetPaginatedAuthorsAsync_System_Int32_System_Int32_System_String_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Haiku.API.Models.Author}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Haiku.API.Models.Author}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IEnumerable<Author>>
+  nameWithType: Task<IEnumerable<Author>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<Haiku.API.Models.Author>>
+  nameWithType.vb: Task(Of IEnumerable(Of Author))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of Haiku.API.Models.Author))
+  name.vb: Task(Of IEnumerable(Of Author))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Haiku.API.Models.Author
+    name: Author
+    href: Haiku.API.Models.Author.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Haiku.API.Models.Author
+    name: Author
+    href: Haiku.API.Models.Author.html
+  - name: )
+  - name: )
+- uid: Haiku.API.Models
+  commentId: N:Haiku.API.Models
+  href: Haiku.html
+  name: Haiku.API.Models
+  nameWithType: Haiku.API.Models
+  fullName: Haiku.API.Models
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Models
+    name: Models
+    href: Haiku.API.Models.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Models
+    name: Models
+    href: Haiku.API.Models.html
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.GetTotalAuthorsAsync*
+  commentId: Overload:Haiku.API.Repositories.AuthorRepositories.AuthorRepository.GetTotalAuthorsAsync
+  href: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.html#Haiku_API_Repositories_AuthorRepositories_AuthorRepository_GetTotalAuthorsAsync_System_String_
+  name: GetTotalAuthorsAsync
+  nameWithType: AuthorRepository.GetTotalAuthorsAsync
+  fullName: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.GetTotalAuthorsAsync
+- uid: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.GetTotalAuthorsAsync(System.String)
+  commentId: M:Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.GetTotalAuthorsAsync(System.String)
+  parent: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository
+  isExternal: true
+  href: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.html#Haiku_API_Repositories_AuthorRepositories_IAuthorRepository_GetTotalAuthorsAsync_System_String_
+  name: GetTotalAuthorsAsync(string)
+  nameWithType: IAuthorRepository.GetTotalAuthorsAsync(string)
+  fullName: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.GetTotalAuthorsAsync(string)
+  nameWithType.vb: IAuthorRepository.GetTotalAuthorsAsync(String)
+  fullName.vb: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.GetTotalAuthorsAsync(String)
+  name.vb: GetTotalAuthorsAsync(String)
+  spec.csharp:
+  - uid: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.GetTotalAuthorsAsync(System.String)
+    name: GetTotalAuthorsAsync
+    href: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.html#Haiku_API_Repositories_AuthorRepositories_IAuthorRepository_GetTotalAuthorsAsync_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.GetTotalAuthorsAsync(System.String)
+    name: GetTotalAuthorsAsync
+    href: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.html#Haiku_API_Repositories_AuthorRepositories_IAuthorRepository_GetTotalAuthorsAsync_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Int32}
+  commentId: T:System.Threading.Tasks.Task{System.Int32}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<int>
+  nameWithType: Task<int>
+  fullName: System.Threading.Tasks.Task<int>
+  nameWithType.vb: Task(Of Integer)
+  fullName.vb: System.Threading.Tasks.Task(Of Integer)
+  name.vb: Task(Of Integer)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.GetAuthorByIdAsync*
+  commentId: Overload:Haiku.API.Repositories.AuthorRepositories.AuthorRepository.GetAuthorByIdAsync
+  href: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.html#Haiku_API_Repositories_AuthorRepositories_AuthorRepository_GetAuthorByIdAsync_System_Int64_
+  name: GetAuthorByIdAsync
+  nameWithType: AuthorRepository.GetAuthorByIdAsync
+  fullName: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.GetAuthorByIdAsync
+- uid: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.GetAuthorByIdAsync(System.Int64)
+  commentId: M:Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.GetAuthorByIdAsync(System.Int64)
+  parent: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository
+  isExternal: true
+  href: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.html#Haiku_API_Repositories_AuthorRepositories_IAuthorRepository_GetAuthorByIdAsync_System_Int64_
+  name: GetAuthorByIdAsync(long)
+  nameWithType: IAuthorRepository.GetAuthorByIdAsync(long)
+  fullName: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.GetAuthorByIdAsync(long)
+  nameWithType.vb: IAuthorRepository.GetAuthorByIdAsync(Long)
+  fullName.vb: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.GetAuthorByIdAsync(Long)
+  name.vb: GetAuthorByIdAsync(Long)
+  spec.csharp:
+  - uid: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.GetAuthorByIdAsync(System.Int64)
+    name: GetAuthorByIdAsync
+    href: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.html#Haiku_API_Repositories_AuthorRepositories_IAuthorRepository_GetAuthorByIdAsync_System_Int64_
+  - name: (
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+  spec.vb:
+  - uid: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.GetAuthorByIdAsync(System.Int64)
+    name: GetAuthorByIdAsync
+    href: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.html#Haiku_API_Repositories_AuthorRepositories_IAuthorRepository_GetAuthorByIdAsync_System_Int64_
+  - name: (
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Threading.Tasks.Task{Haiku.API.Models.Author}
+  commentId: T:System.Threading.Tasks.Task{Haiku.API.Models.Author}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Author>
+  nameWithType: Task<Author>
+  fullName: System.Threading.Tasks.Task<Haiku.API.Models.Author>
+  nameWithType.vb: Task(Of Author)
+  fullName.vb: System.Threading.Tasks.Task(Of Haiku.API.Models.Author)
+  name.vb: Task(Of Author)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Haiku.API.Models.Author
+    name: Author
+    href: Haiku.API.Models.Author.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Haiku.API.Models.Author
+    name: Author
+    href: Haiku.API.Models.Author.html
+  - name: )
+- uid: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.AddAuthorAsync*
+  commentId: Overload:Haiku.API.Repositories.AuthorRepositories.AuthorRepository.AddAuthorAsync
+  href: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.html#Haiku_API_Repositories_AuthorRepositories_AuthorRepository_AddAuthorAsync_Haiku_API_Models_Author_
+  name: AddAuthorAsync
+  nameWithType: AuthorRepository.AddAuthorAsync
+  fullName: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.AddAuthorAsync
+- uid: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.AddAuthorAsync(Haiku.API.Models.Author)
+  commentId: M:Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.AddAuthorAsync(Haiku.API.Models.Author)
+  parent: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository
+  href: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.html#Haiku_API_Repositories_AuthorRepositories_IAuthorRepository_AddAuthorAsync_Haiku_API_Models_Author_
+  name: AddAuthorAsync(Author)
+  nameWithType: IAuthorRepository.AddAuthorAsync(Author)
+  fullName: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.AddAuthorAsync(Haiku.API.Models.Author)
+  spec.csharp:
+  - uid: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.AddAuthorAsync(Haiku.API.Models.Author)
+    name: AddAuthorAsync
+    href: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.html#Haiku_API_Repositories_AuthorRepositories_IAuthorRepository_AddAuthorAsync_Haiku_API_Models_Author_
+  - name: (
+  - uid: Haiku.API.Models.Author
+    name: Author
+    href: Haiku.API.Models.Author.html
+  - name: )
+  spec.vb:
+  - uid: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.AddAuthorAsync(Haiku.API.Models.Author)
+    name: AddAuthorAsync
+    href: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.html#Haiku_API_Repositories_AuthorRepositories_IAuthorRepository_AddAuthorAsync_Haiku_API_Models_Author_
+  - name: (
+  - uid: Haiku.API.Models.Author
+    name: Author
+    href: Haiku.API.Models.Author.html
+  - name: )
+- uid: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.UpdateAuthorAsync*
+  commentId: Overload:Haiku.API.Repositories.AuthorRepositories.AuthorRepository.UpdateAuthorAsync
+  href: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.html#Haiku_API_Repositories_AuthorRepositories_AuthorRepository_UpdateAuthorAsync_Haiku_API_Models_Author_
+  name: UpdateAuthorAsync
+  nameWithType: AuthorRepository.UpdateAuthorAsync
+  fullName: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.UpdateAuthorAsync
+- uid: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.UpdateAuthorAsync(Haiku.API.Models.Author)
+  commentId: M:Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.UpdateAuthorAsync(Haiku.API.Models.Author)
+  parent: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository
+  href: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.html#Haiku_API_Repositories_AuthorRepositories_IAuthorRepository_UpdateAuthorAsync_Haiku_API_Models_Author_
+  name: UpdateAuthorAsync(Author)
+  nameWithType: IAuthorRepository.UpdateAuthorAsync(Author)
+  fullName: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.UpdateAuthorAsync(Haiku.API.Models.Author)
+  spec.csharp:
+  - uid: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.UpdateAuthorAsync(Haiku.API.Models.Author)
+    name: UpdateAuthorAsync
+    href: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.html#Haiku_API_Repositories_AuthorRepositories_IAuthorRepository_UpdateAuthorAsync_Haiku_API_Models_Author_
+  - name: (
+  - uid: Haiku.API.Models.Author
+    name: Author
+    href: Haiku.API.Models.Author.html
+  - name: )
+  spec.vb:
+  - uid: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.UpdateAuthorAsync(Haiku.API.Models.Author)
+    name: UpdateAuthorAsync
+    href: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.html#Haiku_API_Repositories_AuthorRepositories_IAuthorRepository_UpdateAuthorAsync_Haiku_API_Models_Author_
+  - name: (
+  - uid: Haiku.API.Models.Author
+    name: Author
+    href: Haiku.API.Models.Author.html
+  - name: )
+- uid: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.DeleteAuthorByIdAsync*
+  commentId: Overload:Haiku.API.Repositories.AuthorRepositories.AuthorRepository.DeleteAuthorByIdAsync
+  href: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.html#Haiku_API_Repositories_AuthorRepositories_AuthorRepository_DeleteAuthorByIdAsync_System_Int64_
+  name: DeleteAuthorByIdAsync
+  nameWithType: AuthorRepository.DeleteAuthorByIdAsync
+  fullName: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.DeleteAuthorByIdAsync
+- uid: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.DeleteAuthorByIdAsync(System.Int64)
+  commentId: M:Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.DeleteAuthorByIdAsync(System.Int64)
+  parent: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository
+  isExternal: true
+  href: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.html#Haiku_API_Repositories_AuthorRepositories_IAuthorRepository_DeleteAuthorByIdAsync_System_Int64_
+  name: DeleteAuthorByIdAsync(long)
+  nameWithType: IAuthorRepository.DeleteAuthorByIdAsync(long)
+  fullName: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.DeleteAuthorByIdAsync(long)
+  nameWithType.vb: IAuthorRepository.DeleteAuthorByIdAsync(Long)
+  fullName.vb: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.DeleteAuthorByIdAsync(Long)
+  name.vb: DeleteAuthorByIdAsync(Long)
+  spec.csharp:
+  - uid: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.DeleteAuthorByIdAsync(System.Int64)
+    name: DeleteAuthorByIdAsync
+    href: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.html#Haiku_API_Repositories_AuthorRepositories_IAuthorRepository_DeleteAuthorByIdAsync_System_Int64_
+  - name: (
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+  spec.vb:
+  - uid: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.DeleteAuthorByIdAsync(System.Int64)
+    name: DeleteAuthorByIdAsync
+    href: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.html#Haiku_API_Repositories_AuthorRepositories_IAuthorRepository_DeleteAuthorByIdAsync_System_Int64_
+  - name: (
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.AuthorExistsByIdAsync*
+  commentId: Overload:Haiku.API.Repositories.AuthorRepositories.AuthorRepository.AuthorExistsByIdAsync
+  href: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.html#Haiku_API_Repositories_AuthorRepositories_AuthorRepository_AuthorExistsByIdAsync_System_Int64_
+  name: AuthorExistsByIdAsync
+  nameWithType: AuthorRepository.AuthorExistsByIdAsync
+  fullName: Haiku.API.Repositories.AuthorRepositories.AuthorRepository.AuthorExistsByIdAsync
+- uid: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.AuthorExistsByIdAsync(System.Int64)
+  commentId: M:Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.AuthorExistsByIdAsync(System.Int64)
+  parent: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository
+  isExternal: true
+  href: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.html#Haiku_API_Repositories_AuthorRepositories_IAuthorRepository_AuthorExistsByIdAsync_System_Int64_
+  name: AuthorExistsByIdAsync(long)
+  nameWithType: IAuthorRepository.AuthorExistsByIdAsync(long)
+  fullName: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.AuthorExistsByIdAsync(long)
+  nameWithType.vb: IAuthorRepository.AuthorExistsByIdAsync(Long)
+  fullName.vb: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.AuthorExistsByIdAsync(Long)
+  name.vb: AuthorExistsByIdAsync(Long)
+  spec.csharp:
+  - uid: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.AuthorExistsByIdAsync(System.Int64)
+    name: AuthorExistsByIdAsync
+    href: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.html#Haiku_API_Repositories_AuthorRepositories_IAuthorRepository_AuthorExistsByIdAsync_System_Int64_
+  - name: (
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+  spec.vb:
+  - uid: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.AuthorExistsByIdAsync(System.Int64)
+    name: AuthorExistsByIdAsync
+    href: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.html#Haiku_API_Repositories_AuthorRepositories_IAuthorRepository_AuthorExistsByIdAsync_System_Int64_
+  - name: (
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )

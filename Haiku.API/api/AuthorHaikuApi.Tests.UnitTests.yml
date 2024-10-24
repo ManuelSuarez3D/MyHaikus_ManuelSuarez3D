@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: AuthorHaikuApi.Tests.UnitTests
+  commentId: N:AuthorHaikuApi.Tests.UnitTests
+  id: AuthorHaikuApi.Tests.UnitTests
+  children:
+  - AuthorHaikuApi.Tests.UnitTests.AuthorHaikuServiceTests
+  langs:
+  - csharp
+  - vb
+  name: AuthorHaikuApi.Tests.UnitTests
+  nameWithType: AuthorHaikuApi.Tests.UnitTests
+  fullName: AuthorHaikuApi.Tests.UnitTests
+  type: Namespace
+  assemblies:
+  - HaikuApi.Tests
+references:
+- uid: AuthorHaikuApi.Tests.UnitTests.AuthorHaikuServiceTests
+  commentId: T:AuthorHaikuApi.Tests.UnitTests.AuthorHaikuServiceTests
+  href: AuthorHaikuApi.Tests.UnitTests.AuthorHaikuServiceTests.html
+  name: AuthorHaikuServiceTests
+  nameWithType: AuthorHaikuServiceTests
+  fullName: AuthorHaikuApi.Tests.UnitTests.AuthorHaikuServiceTests

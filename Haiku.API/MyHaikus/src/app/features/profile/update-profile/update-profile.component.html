@@ -1,0 +1,62 @@
+<div class="container mt-5 text-center">
+  <div class="row mt-5">
+    <div class="col-md-6 offset-md-3">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="mb-0"><i class="fa-solid fa-wrench ms-n2"></i> Settings</h3>
+        </div>
+        <div class="flex-grow-1 mt-3 mt-md-0">
+          <div class="card-body">
+            <div *ngIf="errorMessages.update" class="alert alert-danger  mt-3 mx-auto text-center" style="max-width: 300px;">{{ errorMessages.update }}</div>
+            <div *ngIf="successMessages.update" class="alert alert-success  mt-3 mx-auto text-center" style="max-width: 300px;">{{ successMessages.update }}</div>
+          </div>
+          <ng-container *ngIf="loadingStates.update; else updateTemplate">
+            <div class="d-flex justify-content-center align-items-center mt-3" style="height: 100px;">
+              <div class="spinner-border text-primary" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+            </div>
+          </ng-container>
+        </div>
+        <ng-template #updateTemplate>
+          <div class=" mb-4">
+            <ul class="list-unstyled">
+              <li>
+                <span class="fw-bold text-muted" style="overflow: auto; white-space: nowrap;">
+                  <i class="fas fa-exclamation-circle"></i> Account Deletion
+                </span>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-danger mt-2" data-toggle="modal" data-target="#deleteUserModal" (click)="openUserModal()">Delete Account</button>
+          </div>
+          <app-update-profile-form [profileDto]="profileDto"
+                                   [userUpdateDto]="userUpdateDto"
+                                   (formProfileSubmit)="updateProfile($event)"
+                                   (formUserSubmit)="updateUser($event)">
+          </app-update-profile-form>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="deleteUserModal" tabindex="-1" role="dialog" aria-labelledby="deleteUserModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header card-header">
+        <h4 class="modal-title" id="deleteModalLabel"><i class='fas fa-exclamation-circle'></i> Delete User</h4>
+      </div>
+      <div class="modal-body">
+        <p>
+          Are you sure you want to delete your Account?<br /><br />
+          All your Haikus will be lost.<br /><br />
+          <strong>This change is irreversible</strong>.<br /><br />
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-danger" (click)="deleteUser()" data-dismiss="modal">Confirm</button>
+      </div>
+    </div>
+  </div>
+</div>

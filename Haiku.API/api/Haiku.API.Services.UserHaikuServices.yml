@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Haiku.API.Services.UserHaikuServices
+  commentId: N:Haiku.API.Services.UserHaikuServices
+  id: Haiku.API.Services.UserHaikuServices
+  children:
+  - Haiku.API.Services.UserHaikuServices.IUserHaikuService
+  - Haiku.API.Services.UserHaikuServices.UserHaikuService
+  langs:
+  - csharp
+  - vb
+  name: Haiku.API.Services.UserHaikuServices
+  nameWithType: Haiku.API.Services.UserHaikuServices
+  fullName: Haiku.API.Services.UserHaikuServices
+  type: Namespace
+  assemblies:
+  - Haiku.API
+references:
+- uid: Haiku.API.Services.UserHaikuServices.IUserHaikuService
+  commentId: T:Haiku.API.Services.UserHaikuServices.IUserHaikuService
+  parent: Haiku.API.Services.UserHaikuServices
+  href: Haiku.API.Services.UserHaikuServices.IUserHaikuService.html
+  name: IUserHaikuService
+  nameWithType: IUserHaikuService
+  fullName: Haiku.API.Services.UserHaikuServices.IUserHaikuService
+- uid: Haiku.API.Services.UserHaikuServices.UserHaikuService
+  commentId: T:Haiku.API.Services.UserHaikuServices.UserHaikuService
+  href: Haiku.API.Services.UserHaikuServices.UserHaikuService.html
+  name: UserHaikuService
+  nameWithType: UserHaikuService
+  fullName: Haiku.API.Services.UserHaikuServices.UserHaikuService
+- uid: Haiku.API.Services.UserHaikuServices
+  commentId: N:Haiku.API.Services.UserHaikuServices
+  href: Haiku.html
+  name: Haiku.API.Services.UserHaikuServices
+  nameWithType: Haiku.API.Services.UserHaikuServices
+  fullName: Haiku.API.Services.UserHaikuServices
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Services
+    name: Services
+    href: Haiku.API.Services.html
+  - name: .
+  - uid: Haiku.API.Services.UserHaikuServices
+    name: UserHaikuServices
+    href: Haiku.API.Services.UserHaikuServices.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Services
+    name: Services
+    href: Haiku.API.Services.html
+  - name: .
+  - uid: Haiku.API.Services.UserHaikuServices
+    name: UserHaikuServices
+    href: Haiku.API.Services.UserHaikuServices.html

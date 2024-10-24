@@ -1,0 +1,1201 @@
+### YamlMime:ManagedReference
+items:
+- uid: Haiku.API.Utilities.UnitOfWork
+  commentId: T:Haiku.API.Utilities.UnitOfWork
+  id: UnitOfWork
+  parent: Haiku.API.Utilities
+  children:
+  - Haiku.API.Utilities.UnitOfWork.#ctor(Haiku.API.Database.HaikuAPIContext,Haiku.API.Repositories.AuthorRepositories.IAuthorRepository,Haiku.API.Repositories.AuthorHaikuRepositories.IAuthorHaikuRepository,Haiku.API.Repositories.UserRepositories.IUserRepository,Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository)
+  - Haiku.API.Utilities.UnitOfWork.AuthorHaikus
+  - Haiku.API.Utilities.UnitOfWork.Authors
+  - Haiku.API.Utilities.UnitOfWork.BeginTransactionAsync
+  - Haiku.API.Utilities.UnitOfWork.CommitAsync
+  - Haiku.API.Utilities.UnitOfWork.CompleteAsync
+  - Haiku.API.Utilities.UnitOfWork.Dispose
+  - Haiku.API.Utilities.UnitOfWork.RollbackAsync
+  - Haiku.API.Utilities.UnitOfWork.UserProfiles
+  - Haiku.API.Utilities.UnitOfWork.Users
+  langs:
+  - csharp
+  - vb
+  name: UnitOfWork
+  nameWithType: UnitOfWork
+  fullName: Haiku.API.Utilities.UnitOfWork
+  type: Class
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Utilities/UnitOfWork.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: UnitOfWork
+    path: Haiku.API/Utilities/UnitOfWork.cs
+    startLine: 10
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Utilities
+  syntax:
+    content: 'public class UnitOfWork : IUnitOfWork, IDisposable'
+    content.vb: Public Class UnitOfWork Implements IUnitOfWork, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - Haiku.API.Utilities.IUnitOfWork
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Haiku.API.Utilities.UnitOfWork.#ctor(Haiku.API.Database.HaikuAPIContext,Haiku.API.Repositories.AuthorRepositories.IAuthorRepository,Haiku.API.Repositories.AuthorHaikuRepositories.IAuthorHaikuRepository,Haiku.API.Repositories.UserRepositories.IUserRepository,Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository)
+  commentId: M:Haiku.API.Utilities.UnitOfWork.#ctor(Haiku.API.Database.HaikuAPIContext,Haiku.API.Repositories.AuthorRepositories.IAuthorRepository,Haiku.API.Repositories.AuthorHaikuRepositories.IAuthorHaikuRepository,Haiku.API.Repositories.UserRepositories.IUserRepository,Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository)
+  id: '#ctor(Haiku.API.Database.HaikuAPIContext,Haiku.API.Repositories.AuthorRepositories.IAuthorRepository,Haiku.API.Repositories.AuthorHaikuRepositories.IAuthorHaikuRepository,Haiku.API.Repositories.UserRepositories.IUserRepository,Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository)'
+  parent: Haiku.API.Utilities.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: UnitOfWork(HaikuAPIContext, IAuthorRepository, IAuthorHaikuRepository, IUserRepository, IUserProfileRepository)
+  nameWithType: UnitOfWork.UnitOfWork(HaikuAPIContext, IAuthorRepository, IAuthorHaikuRepository, IUserRepository, IUserProfileRepository)
+  fullName: Haiku.API.Utilities.UnitOfWork.UnitOfWork(Haiku.API.Database.HaikuAPIContext, Haiku.API.Repositories.AuthorRepositories.IAuthorRepository, Haiku.API.Repositories.AuthorHaikuRepositories.IAuthorHaikuRepository, Haiku.API.Repositories.UserRepositories.IUserRepository, Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository)
+  type: Constructor
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Utilities/UnitOfWork.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: .ctor
+    path: Haiku.API/Utilities/UnitOfWork.cs
+    startLine: 23
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Utilities
+  summary: Initializes a new instance of the <xref href="Haiku.API.Utilities.UnitOfWork" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public UnitOfWork(HaikuAPIContext context, IAuthorRepository authors, IAuthorHaikuRepository authorHaikus, IUserRepository users, IUserProfileRepository userProfiles)
+    parameters:
+    - id: context
+      type: Haiku.API.Database.HaikuAPIContext
+      description: The database context to be used for operations.
+    - id: authors
+      type: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository
+      description: The repository for managing authors.
+    - id: authorHaikus
+      type: Haiku.API.Repositories.AuthorHaikuRepositories.IAuthorHaikuRepository
+      description: The repository for managing author haikus.
+    - id: users
+      type: Haiku.API.Repositories.UserRepositories.IUserRepository
+      description: The repository for managing users.
+    - id: userProfiles
+      type: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository
+      description: The repository for managing user profiles.
+    content.vb: Public Sub New(context As HaikuAPIContext, authors As IAuthorRepository, authorHaikus As IAuthorHaikuRepository, users As IUserRepository, userProfiles As IUserProfileRepository)
+  overload: Haiku.API.Utilities.UnitOfWork.#ctor*
+  nameWithType.vb: UnitOfWork.New(HaikuAPIContext, IAuthorRepository, IAuthorHaikuRepository, IUserRepository, IUserProfileRepository)
+  fullName.vb: Haiku.API.Utilities.UnitOfWork.New(Haiku.API.Database.HaikuAPIContext, Haiku.API.Repositories.AuthorRepositories.IAuthorRepository, Haiku.API.Repositories.AuthorHaikuRepositories.IAuthorHaikuRepository, Haiku.API.Repositories.UserRepositories.IUserRepository, Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository)
+  name.vb: New(HaikuAPIContext, IAuthorRepository, IAuthorHaikuRepository, IUserRepository, IUserProfileRepository)
+- uid: Haiku.API.Utilities.UnitOfWork.Authors
+  commentId: P:Haiku.API.Utilities.UnitOfWork.Authors
+  id: Authors
+  parent: Haiku.API.Utilities.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: Authors
+  nameWithType: UnitOfWork.Authors
+  fullName: Haiku.API.Utilities.UnitOfWork.Authors
+  type: Property
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Utilities/UnitOfWork.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: Authors
+    path: Haiku.API/Utilities/UnitOfWork.cs
+    startLine: 35
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Utilities
+  summary: Gets the repository for managing authors.
+  example: []
+  syntax:
+    content: public IAuthorRepository Authors { get; }
+    parameters: []
+    return:
+      type: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository
+    content.vb: Public ReadOnly Property Authors As IAuthorRepository
+  overload: Haiku.API.Utilities.UnitOfWork.Authors*
+  implements:
+  - Haiku.API.Utilities.IUnitOfWork.Authors
+- uid: Haiku.API.Utilities.UnitOfWork.AuthorHaikus
+  commentId: P:Haiku.API.Utilities.UnitOfWork.AuthorHaikus
+  id: AuthorHaikus
+  parent: Haiku.API.Utilities.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: AuthorHaikus
+  nameWithType: UnitOfWork.AuthorHaikus
+  fullName: Haiku.API.Utilities.UnitOfWork.AuthorHaikus
+  type: Property
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Utilities/UnitOfWork.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: AuthorHaikus
+    path: Haiku.API/Utilities/UnitOfWork.cs
+    startLine: 40
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Utilities
+  summary: Gets the repository for managing author haikus.
+  example: []
+  syntax:
+    content: public IAuthorHaikuRepository AuthorHaikus { get; }
+    parameters: []
+    return:
+      type: Haiku.API.Repositories.AuthorHaikuRepositories.IAuthorHaikuRepository
+    content.vb: Public ReadOnly Property AuthorHaikus As IAuthorHaikuRepository
+  overload: Haiku.API.Utilities.UnitOfWork.AuthorHaikus*
+  implements:
+  - Haiku.API.Utilities.IUnitOfWork.AuthorHaikus
+- uid: Haiku.API.Utilities.UnitOfWork.Users
+  commentId: P:Haiku.API.Utilities.UnitOfWork.Users
+  id: Users
+  parent: Haiku.API.Utilities.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: Users
+  nameWithType: UnitOfWork.Users
+  fullName: Haiku.API.Utilities.UnitOfWork.Users
+  type: Property
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Utilities/UnitOfWork.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: Users
+    path: Haiku.API/Utilities/UnitOfWork.cs
+    startLine: 45
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Utilities
+  summary: Gets the repository for managing users.
+  example: []
+  syntax:
+    content: public IUserRepository Users { get; }
+    parameters: []
+    return:
+      type: Haiku.API.Repositories.UserRepositories.IUserRepository
+    content.vb: Public ReadOnly Property Users As IUserRepository
+  overload: Haiku.API.Utilities.UnitOfWork.Users*
+  implements:
+  - Haiku.API.Utilities.IUnitOfWork.Users
+- uid: Haiku.API.Utilities.UnitOfWork.UserProfiles
+  commentId: P:Haiku.API.Utilities.UnitOfWork.UserProfiles
+  id: UserProfiles
+  parent: Haiku.API.Utilities.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: UserProfiles
+  nameWithType: UnitOfWork.UserProfiles
+  fullName: Haiku.API.Utilities.UnitOfWork.UserProfiles
+  type: Property
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Utilities/UnitOfWork.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: UserProfiles
+    path: Haiku.API/Utilities/UnitOfWork.cs
+    startLine: 50
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Utilities
+  summary: Gets the repository for managing user profiles.
+  example: []
+  syntax:
+    content: public IUserProfileRepository UserProfiles { get; }
+    parameters: []
+    return:
+      type: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository
+    content.vb: Public ReadOnly Property UserProfiles As IUserProfileRepository
+  overload: Haiku.API.Utilities.UnitOfWork.UserProfiles*
+  implements:
+  - Haiku.API.Utilities.IUnitOfWork.UserProfiles
+- uid: Haiku.API.Utilities.UnitOfWork.BeginTransactionAsync
+  commentId: M:Haiku.API.Utilities.UnitOfWork.BeginTransactionAsync
+  id: BeginTransactionAsync
+  parent: Haiku.API.Utilities.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: BeginTransactionAsync()
+  nameWithType: UnitOfWork.BeginTransactionAsync()
+  fullName: Haiku.API.Utilities.UnitOfWork.BeginTransactionAsync()
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Utilities/UnitOfWork.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: BeginTransactionAsync
+    path: Haiku.API/Utilities/UnitOfWork.cs
+    startLine: 60
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Utilities
+  summary: Begins a new database transaction asynchronously.
+  remarks: >-
+    This method should be called before performing a series of operations that need to be 
+
+    executed as a single unit of work.
+  example: []
+  syntax:
+    content: public Task BeginTransactionAsync()
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task that represents the asynchronous operation.
+    content.vb: Public Function BeginTransactionAsync() As Task
+  overload: Haiku.API.Utilities.UnitOfWork.BeginTransactionAsync*
+  implements:
+  - Haiku.API.Utilities.IUnitOfWork.BeginTransactionAsync
+- uid: Haiku.API.Utilities.UnitOfWork.CommitAsync
+  commentId: M:Haiku.API.Utilities.UnitOfWork.CommitAsync
+  id: CommitAsync
+  parent: Haiku.API.Utilities.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: CommitAsync()
+  nameWithType: UnitOfWork.CommitAsync()
+  fullName: Haiku.API.Utilities.UnitOfWork.CommitAsync()
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Utilities/UnitOfWork.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: CommitAsync
+    path: Haiku.API/Utilities/UnitOfWork.cs
+    startLine: 72
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Utilities
+  summary: Commits the current transaction asynchronously.
+  remarks: This method should be called after all operations are complete to persist changes to the database.
+  example: []
+  syntax:
+    content: public Task CommitAsync()
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task that represents the asynchronous operation.
+    content.vb: Public Function CommitAsync() As Task
+  overload: Haiku.API.Utilities.UnitOfWork.CommitAsync*
+  implements:
+  - Haiku.API.Utilities.IUnitOfWork.CommitAsync
+- uid: Haiku.API.Utilities.UnitOfWork.RollbackAsync
+  commentId: M:Haiku.API.Utilities.UnitOfWork.RollbackAsync
+  id: RollbackAsync
+  parent: Haiku.API.Utilities.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: RollbackAsync()
+  nameWithType: UnitOfWork.RollbackAsync()
+  fullName: Haiku.API.Utilities.UnitOfWork.RollbackAsync()
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Utilities/UnitOfWork.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: RollbackAsync
+    path: Haiku.API/Utilities/UnitOfWork.cs
+    startLine: 84
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Utilities
+  summary: Rolls back the current transaction asynchronously.
+  remarks: This method should be called if an error occurs during the operations to revert all changes.
+  example: []
+  syntax:
+    content: public Task RollbackAsync()
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task that represents the asynchronous operation.
+    content.vb: Public Function RollbackAsync() As Task
+  overload: Haiku.API.Utilities.UnitOfWork.RollbackAsync*
+  implements:
+  - Haiku.API.Utilities.IUnitOfWork.RollbackAsync
+- uid: Haiku.API.Utilities.UnitOfWork.CompleteAsync
+  commentId: M:Haiku.API.Utilities.UnitOfWork.CompleteAsync
+  id: CompleteAsync
+  parent: Haiku.API.Utilities.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: CompleteAsync()
+  nameWithType: UnitOfWork.CompleteAsync()
+  fullName: Haiku.API.Utilities.UnitOfWork.CompleteAsync()
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Utilities/UnitOfWork.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: CompleteAsync
+    path: Haiku.API/Utilities/UnitOfWork.cs
+    startLine: 93
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Utilities
+  summary: Saves all changes made in this unit of work asynchronously.
+  example: []
+  syntax:
+    content: public Task<int> CompleteAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+      description: The number of state entries written to the database.
+    content.vb: Public Function CompleteAsync() As Task(Of Integer)
+  overload: Haiku.API.Utilities.UnitOfWork.CompleteAsync*
+  implements:
+  - Haiku.API.Utilities.IUnitOfWork.CompleteAsync
+- uid: Haiku.API.Utilities.UnitOfWork.Dispose
+  commentId: M:Haiku.API.Utilities.UnitOfWork.Dispose
+  id: Dispose
+  parent: Haiku.API.Utilities.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: UnitOfWork.Dispose()
+  fullName: Haiku.API.Utilities.UnitOfWork.Dispose()
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Utilities/UnitOfWork.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: Dispose
+    path: Haiku.API/Utilities/UnitOfWork.cs
+    startLine: 101
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Utilities
+  summary: Disposes the resources used by the <xref href="Haiku.API.Utilities.UnitOfWork" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Haiku.API.Utilities.UnitOfWork.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+references:
+- uid: Haiku.API.Utilities
+  commentId: N:Haiku.API.Utilities
+  href: Haiku.html
+  name: Haiku.API.Utilities
+  nameWithType: Haiku.API.Utilities
+  fullName: Haiku.API.Utilities
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Utilities
+    name: Utilities
+    href: Haiku.API.Utilities.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Utilities
+    name: Utilities
+    href: Haiku.API.Utilities.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Haiku.API.Utilities.IUnitOfWork
+  commentId: T:Haiku.API.Utilities.IUnitOfWork
+  parent: Haiku.API.Utilities
+  href: Haiku.API.Utilities.IUnitOfWork.html
+  name: IUnitOfWork
+  nameWithType: IUnitOfWork
+  fullName: Haiku.API.Utilities.IUnitOfWork
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Haiku.API.Utilities.UnitOfWork
+  commentId: T:Haiku.API.Utilities.UnitOfWork
+  href: Haiku.API.Utilities.UnitOfWork.html
+  name: UnitOfWork
+  nameWithType: UnitOfWork
+  fullName: Haiku.API.Utilities.UnitOfWork
+- uid: Haiku.API.Utilities.UnitOfWork.#ctor*
+  commentId: Overload:Haiku.API.Utilities.UnitOfWork.#ctor
+  href: Haiku.API.Utilities.UnitOfWork.html#Haiku_API_Utilities_UnitOfWork__ctor_Haiku_API_Database_HaikuAPIContext_Haiku_API_Repositories_AuthorRepositories_IAuthorRepository_Haiku_API_Repositories_AuthorHaikuRepositories_IAuthorHaikuRepository_Haiku_API_Repositories_UserRepositories_IUserRepository_Haiku_API_Repositories_UserProfileRepositories_IUserProfileRepository_
+  name: UnitOfWork
+  nameWithType: UnitOfWork.UnitOfWork
+  fullName: Haiku.API.Utilities.UnitOfWork.UnitOfWork
+  nameWithType.vb: UnitOfWork.New
+  fullName.vb: Haiku.API.Utilities.UnitOfWork.New
+  name.vb: New
+- uid: Haiku.API.Database.HaikuAPIContext
+  commentId: T:Haiku.API.Database.HaikuAPIContext
+  parent: Haiku.API.Database
+  href: Haiku.API.Database.HaikuAPIContext.html
+  name: HaikuAPIContext
+  nameWithType: HaikuAPIContext
+  fullName: Haiku.API.Database.HaikuAPIContext
+- uid: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository
+  commentId: T:Haiku.API.Repositories.AuthorRepositories.IAuthorRepository
+  parent: Haiku.API.Repositories.AuthorRepositories
+  href: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository.html
+  name: IAuthorRepository
+  nameWithType: IAuthorRepository
+  fullName: Haiku.API.Repositories.AuthorRepositories.IAuthorRepository
+- uid: Haiku.API.Repositories.AuthorHaikuRepositories.IAuthorHaikuRepository
+  commentId: T:Haiku.API.Repositories.AuthorHaikuRepositories.IAuthorHaikuRepository
+  parent: Haiku.API.Repositories.AuthorHaikuRepositories
+  href: Haiku.API.Repositories.AuthorHaikuRepositories.IAuthorHaikuRepository.html
+  name: IAuthorHaikuRepository
+  nameWithType: IAuthorHaikuRepository
+  fullName: Haiku.API.Repositories.AuthorHaikuRepositories.IAuthorHaikuRepository
+- uid: Haiku.API.Repositories.UserRepositories.IUserRepository
+  commentId: T:Haiku.API.Repositories.UserRepositories.IUserRepository
+  parent: Haiku.API.Repositories.UserRepositories
+  href: Haiku.API.Repositories.UserRepositories.IUserRepository.html
+  name: IUserRepository
+  nameWithType: IUserRepository
+  fullName: Haiku.API.Repositories.UserRepositories.IUserRepository
+- uid: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository
+  commentId: T:Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository
+  parent: Haiku.API.Repositories.UserProfileRepositories
+  href: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository.html
+  name: IUserProfileRepository
+  nameWithType: IUserProfileRepository
+  fullName: Haiku.API.Repositories.UserProfileRepositories.IUserProfileRepository
+- uid: Haiku.API.Database
+  commentId: N:Haiku.API.Database
+  href: Haiku.html
+  name: Haiku.API.Database
+  nameWithType: Haiku.API.Database
+  fullName: Haiku.API.Database
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Database
+    name: Database
+    href: Haiku.API.Database.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Database
+    name: Database
+    href: Haiku.API.Database.html
+- uid: Haiku.API.Repositories.AuthorRepositories
+  commentId: N:Haiku.API.Repositories.AuthorRepositories
+  href: Haiku.html
+  name: Haiku.API.Repositories.AuthorRepositories
+  nameWithType: Haiku.API.Repositories.AuthorRepositories
+  fullName: Haiku.API.Repositories.AuthorRepositories
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Repositories
+    name: Repositories
+    href: Haiku.API.Repositories.html
+  - name: .
+  - uid: Haiku.API.Repositories.AuthorRepositories
+    name: AuthorRepositories
+    href: Haiku.API.Repositories.AuthorRepositories.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Repositories
+    name: Repositories
+    href: Haiku.API.Repositories.html
+  - name: .
+  - uid: Haiku.API.Repositories.AuthorRepositories
+    name: AuthorRepositories
+    href: Haiku.API.Repositories.AuthorRepositories.html
+- uid: Haiku.API.Repositories.AuthorHaikuRepositories
+  commentId: N:Haiku.API.Repositories.AuthorHaikuRepositories
+  href: Haiku.html
+  name: Haiku.API.Repositories.AuthorHaikuRepositories
+  nameWithType: Haiku.API.Repositories.AuthorHaikuRepositories
+  fullName: Haiku.API.Repositories.AuthorHaikuRepositories
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Repositories
+    name: Repositories
+    href: Haiku.API.Repositories.html
+  - name: .
+  - uid: Haiku.API.Repositories.AuthorHaikuRepositories
+    name: AuthorHaikuRepositories
+    href: Haiku.API.Repositories.AuthorHaikuRepositories.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Repositories
+    name: Repositories
+    href: Haiku.API.Repositories.html
+  - name: .
+  - uid: Haiku.API.Repositories.AuthorHaikuRepositories
+    name: AuthorHaikuRepositories
+    href: Haiku.API.Repositories.AuthorHaikuRepositories.html
+- uid: Haiku.API.Repositories.UserRepositories
+  commentId: N:Haiku.API.Repositories.UserRepositories
+  href: Haiku.html
+  name: Haiku.API.Repositories.UserRepositories
+  nameWithType: Haiku.API.Repositories.UserRepositories
+  fullName: Haiku.API.Repositories.UserRepositories
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Repositories
+    name: Repositories
+    href: Haiku.API.Repositories.html
+  - name: .
+  - uid: Haiku.API.Repositories.UserRepositories
+    name: UserRepositories
+    href: Haiku.API.Repositories.UserRepositories.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Repositories
+    name: Repositories
+    href: Haiku.API.Repositories.html
+  - name: .
+  - uid: Haiku.API.Repositories.UserRepositories
+    name: UserRepositories
+    href: Haiku.API.Repositories.UserRepositories.html
+- uid: Haiku.API.Repositories.UserProfileRepositories
+  commentId: N:Haiku.API.Repositories.UserProfileRepositories
+  href: Haiku.html
+  name: Haiku.API.Repositories.UserProfileRepositories
+  nameWithType: Haiku.API.Repositories.UserProfileRepositories
+  fullName: Haiku.API.Repositories.UserProfileRepositories
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Repositories
+    name: Repositories
+    href: Haiku.API.Repositories.html
+  - name: .
+  - uid: Haiku.API.Repositories.UserProfileRepositories
+    name: UserProfileRepositories
+    href: Haiku.API.Repositories.UserProfileRepositories.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Repositories
+    name: Repositories
+    href: Haiku.API.Repositories.html
+  - name: .
+  - uid: Haiku.API.Repositories.UserProfileRepositories
+    name: UserProfileRepositories
+    href: Haiku.API.Repositories.UserProfileRepositories.html
+- uid: Haiku.API.Utilities.UnitOfWork.Authors*
+  commentId: Overload:Haiku.API.Utilities.UnitOfWork.Authors
+  href: Haiku.API.Utilities.UnitOfWork.html#Haiku_API_Utilities_UnitOfWork_Authors
+  name: Authors
+  nameWithType: UnitOfWork.Authors
+  fullName: Haiku.API.Utilities.UnitOfWork.Authors
+- uid: Haiku.API.Utilities.IUnitOfWork.Authors
+  commentId: P:Haiku.API.Utilities.IUnitOfWork.Authors
+  parent: Haiku.API.Utilities.IUnitOfWork
+  href: Haiku.API.Utilities.IUnitOfWork.html#Haiku_API_Utilities_IUnitOfWork_Authors
+  name: Authors
+  nameWithType: IUnitOfWork.Authors
+  fullName: Haiku.API.Utilities.IUnitOfWork.Authors
+- uid: Haiku.API.Utilities.UnitOfWork.AuthorHaikus*
+  commentId: Overload:Haiku.API.Utilities.UnitOfWork.AuthorHaikus
+  href: Haiku.API.Utilities.UnitOfWork.html#Haiku_API_Utilities_UnitOfWork_AuthorHaikus
+  name: AuthorHaikus
+  nameWithType: UnitOfWork.AuthorHaikus
+  fullName: Haiku.API.Utilities.UnitOfWork.AuthorHaikus
+- uid: Haiku.API.Utilities.IUnitOfWork.AuthorHaikus
+  commentId: P:Haiku.API.Utilities.IUnitOfWork.AuthorHaikus
+  parent: Haiku.API.Utilities.IUnitOfWork
+  href: Haiku.API.Utilities.IUnitOfWork.html#Haiku_API_Utilities_IUnitOfWork_AuthorHaikus
+  name: AuthorHaikus
+  nameWithType: IUnitOfWork.AuthorHaikus
+  fullName: Haiku.API.Utilities.IUnitOfWork.AuthorHaikus
+- uid: Haiku.API.Utilities.UnitOfWork.Users*
+  commentId: Overload:Haiku.API.Utilities.UnitOfWork.Users
+  href: Haiku.API.Utilities.UnitOfWork.html#Haiku_API_Utilities_UnitOfWork_Users
+  name: Users
+  nameWithType: UnitOfWork.Users
+  fullName: Haiku.API.Utilities.UnitOfWork.Users
+- uid: Haiku.API.Utilities.IUnitOfWork.Users
+  commentId: P:Haiku.API.Utilities.IUnitOfWork.Users
+  parent: Haiku.API.Utilities.IUnitOfWork
+  href: Haiku.API.Utilities.IUnitOfWork.html#Haiku_API_Utilities_IUnitOfWork_Users
+  name: Users
+  nameWithType: IUnitOfWork.Users
+  fullName: Haiku.API.Utilities.IUnitOfWork.Users
+- uid: Haiku.API.Utilities.UnitOfWork.UserProfiles*
+  commentId: Overload:Haiku.API.Utilities.UnitOfWork.UserProfiles
+  href: Haiku.API.Utilities.UnitOfWork.html#Haiku_API_Utilities_UnitOfWork_UserProfiles
+  name: UserProfiles
+  nameWithType: UnitOfWork.UserProfiles
+  fullName: Haiku.API.Utilities.UnitOfWork.UserProfiles
+- uid: Haiku.API.Utilities.IUnitOfWork.UserProfiles
+  commentId: P:Haiku.API.Utilities.IUnitOfWork.UserProfiles
+  parent: Haiku.API.Utilities.IUnitOfWork
+  href: Haiku.API.Utilities.IUnitOfWork.html#Haiku_API_Utilities_IUnitOfWork_UserProfiles
+  name: UserProfiles
+  nameWithType: IUnitOfWork.UserProfiles
+  fullName: Haiku.API.Utilities.IUnitOfWork.UserProfiles
+- uid: Haiku.API.Utilities.UnitOfWork.BeginTransactionAsync*
+  commentId: Overload:Haiku.API.Utilities.UnitOfWork.BeginTransactionAsync
+  href: Haiku.API.Utilities.UnitOfWork.html#Haiku_API_Utilities_UnitOfWork_BeginTransactionAsync
+  name: BeginTransactionAsync
+  nameWithType: UnitOfWork.BeginTransactionAsync
+  fullName: Haiku.API.Utilities.UnitOfWork.BeginTransactionAsync
+- uid: Haiku.API.Utilities.IUnitOfWork.BeginTransactionAsync
+  commentId: M:Haiku.API.Utilities.IUnitOfWork.BeginTransactionAsync
+  parent: Haiku.API.Utilities.IUnitOfWork
+  href: Haiku.API.Utilities.IUnitOfWork.html#Haiku_API_Utilities_IUnitOfWork_BeginTransactionAsync
+  name: BeginTransactionAsync()
+  nameWithType: IUnitOfWork.BeginTransactionAsync()
+  fullName: Haiku.API.Utilities.IUnitOfWork.BeginTransactionAsync()
+  spec.csharp:
+  - uid: Haiku.API.Utilities.IUnitOfWork.BeginTransactionAsync
+    name: BeginTransactionAsync
+    href: Haiku.API.Utilities.IUnitOfWork.html#Haiku_API_Utilities_IUnitOfWork_BeginTransactionAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Haiku.API.Utilities.IUnitOfWork.BeginTransactionAsync
+    name: BeginTransactionAsync
+    href: Haiku.API.Utilities.IUnitOfWork.html#Haiku_API_Utilities_IUnitOfWork_BeginTransactionAsync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Haiku.API.Utilities.UnitOfWork.CommitAsync*
+  commentId: Overload:Haiku.API.Utilities.UnitOfWork.CommitAsync
+  href: Haiku.API.Utilities.UnitOfWork.html#Haiku_API_Utilities_UnitOfWork_CommitAsync
+  name: CommitAsync
+  nameWithType: UnitOfWork.CommitAsync
+  fullName: Haiku.API.Utilities.UnitOfWork.CommitAsync
+- uid: Haiku.API.Utilities.IUnitOfWork.CommitAsync
+  commentId: M:Haiku.API.Utilities.IUnitOfWork.CommitAsync
+  parent: Haiku.API.Utilities.IUnitOfWork
+  href: Haiku.API.Utilities.IUnitOfWork.html#Haiku_API_Utilities_IUnitOfWork_CommitAsync
+  name: CommitAsync()
+  nameWithType: IUnitOfWork.CommitAsync()
+  fullName: Haiku.API.Utilities.IUnitOfWork.CommitAsync()
+  spec.csharp:
+  - uid: Haiku.API.Utilities.IUnitOfWork.CommitAsync
+    name: CommitAsync
+    href: Haiku.API.Utilities.IUnitOfWork.html#Haiku_API_Utilities_IUnitOfWork_CommitAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Haiku.API.Utilities.IUnitOfWork.CommitAsync
+    name: CommitAsync
+    href: Haiku.API.Utilities.IUnitOfWork.html#Haiku_API_Utilities_IUnitOfWork_CommitAsync
+  - name: (
+  - name: )
+- uid: Haiku.API.Utilities.UnitOfWork.RollbackAsync*
+  commentId: Overload:Haiku.API.Utilities.UnitOfWork.RollbackAsync
+  href: Haiku.API.Utilities.UnitOfWork.html#Haiku_API_Utilities_UnitOfWork_RollbackAsync
+  name: RollbackAsync
+  nameWithType: UnitOfWork.RollbackAsync
+  fullName: Haiku.API.Utilities.UnitOfWork.RollbackAsync
+- uid: Haiku.API.Utilities.IUnitOfWork.RollbackAsync
+  commentId: M:Haiku.API.Utilities.IUnitOfWork.RollbackAsync
+  parent: Haiku.API.Utilities.IUnitOfWork
+  href: Haiku.API.Utilities.IUnitOfWork.html#Haiku_API_Utilities_IUnitOfWork_RollbackAsync
+  name: RollbackAsync()
+  nameWithType: IUnitOfWork.RollbackAsync()
+  fullName: Haiku.API.Utilities.IUnitOfWork.RollbackAsync()
+  spec.csharp:
+  - uid: Haiku.API.Utilities.IUnitOfWork.RollbackAsync
+    name: RollbackAsync
+    href: Haiku.API.Utilities.IUnitOfWork.html#Haiku_API_Utilities_IUnitOfWork_RollbackAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Haiku.API.Utilities.IUnitOfWork.RollbackAsync
+    name: RollbackAsync
+    href: Haiku.API.Utilities.IUnitOfWork.html#Haiku_API_Utilities_IUnitOfWork_RollbackAsync
+  - name: (
+  - name: )
+- uid: Haiku.API.Utilities.UnitOfWork.CompleteAsync*
+  commentId: Overload:Haiku.API.Utilities.UnitOfWork.CompleteAsync
+  href: Haiku.API.Utilities.UnitOfWork.html#Haiku_API_Utilities_UnitOfWork_CompleteAsync
+  name: CompleteAsync
+  nameWithType: UnitOfWork.CompleteAsync
+  fullName: Haiku.API.Utilities.UnitOfWork.CompleteAsync
+- uid: Haiku.API.Utilities.IUnitOfWork.CompleteAsync
+  commentId: M:Haiku.API.Utilities.IUnitOfWork.CompleteAsync
+  parent: Haiku.API.Utilities.IUnitOfWork
+  href: Haiku.API.Utilities.IUnitOfWork.html#Haiku_API_Utilities_IUnitOfWork_CompleteAsync
+  name: CompleteAsync()
+  nameWithType: IUnitOfWork.CompleteAsync()
+  fullName: Haiku.API.Utilities.IUnitOfWork.CompleteAsync()
+  spec.csharp:
+  - uid: Haiku.API.Utilities.IUnitOfWork.CompleteAsync
+    name: CompleteAsync
+    href: Haiku.API.Utilities.IUnitOfWork.html#Haiku_API_Utilities_IUnitOfWork_CompleteAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Haiku.API.Utilities.IUnitOfWork.CompleteAsync
+    name: CompleteAsync
+    href: Haiku.API.Utilities.IUnitOfWork.html#Haiku_API_Utilities_IUnitOfWork_CompleteAsync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Int32}
+  commentId: T:System.Threading.Tasks.Task{System.Int32}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<int>
+  nameWithType: Task<int>
+  fullName: System.Threading.Tasks.Task<int>
+  nameWithType.vb: Task(Of Integer)
+  fullName.vb: System.Threading.Tasks.Task(Of Integer)
+  name.vb: Task(Of Integer)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Haiku.API.Utilities.UnitOfWork.Dispose*
+  commentId: Overload:Haiku.API.Utilities.UnitOfWork.Dispose
+  href: Haiku.API.Utilities.UnitOfWork.html#Haiku_API_Utilities_UnitOfWork_Dispose
+  name: Dispose
+  nameWithType: UnitOfWork.Dispose
+  fullName: Haiku.API.Utilities.UnitOfWork.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

@@ -1,0 +1,160 @@
+### YamlMime:ManagedReference
+items:
+- uid: Haiku.API.Services.XmlSerializationServices.IXmlSerializationService
+  commentId: T:Haiku.API.Services.XmlSerializationServices.IXmlSerializationService
+  id: IXmlSerializationService
+  parent: Haiku.API.Services.XmlSerializationServices
+  children:
+  - Haiku.API.Services.XmlSerializationServices.IXmlSerializationService.SerializeAndSanitizeToXml(Haiku.API.Dtos.PaginationMetaDataDto)
+  langs:
+  - csharp
+  - vb
+  name: IXmlSerializationService
+  nameWithType: IXmlSerializationService
+  fullName: Haiku.API.Services.XmlSerializationServices.IXmlSerializationService
+  type: Interface
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Services/XmlSerializationServices/IXmlSerializationService.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: IXmlSerializationService
+    path: Haiku.API/Services/XmlSerializationServices/IXmlSerializationService.cs
+    startLine: 5
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Services.XmlSerializationServices
+  syntax:
+    content: public interface IXmlSerializationService
+    content.vb: Public Interface IXmlSerializationService
+- uid: Haiku.API.Services.XmlSerializationServices.IXmlSerializationService.SerializeAndSanitizeToXml(Haiku.API.Dtos.PaginationMetaDataDto)
+  commentId: M:Haiku.API.Services.XmlSerializationServices.IXmlSerializationService.SerializeAndSanitizeToXml(Haiku.API.Dtos.PaginationMetaDataDto)
+  id: SerializeAndSanitizeToXml(Haiku.API.Dtos.PaginationMetaDataDto)
+  parent: Haiku.API.Services.XmlSerializationServices.IXmlSerializationService
+  langs:
+  - csharp
+  - vb
+  name: SerializeAndSanitizeToXml(PaginationMetaDataDto)
+  nameWithType: IXmlSerializationService.SerializeAndSanitizeToXml(PaginationMetaDataDto)
+  fullName: Haiku.API.Services.XmlSerializationServices.IXmlSerializationService.SerializeAndSanitizeToXml(Haiku.API.Dtos.PaginationMetaDataDto)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Services/XmlSerializationServices/IXmlSerializationService.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: SerializeAndSanitizeToXml
+    path: Haiku.API/Services/XmlSerializationServices/IXmlSerializationService.cs
+    startLine: 7
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Services.XmlSerializationServices
+  syntax:
+    content: string SerializeAndSanitizeToXml(PaginationMetaDataDto paginationMetaData)
+    parameters:
+    - id: paginationMetaData
+      type: Haiku.API.Dtos.PaginationMetaDataDto
+    return:
+      type: System.String
+    content.vb: Function SerializeAndSanitizeToXml(paginationMetaData As PaginationMetaDataDto) As String
+  overload: Haiku.API.Services.XmlSerializationServices.IXmlSerializationService.SerializeAndSanitizeToXml*
+references:
+- uid: Haiku.API.Services.XmlSerializationServices
+  commentId: N:Haiku.API.Services.XmlSerializationServices
+  href: Haiku.html
+  name: Haiku.API.Services.XmlSerializationServices
+  nameWithType: Haiku.API.Services.XmlSerializationServices
+  fullName: Haiku.API.Services.XmlSerializationServices
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Services
+    name: Services
+    href: Haiku.API.Services.html
+  - name: .
+  - uid: Haiku.API.Services.XmlSerializationServices
+    name: XmlSerializationServices
+    href: Haiku.API.Services.XmlSerializationServices.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Services
+    name: Services
+    href: Haiku.API.Services.html
+  - name: .
+  - uid: Haiku.API.Services.XmlSerializationServices
+    name: XmlSerializationServices
+    href: Haiku.API.Services.XmlSerializationServices.html
+- uid: Haiku.API.Services.XmlSerializationServices.IXmlSerializationService.SerializeAndSanitizeToXml*
+  commentId: Overload:Haiku.API.Services.XmlSerializationServices.IXmlSerializationService.SerializeAndSanitizeToXml
+  href: Haiku.API.Services.XmlSerializationServices.IXmlSerializationService.html#Haiku_API_Services_XmlSerializationServices_IXmlSerializationService_SerializeAndSanitizeToXml_Haiku_API_Dtos_PaginationMetaDataDto_
+  name: SerializeAndSanitizeToXml
+  nameWithType: IXmlSerializationService.SerializeAndSanitizeToXml
+  fullName: Haiku.API.Services.XmlSerializationServices.IXmlSerializationService.SerializeAndSanitizeToXml
+- uid: Haiku.API.Dtos.PaginationMetaDataDto
+  commentId: T:Haiku.API.Dtos.PaginationMetaDataDto
+  parent: Haiku.API.Dtos
+  href: Haiku.API.Dtos.PaginationMetaDataDto.html
+  name: PaginationMetaDataDto
+  nameWithType: PaginationMetaDataDto
+  fullName: Haiku.API.Dtos.PaginationMetaDataDto
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Haiku.API.Dtos
+  commentId: N:Haiku.API.Dtos
+  href: Haiku.html
+  name: Haiku.API.Dtos
+  nameWithType: Haiku.API.Dtos
+  fullName: Haiku.API.Dtos
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Dtos
+    name: Dtos
+    href: Haiku.API.Dtos.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Dtos
+    name: Dtos
+    href: Haiku.API.Dtos.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

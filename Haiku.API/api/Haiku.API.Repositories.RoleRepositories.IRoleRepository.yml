@@ -1,0 +1,224 @@
+### YamlMime:ManagedReference
+items:
+- uid: Haiku.API.Repositories.RoleRepositories.IRoleRepository
+  commentId: T:Haiku.API.Repositories.RoleRepositories.IRoleRepository
+  id: IRoleRepository
+  parent: Haiku.API.Repositories.RoleRepositories
+  children:
+  - Haiku.API.Repositories.RoleRepositories.IRoleRepository.GetUserRoleAsync(System.Int64)
+  langs:
+  - csharp
+  - vb
+  name: IRoleRepository
+  nameWithType: IRoleRepository
+  fullName: Haiku.API.Repositories.RoleRepositories.IRoleRepository
+  type: Interface
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Repositories/RoleRepositories/IRoleRepository.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: IRoleRepository
+    path: Haiku.API/Repositories/RoleRepositories/IRoleRepository.cs
+    startLine: 4
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Repositories.RoleRepositories
+  syntax:
+    content: public interface IRoleRepository
+    content.vb: Public Interface IRoleRepository
+- uid: Haiku.API.Repositories.RoleRepositories.IRoleRepository.GetUserRoleAsync(System.Int64)
+  commentId: M:Haiku.API.Repositories.RoleRepositories.IRoleRepository.GetUserRoleAsync(System.Int64)
+  id: GetUserRoleAsync(System.Int64)
+  parent: Haiku.API.Repositories.RoleRepositories.IRoleRepository
+  langs:
+  - csharp
+  - vb
+  name: GetUserRoleAsync(long)
+  nameWithType: IRoleRepository.GetUserRoleAsync(long)
+  fullName: Haiku.API.Repositories.RoleRepositories.IRoleRepository.GetUserRoleAsync(long)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Repositories/RoleRepositories/IRoleRepository.cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: GetUserRoleAsync
+    path: Haiku.API/Repositories/RoleRepositories/IRoleRepository.cs
+    startLine: 6
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Repositories.RoleRepositories
+  syntax:
+    content: Task<Role?> GetUserRoleAsync(long userId)
+    parameters:
+    - id: userId
+      type: System.Int64
+    return:
+      type: System.Threading.Tasks.Task{Haiku.API.Models.Role}
+    content.vb: Function GetUserRoleAsync(userId As Long) As Task(Of Role)
+  overload: Haiku.API.Repositories.RoleRepositories.IRoleRepository.GetUserRoleAsync*
+  nameWithType.vb: IRoleRepository.GetUserRoleAsync(Long)
+  fullName.vb: Haiku.API.Repositories.RoleRepositories.IRoleRepository.GetUserRoleAsync(Long)
+  name.vb: GetUserRoleAsync(Long)
+references:
+- uid: Haiku.API.Repositories.RoleRepositories
+  commentId: N:Haiku.API.Repositories.RoleRepositories
+  href: Haiku.html
+  name: Haiku.API.Repositories.RoleRepositories
+  nameWithType: Haiku.API.Repositories.RoleRepositories
+  fullName: Haiku.API.Repositories.RoleRepositories
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Repositories
+    name: Repositories
+    href: Haiku.API.Repositories.html
+  - name: .
+  - uid: Haiku.API.Repositories.RoleRepositories
+    name: RoleRepositories
+    href: Haiku.API.Repositories.RoleRepositories.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Repositories
+    name: Repositories
+    href: Haiku.API.Repositories.html
+  - name: .
+  - uid: Haiku.API.Repositories.RoleRepositories
+    name: RoleRepositories
+    href: Haiku.API.Repositories.RoleRepositories.html
+- uid: Haiku.API.Repositories.RoleRepositories.IRoleRepository.GetUserRoleAsync*
+  commentId: Overload:Haiku.API.Repositories.RoleRepositories.IRoleRepository.GetUserRoleAsync
+  href: Haiku.API.Repositories.RoleRepositories.IRoleRepository.html#Haiku_API_Repositories_RoleRepositories_IRoleRepository_GetUserRoleAsync_System_Int64_
+  name: GetUserRoleAsync
+  nameWithType: IRoleRepository.GetUserRoleAsync
+  fullName: Haiku.API.Repositories.RoleRepositories.IRoleRepository.GetUserRoleAsync
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Threading.Tasks.Task{Haiku.API.Models.Role}
+  commentId: T:System.Threading.Tasks.Task{Haiku.API.Models.Role}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Role>
+  nameWithType: Task<Role>
+  fullName: System.Threading.Tasks.Task<Haiku.API.Models.Role>
+  nameWithType.vb: Task(Of Role)
+  fullName.vb: System.Threading.Tasks.Task(Of Haiku.API.Models.Role)
+  name.vb: Task(Of Role)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Haiku.API.Models.Role
+    name: Role
+    href: Haiku.API.Models.Role.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Haiku.API.Models.Role
+    name: Role
+    href: Haiku.API.Models.Role.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

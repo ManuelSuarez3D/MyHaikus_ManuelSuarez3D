@@ -1,0 +1,240 @@
+### YamlMime:ManagedReference
+items:
+- uid: Haiku.API.Services.AuthServices.IAuthService
+  commentId: T:Haiku.API.Services.AuthServices.IAuthService
+  id: IAuthService
+  parent: Haiku.API.Services.AuthServices
+  children:
+  - Haiku.API.Services.AuthServices.IAuthService.AuthenticateUserAsync(Haiku.API.Dtos.LoginDto)
+  langs:
+  - csharp
+  - vb
+  name: IAuthService
+  nameWithType: IAuthService
+  fullName: Haiku.API.Services.AuthServices.IAuthService
+  type: Interface
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Services/AuthServices/IAuthService .cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: IAuthService
+    path: Haiku.API/Services/AuthServices/IAuthService .cs
+    startLine: 5
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Services.AuthServices
+  syntax:
+    content: public interface IAuthService
+    content.vb: Public Interface IAuthService
+- uid: Haiku.API.Services.AuthServices.IAuthService.AuthenticateUserAsync(Haiku.API.Dtos.LoginDto)
+  commentId: M:Haiku.API.Services.AuthServices.IAuthService.AuthenticateUserAsync(Haiku.API.Dtos.LoginDto)
+  id: AuthenticateUserAsync(Haiku.API.Dtos.LoginDto)
+  parent: Haiku.API.Services.AuthServices.IAuthService
+  langs:
+  - csharp
+  - vb
+  name: AuthenticateUserAsync(LoginDto)
+  nameWithType: IAuthService.AuthenticateUserAsync(LoginDto)
+  fullName: Haiku.API.Services.AuthServices.IAuthService.AuthenticateUserAsync(Haiku.API.Dtos.LoginDto)
+  type: Method
+  source:
+    remote:
+      path: Haiku.API/Haiku.API/Services/AuthServices/IAuthService .cs
+      branch: main
+      repo: https://github.com/ManuelSuarez3D/MyHaikus_ManuelSuarez3D.git
+    id: AuthenticateUserAsync
+    path: Haiku.API/Services/AuthServices/IAuthService .cs
+    startLine: 7
+  assemblies:
+  - Haiku.API
+  namespace: Haiku.API.Services.AuthServices
+  syntax:
+    content: Task<JWTokenDto> AuthenticateUserAsync(LoginDto loginDto)
+    parameters:
+    - id: loginDto
+      type: Haiku.API.Dtos.LoginDto
+    return:
+      type: System.Threading.Tasks.Task{Haiku.API.Dtos.JWTokenDto}
+    content.vb: Function AuthenticateUserAsync(loginDto As LoginDto) As Task(Of JWTokenDto)
+  overload: Haiku.API.Services.AuthServices.IAuthService.AuthenticateUserAsync*
+references:
+- uid: Haiku.API.Services.AuthServices
+  commentId: N:Haiku.API.Services.AuthServices
+  href: Haiku.html
+  name: Haiku.API.Services.AuthServices
+  nameWithType: Haiku.API.Services.AuthServices
+  fullName: Haiku.API.Services.AuthServices
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Services
+    name: Services
+    href: Haiku.API.Services.html
+  - name: .
+  - uid: Haiku.API.Services.AuthServices
+    name: AuthServices
+    href: Haiku.API.Services.AuthServices.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Services
+    name: Services
+    href: Haiku.API.Services.html
+  - name: .
+  - uid: Haiku.API.Services.AuthServices
+    name: AuthServices
+    href: Haiku.API.Services.AuthServices.html
+- uid: Haiku.API.Services.AuthServices.IAuthService.AuthenticateUserAsync*
+  commentId: Overload:Haiku.API.Services.AuthServices.IAuthService.AuthenticateUserAsync
+  href: Haiku.API.Services.AuthServices.IAuthService.html#Haiku_API_Services_AuthServices_IAuthService_AuthenticateUserAsync_Haiku_API_Dtos_LoginDto_
+  name: AuthenticateUserAsync
+  nameWithType: IAuthService.AuthenticateUserAsync
+  fullName: Haiku.API.Services.AuthServices.IAuthService.AuthenticateUserAsync
+- uid: Haiku.API.Dtos.LoginDto
+  commentId: T:Haiku.API.Dtos.LoginDto
+  parent: Haiku.API.Dtos
+  href: Haiku.API.Dtos.LoginDto.html
+  name: LoginDto
+  nameWithType: LoginDto
+  fullName: Haiku.API.Dtos.LoginDto
+- uid: System.Threading.Tasks.Task{Haiku.API.Dtos.JWTokenDto}
+  commentId: T:System.Threading.Tasks.Task{Haiku.API.Dtos.JWTokenDto}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<JWTokenDto>
+  nameWithType: Task<JWTokenDto>
+  fullName: System.Threading.Tasks.Task<Haiku.API.Dtos.JWTokenDto>
+  nameWithType.vb: Task(Of JWTokenDto)
+  fullName.vb: System.Threading.Tasks.Task(Of Haiku.API.Dtos.JWTokenDto)
+  name.vb: Task(Of JWTokenDto)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Haiku.API.Dtos.JWTokenDto
+    name: JWTokenDto
+    href: Haiku.API.Dtos.JWTokenDto.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Haiku.API.Dtos.JWTokenDto
+    name: JWTokenDto
+    href: Haiku.API.Dtos.JWTokenDto.html
+  - name: )
+- uid: Haiku.API.Dtos
+  commentId: N:Haiku.API.Dtos
+  href: Haiku.html
+  name: Haiku.API.Dtos
+  nameWithType: Haiku.API.Dtos
+  fullName: Haiku.API.Dtos
+  spec.csharp:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Dtos
+    name: Dtos
+    href: Haiku.API.Dtos.html
+  spec.vb:
+  - uid: Haiku
+    name: Haiku
+    href: Haiku.html
+  - name: .
+  - uid: Haiku.API
+    name: API
+    href: Haiku.API.html
+  - name: .
+  - uid: Haiku.API.Dtos
+    name: Dtos
+    href: Haiku.API.Dtos.html
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

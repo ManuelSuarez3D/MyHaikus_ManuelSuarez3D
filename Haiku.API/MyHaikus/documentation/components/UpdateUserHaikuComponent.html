@@ -1,0 +1,1144 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>my-haikus documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+          <script>
+               // Blocking script to avoid flickering dark mode
+               // Dark mode toggle button
+               var useDark = window.matchMedia('(prefers-color-scheme: dark)');
+               var darkModeState = useDark.matches;
+               var $darkModeToggleSwitchers = document.querySelectorAll('.dark-mode-switch input');
+               var $darkModeToggles = document.querySelectorAll('.dark-mode-switch');
+               var darkModeStateLocal = localStorage.getItem('compodoc_darkmode-state');
+
+               function checkToggle(check) {
+                    for (var i = 0; i < $darkModeToggleSwitchers.length; i++) {
+                         $darkModeToggleSwitchers[i].checked = check;
+                    }
+               }
+
+               function toggleDarkMode(state) {
+                    if (window.localStorage) {
+                         localStorage.setItem('compodoc_darkmode-state', state);
+                    }
+
+                    checkToggle(state);
+
+                    const hasClass = document.body.classList.contains('dark');
+
+                    if (state) {
+                         for (var i = 0; i < $darkModeToggles.length; i++) {
+                              $darkModeToggles[i].classList.add('dark');
+                         }
+                         if (!hasClass) {
+                              document.body.classList.add('dark');
+                         }
+                    } else {
+                         for (var i = 0; i < $darkModeToggles.length; i++) {
+                              $darkModeToggles[i].classList.remove('dark');
+                         }
+                         if (hasClass) {
+                              document.body.classList.remove('dark');
+                         }
+                    }
+               }
+
+               useDark.addEventListener('change', function (evt) {
+                    toggleDarkMode(evt.matches);
+               });
+               if (darkModeStateLocal) {
+                    darkModeState = darkModeStateLocal === 'true';
+               }
+               toggleDarkMode(darkModeState);
+          </script>
+
+        <div class="navbar navbar-default navbar-fixed-top d-md-none p-0">
+               <div class="d-flex">
+                    <a href="../" class="navbar-brand">my-haikus documentation</a>
+                    <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+               </div>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="d-none d-md-block menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  UpdateUserHaikuComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/features/user-haikus/update-user-haiku/update-user-haiku.component.ts</code>
+</p>
+
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>A component for updating a user haiku for a user.</p>
+
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code>OnInit</code>
+                <code>OnDestroy</code>
+    </p>
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-update-userHaiku</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./update-user-haiku.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./update-user-haiku.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#errorMessages" >errorMessages</a>
+                            </li>
+                            <li>
+                                <a href="#loadingStates" >loadingStates</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#unsubscribe$" >unsubscribe$</a>
+                            </li>
+                            <li>
+                                <a href="#userHaikuDto" >userHaikuDto</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#clearMessages" >clearMessages</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#handleError" >handleError</a>
+                            </li>
+                            <li>
+                                <a href="#loadUserHaikuById" >loadUserHaikuById</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#updateUserHaiku" >updateUserHaiku</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(userHaikuService: <a href="../injectables/UserHaikuService.html" target="_self">UserHaikuService</a>, router: Router, route: ActivatedRoute)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/features/user-haikus/update-user-haiku/update-user-haiku.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>userHaikuService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserHaikuService.html" target="_self" >UserHaikuService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                    <code>Router</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                    <code>ActivatedRoute</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="clearMessages"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>clearMessages</b></span>
+                        <a href="#clearMessages"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>clearMessages()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="52"
+                                    class="link-to-prism">src/app/features/user-haikus/update-user-haiku/update-user-haiku.component.ts:52</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Clears any error messages related to add loading.</p>
+</div>
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                <p>This method does not return a value.</p>
+
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleError"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>handleError</b></span>
+                        <a href="#handleError"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>handleError(error: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, type)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="65"
+                                    class="link-to-prism">src/app/features/user-haikus/update-user-haiku/update-user-haiku.component.ts:65</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Handles errors for specific types of operations (e.g., update loading) and updates loading states.</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                                <td>Description</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>error</td>
+                                            <td>
+                                                            <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                            <td>
+                                                    <ul>
+<li>The error response or message.</li>
+</ul>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                                <td>type</td>
+                                            <td>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                            <td>
+                                                    <ul>
+<li>The type of operation encountering the error.</li>
+</ul>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                <p>This method does not return a value.</p>
+
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadUserHaikuById"></a>
+                    <span class="name">
+                        <span ><b>loadUserHaikuById</b></span>
+                        <a href="#loadUserHaikuById"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>loadUserHaikuById(userHaikuId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="77"
+                                    class="link-to-prism">src/app/features/user-haikus/update-user-haiku/update-user-haiku.component.ts:77</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Loads the specific user haiku by the ID and assigns it to the component&#39;s <code>userHaikuDto</code>.</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                                <td>Description</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>userHaikuId</td>
+                                            <td>
+                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                            <td>
+                                                    <ul>
+<li>The ID of the user haiku to load.</li>
+</ul>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                <p>This method does not return a value.</p>
+
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="35"
+                                    class="link-to-prism">src/app/features/user-haikus/update-user-haiku/update-user-haiku.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="40"
+                                    class="link-to-prism">src/app/features/user-haikus/update-user-haiku/update-user-haiku.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateUserHaiku"></a>
+                    <span class="name">
+                        <span ><b>updateUserHaiku</b></span>
+                        <a href="#updateUserHaiku"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateUserHaiku(updatedUserHaiku: <a href="../interfaces/UserHaikuDto.html" target="_self">UserHaikuDto</a>)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="100"
+                                    class="link-to-prism">src/app/features/user-haikus/update-user-haiku/update-user-haiku.component.ts:100</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Updates an existing user haiku and navigates to the user haiku view page.</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                                <td>Description</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>updatedUserHaiku</td>
+                                            <td>
+                                                            <code><a href="../interfaces/UserHaikuDto.html" target="_self" >UserHaikuDto</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                            <td>
+                                                    <ul>
+<li>The data transfer object containing the updated user haiku details.</li>
+</ul>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                <p>This method does not return a value.</p>
+
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="errorMessages"></a>
+                    <span class="name">
+                        <span ><b>errorMessages</b></span>
+                        <a href="#errorMessages"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    update: null,
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/features/user-haikus/update-user-haiku/update-user-haiku.component.ts:21</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadingStates"></a>
+                    <span class="name">
+                        <span ><b>loadingStates</b></span>
+                        <a href="#loadingStates"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    update: false,
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/features/user-haikus/update-user-haiku/update-user-haiku.component.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="unsubscribe$"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>unsubscribe$</b></span>
+                        <a href="#unsubscribe$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Subject&lt;void&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/features/user-haikus/update-user-haiku/update-user-haiku.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userHaikuDto"></a>
+                    <span class="name">
+                        <span ><b>userHaikuDto</b></span>
+                        <a href="#userHaikuDto"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/UserHaikuDto.html" target="_self" >UserHaikuDto</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{ id: 0, title: &#x27;&#x27;, lineOne: &#x27;&#x27;, lineTwo: &#x27;&#x27;, lineThree: &#x27;&#x27;, userId: 0 }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/features/user-haikus/update-user-haiku/update-user-haiku.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Output, EventEmitter, OnDestroy, OnInit } from &quot;@angular/core&quot;;
+import { FormGroup, FormBuilder, Validators } from &quot;@angular/forms&quot;;
+import { Subject, takeUntil, finalize } from &quot;rxjs&quot;;
+import { Router, ActivatedRoute } from &quot;@angular/router&quot;;
+import { UserHaikuService } from &quot;../../../core/services/user-haiku.service&quot;;
+import { UserService } from &quot;../../../core/services/user.service&quot;;
+import { UserHaikuDto } from &quot;../../../shared/models/userHaikuDto.model&quot;;
+
+/**
+ * A component for updating a user haiku for a user.
+*/
+@Component({
+  selector: &#x27;app-update-userHaiku&#x27;,
+  templateUrl: &#x27;./update-user-haiku.component.html&#x27;,
+  styleUrls: [&#x27;./update-user-haiku.component.css&#x27;]
+})
+export class UpdateUserHaikuComponent implements OnInit, OnDestroy {
+  private unsubscribe$ &#x3D; new Subject&lt;void&gt;();
+  userHaikuDto: UserHaikuDto &#x3D; { id: 0, title: &#x27;&#x27;, lineOne: &#x27;&#x27;, lineTwo: &#x27;&#x27;, lineThree: &#x27;&#x27;, userId: 0 };
+
+  errorMessages &#x3D; {
+    update: null,
+  };
+
+  loadingStates &#x3D; {
+    update: false,
+  };
+
+  constructor(
+    private userHaikuService: UserHaikuService,
+    private router: Router,
+    private route: ActivatedRoute
+  ) { }
+
+  ngOnDestroy(): void {
+    this.unsubscribe$.next();
+    this.unsubscribe$.complete();
+  }
+
+  ngOnInit(): void {
+    this.loadingStates.update &#x3D; true;
+    this.clearMessages();
+
+    const userHaikuIdToUpdate &#x3D; +this.route.snapshot.paramMap.get(&#x27;id&#x27;)!;
+    this.loadUserHaikuById(userHaikuIdToUpdate);
+  }
+
+  /**
+   * Clears any error messages related to add loading.
+   * @returns {void} This method does not return a value.
+  */
+  private clearMessages(): void {
+    this.errorMessages &#x3D; {
+      update: null,
+    };
+  }
+
+  /**
+   * Handles errors for specific types of operations (e.g., update loading) and updates loading states.
+   * 
+   * @param {any} error - The error response or message.
+   * @param {&#x27;update&#x27;} type - The type of operation encountering the error.
+   * @returns {void} This method does not return a value.
+  */
+  private handleError(error: any, type: &#x27;update&#x27;): void {
+    this.loadingStates[type] &#x3D; false;
+    this.errorMessages[type] &#x3D; error.message || &#x27;An unknown error occurred, please try again later.&#x27;;
+  }
+
+  /**
+   * Loads the specific user haiku by the ID and assigns it to the component&#x27;s &#x60;userHaikuDto&#x60;.
+   * 
+   * @param {number} userHaikuId - The ID of the user haiku to load.
+   * @returns {void} This method does not return a value.
+   * @throws Will call &#x60;handleError&#x60; with an error message on failure.
+  */
+  loadUserHaikuById(userHaikuId: number): void {
+    this.loadingStates.update &#x3D; true;
+
+    this.userHaikuService.getUserHaikuById(userHaikuId).pipe(
+      takeUntil(this.unsubscribe$),
+      finalize(() &#x3D;&gt; {
+        this.loadingStates.update &#x3D; false;
+      })
+    ).subscribe({
+      next: userHaiku &#x3D;&gt; {
+        this.userHaikuDto &#x3D; userHaiku;
+      },
+      error: error &#x3D;&gt; this.handleError(error, &#x27;update&#x27;)
+    });
+  }
+
+  /**
+   * Updates an existing user haiku and navigates to the user haiku view page.
+   * 
+   * @param {UserHaikuDto} updatedUserHaiku - The data transfer object containing the updated user haiku details.
+   * @returns {void} This method does not return a value.
+   * @throws Will call &#x60;handleError&#x60; with an error message on failure.
+  */
+  updateUserHaiku(updatedUserHaiku: UserHaikuDto): void {
+    this.loadingStates.update &#x3D; true;
+
+    this.userHaikuService.updateUserHaiku(updatedUserHaiku.id, updatedUserHaiku).pipe(
+      takeUntil(this.unsubscribe$),
+      finalize(() &#x3D;&gt; {
+        this.loadingStates.update &#x3D; false;
+      })
+    ).subscribe({
+      next: () &#x3D;&gt; {
+        this.router.navigate([&#x27;/view-user-haiku&#x27;, updatedUserHaiku.id]);
+      },
+      error: error &#x3D;&gt; this.handleError(error, &#x27;update&#x27;)
+    });
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;container mt-5 text-center&quot;&gt;
+  &lt;div class&#x3D;&quot;row mt-5&quot;&gt;
+    &lt;div class&#x3D;&quot;col-md-6 offset-md-3&quot;&gt;
+      &lt;div class&#x3D;&quot;card&quot;&gt;
+        &lt;div class&#x3D;&quot;card-header&quot;&gt;
+          &lt;h3 class&#x3D;&quot;mb-0&quot;&gt;&lt;i class&#x3D;&quot;fas fa-pen-fancy ms-n2&quot;&gt;&lt;/i&gt; Update User Haiku&lt;/h3&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;card-body&quot;&gt;
+          &lt;div *ngIf&#x3D;&quot;errorMessages.update&quot; class&#x3D;&quot;alert alert-danger mt-3&quot;&gt;{{ errorMessages.update }}&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;p-4&quot;&gt;
+          &lt;ul class&#x3D;&quot;list-unstyled&quot;&gt;
+            &lt;li class&#x3D;&quot;mb-2&quot;&gt;
+              &lt;span class&#x3D;&quot;fw-bold text-muted&quot; style&#x3D;&quot;overflow: auto; white-space: nowrap;&quot;&gt;
+                &lt;i class&#x3D;&quot;fas fa-pencil-alt me-1&quot;&gt;&lt;/i&gt; Title
+              &lt;/span&gt;: Minimum length of 2 characters, maximum of 50 characters. If left empty, it defaults to &quot;Untitled&quot;.
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;span class&#x3D;&quot;fw-bold text-muted&quot; style&#x3D;&quot;overflow: auto; white-space: nowrap;&quot;&gt;
+                &lt;i class&#x3D;&quot;fas fa-pencil-alt me-1&quot;&gt;&lt;/i&gt; Line One
+              &lt;/span&gt;: Total length of 5 syllables.
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;span class&#x3D;&quot;fw-bold text-muted&quot; style&#x3D;&quot;overflow: auto; white-space: nowrap;&quot;&gt;
+                &lt;i class&#x3D;&quot;fas fa-pencil-alt me-1&quot;&gt;&lt;/i&gt; Line Two
+              &lt;/span&gt;: Total length of 7 syllables.
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;span class&#x3D;&quot;fw-bold text-muted&quot; style&#x3D;&quot;overflow: auto; white-space: nowrap;&quot;&gt;
+                &lt;i class&#x3D;&quot;fas fa-pencil-alt me-1&quot;&gt;&lt;/i&gt; Line Three
+              &lt;/span&gt;: Total length of 5 syllables.
+            &lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;p class&#x3D;&quot;lead&quot;&gt;Fields marked with * are required.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;ng-container *ngIf&#x3D;&quot;loadingStates.update; else updateTemplate&quot;&gt;
+          &lt;div class&#x3D;&quot;d-flex justify-content-center align-items-center mt-3&quot; style&#x3D;&quot;height: 100px;&quot;&gt;
+            &lt;div class&#x3D;&quot;spinner-border text-primary&quot; role&#x3D;&quot;status&quot;&gt;
+              &lt;span class&#x3D;&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/ng-container&gt;
+        &lt;ng-template #updateTemplate&gt;
+          &lt;div class&#x3D;&quot;card-body&quot;&gt;
+            &lt;app-update-user-haiku-form [userHaikuDto]&#x3D;&quot;userHaikuDto&quot; (formSubmit)&#x3D;&quot;updateUserHaiku($event)&quot;&gt;&lt;/app-update-user-haiku-form&gt;
+          &lt;/div&gt;
+        &lt;/ng-template&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./update-user-haiku.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="container mt-5 text-center">  <div class="row mt-5">    <div class="col-md-6 offset-md-3">      <div class="card">        <div class="card-header">          <h3 class="mb-0"><i class="fas fa-pen-fancy ms-n2"></i> Update User Haiku</h3>        </div>        <div class="card-body">          <div *ngIf="errorMessages.update" class="alert alert-danger mt-3">{{ errorMessages.update }}</div>        </div>        <div class="p-4">          <ul class="list-unstyled">            <li class="mb-2">              <span class="fw-bold text-muted" style="overflow: auto; white-space: nowrap;">                <i class="fas fa-pencil-alt me-1"></i> Title              </span>: Minimum length of 2 characters, maximum of 50 characters. If left empty, it defaults to "Untitled".            </li>            <li>              <span class="fw-bold text-muted" style="overflow: auto; white-space: nowrap;">                <i class="fas fa-pencil-alt me-1"></i> Line One              </span>: Total length of 5 syllables.            </li>            <li>              <span class="fw-bold text-muted" style="overflow: auto; white-space: nowrap;">                <i class="fas fa-pencil-alt me-1"></i> Line Two              </span>: Total length of 7 syllables.            </li>            <li>              <span class="fw-bold text-muted" style="overflow: auto; white-space: nowrap;">                <i class="fas fa-pencil-alt me-1"></i> Line Three              </span>: Total length of 5 syllables.            </li>          </ul>          <p class="lead">Fields marked with * are required.</p>        </div>        <ng-container *ngIf="loadingStates.update; else updateTemplate">          <div class="d-flex justify-content-center align-items-center mt-3" style="height: 100px;">            <div class="spinner-border text-primary" role="status">              <span class="sr-only">Loading...</span>            </div>          </div>        </ng-container>        <ng-template #updateTemplate>          <div class="card-body">            <app-update-user-haiku-form [userHaikuDto]="userHaikuDto" (formSubmit)="updateUserHaiku($event)"></app-update-user-haiku-form>          </div>        </ng-template>      </div>    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AddAuthorComponent', 'selector': 'app-add-author'},{'name': 'AddAuthorFormComponent', 'selector': 'app-add-author-form'},{'name': 'AddAuthorHaikuComponent', 'selector': 'app-add-author-haiku'},{'name': 'AddAuthorHaikuFormComponent', 'selector': 'app-add-author-haiku-form'},{'name': 'AddUserHaikuComponent', 'selector': 'app-add-user-haiku'},{'name': 'AddUserHaikuFormComponent', 'selector': 'app-add-user-haiku-form'},{'name': 'AllAuthorHaikusComponent', 'selector': 'app-all-author-haikus'},{'name': 'AllAuthorsComponent', 'selector': 'app-all-authors'},{'name': 'AllUserHaikusComponent', 'selector': 'app-all-user-haikus'},{'name': 'AllUsersComponent', 'selector': 'app-all-users'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LoginFormComponent', 'selector': 'app-login-form'},{'name': 'NotFoundComponent', 'selector': 'app-not-found'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'RegisterFormComponent', 'selector': 'app-register-form'},{'name': 'SingleAuthorComponent', 'selector': 'app-single-author'},{'name': 'SingleAuthorHaikuComponent', 'selector': 'app-single-author-haiku'},{'name': 'SingleUserComponent', 'selector': 'app-single-user'},{'name': 'SingleUserHaikuComponent', 'selector': 'app-single-user-haiku'},{'name': 'UpdateAuthorComponent', 'selector': 'app-update-author'},{'name': 'UpdateAuthorFormComponent', 'selector': 'app-update-author-form'},{'name': 'UpdateAuthorHaikuComponent', 'selector': 'app-update-authorHaiku'},{'name': 'UpdateAuthorHaikuFormComponent', 'selector': 'app-update-author-haiku-form'},{'name': 'UpdateProfileComponent', 'selector': 'app-update-profile'},{'name': 'UpdateProfileFormComponent', 'selector': 'app-update-profile-form'},{'name': 'UpdateUserHaikuComponent', 'selector': 'app-update-userHaiku'},{'name': 'UpdateUserHaikuFormComponent', 'selector': 'app-update-user-haiku-form'}];
+    var DIRECTIVES = [{'name': 'IsAuthorizedDirective', 'selector': '[appIsAuthorized]'},{'name': 'IsUnAuthenticatedDirective', 'selector': '[appIsUnAuthenticated]'}];
+    var ACTUAL_COMPONENT = {'name': 'UpdateUserHaikuComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'UpdateUserHaikuComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script>
+               $darkModeToggleSwitchers = document.querySelectorAll('.dark-mode-switch input');
+               checkToggle(darkModeState);
+               if ($darkModeToggleSwitchers.length > 0) {
+                    for (var i = 0; i < $darkModeToggleSwitchers.length; i++) {
+                         $darkModeToggleSwitchers[i].addEventListener('change', function (event) {
+                              darkModeState = !darkModeState;
+                              toggleDarkMode(darkModeState);
+                         });
+                    }
+               }
+          </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

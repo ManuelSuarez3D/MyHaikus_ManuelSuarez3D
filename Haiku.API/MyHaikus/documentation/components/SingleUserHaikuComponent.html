@@ -1,0 +1,2403 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>my-haikus documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+          <script>
+               // Blocking script to avoid flickering dark mode
+               // Dark mode toggle button
+               var useDark = window.matchMedia('(prefers-color-scheme: dark)');
+               var darkModeState = useDark.matches;
+               var $darkModeToggleSwitchers = document.querySelectorAll('.dark-mode-switch input');
+               var $darkModeToggles = document.querySelectorAll('.dark-mode-switch');
+               var darkModeStateLocal = localStorage.getItem('compodoc_darkmode-state');
+
+               function checkToggle(check) {
+                    for (var i = 0; i < $darkModeToggleSwitchers.length; i++) {
+                         $darkModeToggleSwitchers[i].checked = check;
+                    }
+               }
+
+               function toggleDarkMode(state) {
+                    if (window.localStorage) {
+                         localStorage.setItem('compodoc_darkmode-state', state);
+                    }
+
+                    checkToggle(state);
+
+                    const hasClass = document.body.classList.contains('dark');
+
+                    if (state) {
+                         for (var i = 0; i < $darkModeToggles.length; i++) {
+                              $darkModeToggles[i].classList.add('dark');
+                         }
+                         if (!hasClass) {
+                              document.body.classList.add('dark');
+                         }
+                    } else {
+                         for (var i = 0; i < $darkModeToggles.length; i++) {
+                              $darkModeToggles[i].classList.remove('dark');
+                         }
+                         if (hasClass) {
+                              document.body.classList.remove('dark');
+                         }
+                    }
+               }
+
+               useDark.addEventListener('change', function (evt) {
+                    toggleDarkMode(evt.matches);
+               });
+               if (darkModeStateLocal) {
+                    darkModeState = darkModeStateLocal === 'true';
+               }
+               toggleDarkMode(darkModeState);
+          </script>
+
+        <div class="navbar navbar-default navbar-fixed-top d-md-none p-0">
+               <div class="d-flex">
+                    <a href="../" class="navbar-brand">my-haikus documentation</a>
+                    <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+               </div>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="d-none d-md-block menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  SingleUserHaikuComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/features/user-haikus/single-user-haiku/single-user-haiku.component.ts</code>
+</p>
+
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Component for displaying and managing a user haiku and user.</p>
+
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code>OnInit</code>
+                <code>OnDestroy</code>
+    </p>
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-single-user-haiku</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./single-user-haiku.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./single-user-haiku.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#accountDto" >accountDto</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#adminRole" >adminRole</a>
+                            </li>
+                            <li>
+                                <a href="#currentUserId" >currentUserId</a>
+                            </li>
+                            <li>
+                                <a href="#currentUserIsAdmin" >currentUserIsAdmin</a>
+                            </li>
+                            <li>
+                                <a href="#errorMessages" >errorMessages</a>
+                            </li>
+                            <li>
+                                <a href="#loadingStates" >loadingStates</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#unsubscribe$" >unsubscribe$</a>
+                            </li>
+                            <li>
+                                <a href="#userHaikuDto" >userHaikuDto</a>
+                            </li>
+                            <li>
+                                <a href="#userHaikuId" >userHaikuId</a>
+                            </li>
+                            <li>
+                                <a href="#userHaikuIdToDelete" >userHaikuIdToDelete</a>
+                            </li>
+                            <li>
+                                <a href="#userIdToDelete" >userIdToDelete</a>
+                            </li>
+                            <li>
+                                <a href="#userToDeleteRoleId" >userToDeleteRoleId</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#clearMessages" >clearMessages</a>
+                            </li>
+                            <li>
+                                <a href="#deleteUser" >deleteUser</a>
+                            </li>
+                            <li>
+                                <a href="#deleteUserHaiku" >deleteUserHaiku</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#handleError" >handleError</a>
+                            </li>
+                            <li>
+                                <a href="#isAdmin" >isAdmin</a>
+                            </li>
+                            <li>
+                                <a href="#isNotOwner" >isNotOwner</a>
+                            </li>
+                            <li>
+                                <a href="#loadUserAndProfile" >loadUserAndProfile</a>
+                            </li>
+                            <li>
+                                <a href="#loadUserHaikuById" >loadUserHaikuById</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#openUserHaikuModal" >openUserHaikuModal</a>
+                            </li>
+                            <li>
+                                <a href="#openUserModal" >openUserModal</a>
+                            </li>
+                            <li>
+                                <a href="#updateUserHaiku" >updateUserHaiku</a>
+                            </li>
+                            <li>
+                                <a href="#userIsNotAdmin" >userIsNotAdmin</a>
+                            </li>
+                            <li>
+                                <a href="#viewUser" >viewUser</a>
+                            </li>
+                            <li>
+                                <a href="#viewUserHaikus" >viewUserHaikus</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(route: ActivatedRoute, userHaikuService: <a href="../injectables/UserHaikuService.html" target="_self">UserHaikuService</a>, userService: <a href="../injectables/UserService.html" target="_self">UserService</a>, profileService: <a href="../injectables/ProfileService.html" target="_self">ProfileService</a>, imageService: <a href="../injectables/ImageService.html" target="_self">ImageService</a>, authenticationService: <a href="../injectables/AuthenticationService.html" target="_self">AuthenticationService</a>, authorizationService: <a href="../injectables/AuthorizationService.html" target="_self">AuthorizationService</a>, navigationService: <a href="../injectables/NavigationService.html" target="_self">NavigationService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/features/user-haikus/single-user-haiku/single-user-haiku.component.ts:44</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                    <code>ActivatedRoute</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userHaikuService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserHaikuService.html" target="_self" >UserHaikuService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>profileService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ProfileService.html" target="_self" >ProfileService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>imageService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ImageService.html" target="_self" >ImageService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authenticationService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthenticationService.html" target="_self" >AuthenticationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authorizationService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthorizationService.html" target="_self" >AuthorizationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>navigationService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NavigationService.html" target="_self" >NavigationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="clearMessages"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>clearMessages</b></span>
+                        <a href="#clearMessages"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>clearMessages()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="78"
+                                    class="link-to-prism">src/app/features/user-haikus/single-user-haiku/single-user-haiku.component.ts:78</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Clears any error messages related to author haikus loading.</p>
+</div>
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                <p>This method does not return a value.</p>
+
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteUser"></a>
+                    <span class="name">
+                        <span ><b>deleteUser</b></span>
+                        <a href="#deleteUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteUser()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="193"
+                                    class="link-to-prism">src/app/features/user-haikus/single-user-haiku/single-user-haiku.component.ts:193</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Deletes a user based on the user ID stored in <code>userToDeleteRoleId</code>.</p>
+</div>
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                <p>This method does not return a value.</p>
+
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteUserHaiku"></a>
+                    <span class="name">
+                        <span ><b>deleteUserHaiku</b></span>
+                        <a href="#deleteUserHaiku"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteUserHaiku()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="170"
+                                    class="link-to-prism">src/app/features/user-haikus/single-user-haiku/single-user-haiku.component.ts:170</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Deletes a user haiku based on the user haiku ID stored in <code>userHaikuIdToDelete</code>.</p>
+</div>
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                <p>This method does not return a value.</p>
+
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleError"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>handleError</b></span>
+                        <a href="#handleError"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>handleError(error: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, type: "user" | "userHaiku")</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="93"
+                                    class="link-to-prism">src/app/features/user-haikus/single-user-haiku/single-user-haiku.component.ts:93</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Handles errors for specific types of operations (e.g., user, user haiku loading) and updates loading states.</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                                <td>Description</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>error</td>
+                                            <td>
+                                                            <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                            <td>
+                                                    <ul>
+<li>The error response or message.</li>
+</ul>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                                <td>type</td>
+                                            <td>
+                                                        <code>&quot;user&quot; | &quot;userHaiku&quot;</code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                            <td>
+                                                    <ul>
+<li>The type of operation encountering the error.</li>
+</ul>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                <p>This method does not return a value.</p>
+
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isAdmin"></a>
+                    <span class="name">
+                        <span ><b>isAdmin</b></span>
+                        <a href="#isAdmin"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isAdmin()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="298"
+                                    class="link-to-prism">src/app/features/user-haikus/single-user-haiku/single-user-haiku.component.ts:298</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Checks if the current user is of role Admin.</p>
+</div>
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                <ul>
+<li><code>true</code> if the current user is an admin, <code>false</code> otherwise.</li>
+</ul>
+
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isNotOwner"></a>
+                    <span class="name">
+                        <span ><b>isNotOwner</b></span>
+                        <a href="#isNotOwner"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isNotOwner(ownerId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="286"
+                                    class="link-to-prism">src/app/features/user-haikus/single-user-haiku/single-user-haiku.component.ts:286</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Checks if the given owner ID is not the current user.</p>
+<p>This method compares the provided owner ID with the fetched user ID.</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>ownerId</td>
+                                            <td>
+                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                <ul>
+<li><code>true</code> if the owner ID does not belong to the user, <code>false</code> otherwise.</li>
+</ul>
+
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadUserAndProfile"></a>
+                    <span class="name">
+                        <span ><b>loadUserAndProfile</b></span>
+                        <a href="#loadUserAndProfile"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>loadUserAndProfile(userId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="127"
+                                    class="link-to-prism">src/app/features/user-haikus/single-user-haiku/single-user-haiku.component.ts:127</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Loads a user by the user ID.</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                                <td>Description</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>userId</td>
+                                            <td>
+                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                            <td>
+                                                    <ul>
+<li>The ID of the user to load.</li>
+</ul>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                <p>This method does not return a value.</p>
+
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadUserHaikuById"></a>
+                    <span class="name">
+                        <span ><b>loadUserHaikuById</b></span>
+                        <a href="#loadUserHaikuById"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>loadUserHaikuById(userHaikuId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="104"
+                                    class="link-to-prism">src/app/features/user-haikus/single-user-haiku/single-user-haiku.component.ts:104</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Loads user by user ID, proceeds to load user haiku.</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                                <td>Description</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>userHaikuId</td>
+                                            <td>
+                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                            <td>
+                                                    <ul>
+<li>The ID of the user to load</li>
+</ul>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                <p>This method does not return a value.</p>
+
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="57"
+                                    class="link-to-prism">src/app/features/user-haikus/single-user-haiku/single-user-haiku.component.ts:57</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="62"
+                                    class="link-to-prism">src/app/features/user-haikus/single-user-haiku/single-user-haiku.component.ts:62</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openUserHaikuModal"></a>
+                    <span class="name">
+                        <span ><b>openUserHaikuModal</b></span>
+                        <a href="#openUserHaikuModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openUserHaikuModal(userHaikuId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="259"
+                                    class="link-to-prism">src/app/features/user-haikus/single-user-haiku/single-user-haiku.component.ts:259</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Opens a modal for user haiku deletion confirmation by setting the user haiku ID to delete.</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                                <td>Description</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>userHaikuId</td>
+                                            <td>
+                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                            <td>
+                                                    <ul>
+<li>The ID of the user haiku to be deleted.</li>
+</ul>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                <p>This method does not return a value.</p>
+
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openUserModal"></a>
+                    <span class="name">
+                        <span ><b>openUserModal</b></span>
+                        <a href="#openUserModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openUserModal(userId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, roleId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="248"
+                                    class="link-to-prism">src/app/features/user-haikus/single-user-haiku/single-user-haiku.component.ts:248</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Opens a modal for user deletion confirmation by setting the user ID to delete.</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                                <td>Description</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>userId</td>
+                                            <td>
+                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                            <td>
+                                                    <ul>
+<li>The ID of the user to be deleted.</li>
+</ul>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                                <td>roleId</td>
+                                            <td>
+                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                            <td>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                <p>This method does not return a value.</p>
+
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateUserHaiku"></a>
+                    <span class="name">
+                        <span ><b>updateUserHaiku</b></span>
+                        <a href="#updateUserHaiku"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateUserHaiku(userHaikuId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="238"
+                                    class="link-to-prism">src/app/features/user-haikus/single-user-haiku/single-user-haiku.component.ts:238</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Navigates the User Haiku update by ID.</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>userHaikuId</td>
+                                            <td>
+                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                <p>This method does not return a value.</p>
+
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userIsNotAdmin"></a>
+                    <span class="name">
+                        <span ><b>userIsNotAdmin</b></span>
+                        <a href="#userIsNotAdmin"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>userIsNotAdmin(roleId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="271"
+                                    class="link-to-prism">src/app/features/user-haikus/single-user-haiku/single-user-haiku.component.ts:271</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Checks if the given role ID is not an admin role.</p>
+<p>This method compares the provided role ID with the defined admin role ID.</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                                <td>Description</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>roleId</td>
+                                            <td>
+                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                            <td>
+                                                    <ul>
+<li>The role ID to check against the admin role.</li>
+</ul>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                <ul>
+<li><code>true</code> if the role ID is not an admin role, <code>false</code> otherwise.</li>
+</ul>
+
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="viewUser"></a>
+                    <span class="name">
+                        <span ><b>viewUser</b></span>
+                        <a href="#viewUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>viewUser(userId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="219"
+                                    class="link-to-prism">src/app/features/user-haikus/single-user-haiku/single-user-haiku.component.ts:219</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Navigates the User view by ID.</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                                <td>Description</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>userId</td>
+                                            <td>
+                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                            <td>
+                                                    <ul>
+<li>The User ID.</li>
+</ul>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                <p>This method does not return a value.</p>
+
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="viewUserHaikus"></a>
+                    <span class="name">
+                        <span ><b>viewUserHaikus</b></span>
+                        <a href="#viewUserHaikus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>viewUserHaikus()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="228"
+                                    class="link-to-prism">src/app/features/user-haikus/single-user-haiku/single-user-haiku.component.ts:228</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-description"><p>Navigates to all User Haikus.</p>
+</div>
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                <p>This method does not return a value.</p>
+
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="accountDto"></a>
+                    <span class="name">
+                        <span ><b>accountDto</b></span>
+                        <a href="#accountDto"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/AccountDto.html" target="_self" >AccountDto</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{ id: 0, username: &#x27;&#x27;, password: &#x27;&#x27;, bio: &#x27;&#x27;, filePath: &#x27;&#x27;, roleId: 0 }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/features/user-haikus/single-user-haiku/single-user-haiku.component.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="adminRole"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>adminRole</b></span>
+                        <a href="#adminRole"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>1</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/features/user-haikus/single-user-haiku/single-user-haiku.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentUserId"></a>
+                    <span class="name">
+                        <span ><b>currentUserId</b></span>
+                        <a href="#currentUserId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>number | null</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>null</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/features/user-haikus/single-user-haiku/single-user-haiku.component.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentUserIsAdmin"></a>
+                    <span class="name">
+                        <span ><b>currentUserIsAdmin</b></span>
+                        <a href="#currentUserIsAdmin"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>boolean | null</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>null</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/features/user-haikus/single-user-haiku/single-user-haiku.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="errorMessages"></a>
+                    <span class="name">
+                        <span ><b>errorMessages</b></span>
+                        <a href="#errorMessages"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>literal type</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    user: null,
+    userHaiku: null,
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/features/user-haikus/single-user-haiku/single-user-haiku.component.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadingStates"></a>
+                    <span class="name">
+                        <span ><b>loadingStates</b></span>
+                        <a href="#loadingStates"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    user: false,
+    userHaiku: false
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/features/user-haikus/single-user-haiku/single-user-haiku.component.ts:41</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="unsubscribe$"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>unsubscribe$</b></span>
+                        <a href="#unsubscribe$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Subject&lt;void&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/features/user-haikus/single-user-haiku/single-user-haiku.component.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userHaikuDto"></a>
+                    <span class="name">
+                        <span ><b>userHaikuDto</b></span>
+                        <a href="#userHaikuDto"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/UserHaikuDto.html" target="_self" >UserHaikuDto</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{ id: 0, title: &#x27;&#x27;, lineOne: &#x27;&#x27;, lineTwo: &#x27;&#x27;, lineThree: &#x27;&#x27;, userId: 0 }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/features/user-haikus/single-user-haiku/single-user-haiku.component.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userHaikuId"></a>
+                    <span class="name">
+                        <span ><b>userHaikuId</b></span>
+                        <a href="#userHaikuId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>number | null</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>null</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/features/user-haikus/single-user-haiku/single-user-haiku.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userHaikuIdToDelete"></a>
+                    <span class="name">
+                        <span ><b>userHaikuIdToDelete</b></span>
+                        <a href="#userHaikuIdToDelete"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>number | null</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>null</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/features/user-haikus/single-user-haiku/single-user-haiku.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userIdToDelete"></a>
+                    <span class="name">
+                        <span ><b>userIdToDelete</b></span>
+                        <a href="#userIdToDelete"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>number | null</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>null</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/features/user-haikus/single-user-haiku/single-user-haiku.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userToDeleteRoleId"></a>
+                    <span class="name">
+                        <span ><b>userToDeleteRoleId</b></span>
+                        <a href="#userToDeleteRoleId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>number | null</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>null</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/features/user-haikus/single-user-haiku/single-user-haiku.component.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, OnDestroy } from &#x27;@angular/core&#x27;;
+import { ActivatedRoute } from &#x27;@angular/router&#x27;;
+import { finalize, map, of, Subject, switchMap, takeUntil } from &#x27;rxjs&#x27;;
+import { NavigationService } from &#x27;../../../core/services/navigation.service&#x27;;
+import { ProfileService } from &#x27;../../../core/services/profile.service&#x27;;
+import { UserHaikuService } from &#x27;../../../core/services/user-haiku.service&#x27;;
+import { UserService } from &#x27;../../../core/services/user.service&#x27;;
+import { AccountDto } from &#x27;../../../shared/models/accountDto.model&#x27;;
+import { UserHaikuDto } from &#x27;../../../shared/models/userHaikuDto.model&#x27;;
+import { ImageService } from &#x27;../../../core/services/image.service&#x27;;
+import { AuthenticationService } from &#x27;../../../core/services/authentication.service&#x27;;
+import { AuthorizationService } from &#x27;../../../core/services/authorization.service&#x27;;
+
+/**
+ * Component for displaying and managing a user haiku and user.
+*/
+@Component({
+  selector: &#x27;app-single-user-haiku&#x27;,
+  templateUrl: &#x27;./single-user-haiku.component.html&#x27;,
+  styleUrls: [&#x27;./single-user-haiku.component.css&#x27;]
+})
+export class SingleUserHaikuComponent implements OnInit, OnDestroy {
+  private unsubscribe$ &#x3D; new Subject&lt;void&gt;();
+  private readonly adminRole &#x3D; 1;
+
+  userHaikuDto: UserHaikuDto &#x3D; { id: 0, title: &#x27;&#x27;, lineOne: &#x27;&#x27;, lineTwo: &#x27;&#x27;, lineThree: &#x27;&#x27;, userId: 0 };
+  accountDto: AccountDto &#x3D; { id: 0, username: &#x27;&#x27;, password: &#x27;&#x27;, bio: &#x27;&#x27;, filePath: &#x27;&#x27;, roleId: 0 };
+
+  currentUserIsAdmin: boolean | null &#x3D; null;
+  currentUserId: number | null &#x3D; null;
+  userHaikuId: number | null &#x3D; null;
+  userHaikuIdToDelete: number | null &#x3D; null;
+  userIdToDelete: number | null &#x3D; null;
+  userToDeleteRoleId: number | null &#x3D; null;
+
+  errorMessages: { user: string | null, userHaiku: string | null } &#x3D; {
+    user: null,
+    userHaiku: null,
+  };
+
+  loadingStates &#x3D; {
+    user: false,
+    userHaiku: false
+  };
+
+  constructor(
+    private route: ActivatedRoute,
+    private userHaikuService: UserHaikuService,
+    private userService: UserService,
+    private profileService: ProfileService,
+    private imageService: ImageService,
+    private authenticationService: AuthenticationService,
+    private authorizationService: AuthorizationService,
+    private navigationService: NavigationService,
+  ) { }
+
+  ngOnDestroy(): void {
+    this.unsubscribe$.next();
+    this.unsubscribe$.complete();
+  }
+
+  ngOnInit(): void {
+    this.loadingStates.user &#x3D; true;
+    this.clearMessages();
+
+    this.userHaikuId &#x3D; Number(this.route.snapshot.paramMap.get(&#x27;id&#x27;));
+    this.currentUserId &#x3D; this.authenticationService.getUserId();
+    this.currentUserIsAdmin &#x3D; this.authorizationService.isAuthorizedForRoles([&quot;Admin&quot;]);
+
+    if (this.userHaikuId)
+      this.loadUserHaikuById(this.userHaikuId);
+  }
+
+  /**
+   * Clears any error messages related to author haikus loading.
+   * @returns {void} This method does not return a value.
+  */
+  private clearMessages(): void {
+    this.errorMessages &#x3D; {
+      user: null,
+      userHaiku: null,
+    };
+  }
+
+  /**
+   * Handles errors for specific types of operations (e.g., user, user haiku loading) and updates loading states.
+   * 
+   * @param {any} error - The error response or message.
+   * @param {&#x27;user&#x27;} type - The type of operation encountering the error.
+   * @param {&#x27;userHaiku&#x27;} type - The type of operation encountering the error.
+   * @returns {void} This method does not return a value.
+  */
+  private handleError(error: any, type: &#x27;user&#x27; | &#x27;userHaiku&#x27;): void {
+    this.loadingStates[type] &#x3D; false;
+    this.errorMessages[type] &#x3D; error.message || &#x27;An unknown error occurred, please try again later.&#x27;;
+  }
+
+  /**
+   * Loads user by user ID, proceeds to load user haiku.
+   * @param {number} userHaikuId - The ID of the user to load
+   * @returns {void} This method does not return a value.
+   * @throws Will call &#x60;handleError&#x60; with an error message on failure.
+  */
+  loadUserHaikuById(userHaikuId: number): void {
+    this.loadingStates.userHaiku &#x3D; true;
+
+    this.userHaikuService.getUserHaikuById(userHaikuId).pipe(
+      takeUntil(this.unsubscribe$),
+      finalize(() &#x3D;&gt; {
+        this.loadingStates.userHaiku &#x3D; false;
+      })
+    ).subscribe({
+      next: userHaiku &#x3D;&gt; {
+        this.userHaikuDto &#x3D; userHaiku;
+        this.loadUserAndProfile(userHaiku.userId);
+      },
+      error: error &#x3D;&gt; this.handleError(error, &#x27;userHaiku&#x27;)
+    });
+  }
+
+  /**
+   * Loads a user by the user ID.
+   * @param {number} userId - The ID of the user to load.
+   * @returns {void} This method does not return a value.
+   * @throws Will call &#x60;handleError&#x60; with an error message on failure.
+  */
+  loadUserAndProfile(userId: number): void {
+    this.loadingStates.user &#x3D; true;
+
+    this.userService.getUserById(userId).pipe(
+      takeUntil(this.unsubscribe$),
+      switchMap(user &#x3D;&gt;
+        this.profileService.getProfileByUserId(user.id).pipe(
+          takeUntil(this.unsubscribe$),
+          switchMap(profile &#x3D;&gt; {
+            // Fetch the image by the imageId in the profile
+            if (profile?.imageId) {
+              return this.imageService.getImageById(profile.imageId).pipe(
+                takeUntil(this.unsubscribe$),
+                map(image &#x3D;&gt; ({ user, profile, image }))
+              );
+            } else {
+              return of({ user, profile, image: null }); // If no imageId, return null
+            }
+          }),
+          finalize(() &#x3D;&gt; {
+            this.loadingStates.user &#x3D; false;
+          })
+        )
+      )
+    )
+      .subscribe({
+        next: ({ user, profile, image }) &#x3D;&gt; {
+          this.accountDto &#x3D; {
+            ...user,
+            bio: profile?.bio || &#x27;Empty Bio Error&#x27;,
+            filePath: image?.filePath || &#x27;Empty Image Error&#x27;, // Assuming filePath contains the image URL
+          };
+        },
+        error: error &#x3D;&gt; this.handleError(error, &#x27;user&#x27;)
+      });
+  }
+
+  /**
+   * Deletes a user haiku based on the user haiku ID stored in &#x60;userHaikuIdToDelete&#x60;.
+   * 
+   * @returns {void} This method does not return a value.
+   * @throws Will call &#x60;handleError&#x60; with an error message on failure.
+  */
+  deleteUserHaiku(): void {
+    if (this.userHaikuIdToDelete) {
+      this.loadingStates.user &#x3D; true;
+
+      this.userHaikuService.deleteUserHaiku(this.userHaikuIdToDelete).pipe(
+        takeUntil(this.unsubscribe$),
+        finalize(() &#x3D;&gt; this.loadingStates.user &#x3D; false)
+      ).subscribe({
+        next: () &#x3D;&gt; {
+          this.userHaikuIdToDelete &#x3D; null;
+          this.viewUserHaikus();
+        },
+        error: error &#x3D;&gt; this.handleError(error, &#x27;userHaiku&#x27;)
+      });
+    }
+  }
+
+  /**
+   * Deletes a user based on the user ID stored in &#x60;userToDeleteRoleId&#x60;.
+   * 
+   * @returns {void} This method does not return a value.
+   * @throws Will call &#x60;handleError&#x60; with an error message on failure.
+  */
+  deleteUser(): void {
+    if (this.userIdToDelete &amp;&amp; this.userToDeleteRoleId) {
+      if (this.userIsNotAdmin(this.userToDeleteRoleId)) {
+        this.loadingStates.user &#x3D; true;
+
+        this.userService.deleteUser(this.userIdToDelete).pipe(
+          takeUntil(this.unsubscribe$),
+          finalize(() &#x3D;&gt; this.loadingStates.user &#x3D; false)
+        ).subscribe({
+          next: () &#x3D;&gt; {
+            this.userIdToDelete &#x3D; null;
+            this.userToDeleteRoleId &#x3D; null;
+            this.viewUserHaikus();
+          },
+          error: error &#x3D;&gt; this.handleError(error, &#x27;user&#x27;)
+        });
+      }
+    }
+  }
+
+  /**
+   * Navigates the User view by ID.
+   *
+   * @param {number} userId - The User ID.
+   * @returns {void} This method does not return a value.
+  */
+  viewUser(userId: number): void {
+    this.navigationService.viewUser(userId);
+  }
+
+  /**
+   * Navigates to all User Haikus.
+   *
+   * @returns {void} This method does not return a value.
+  */
+  viewUserHaikus(): void {
+    this.navigationService.viewUserHaikus();
+  }
+
+  /**
+   * Navigates the User Haiku update by ID.
+   *
+   * @param {number} authorId - The User Haiku  ID.
+   * @returns {void} This method does not return a value.
+  */
+  updateUserHaiku(userHaikuId: number): void {
+    this.navigationService.updateUserHaiku(userHaikuId);
+  }
+
+  /**
+   * Opens a modal for user deletion confirmation by setting the user ID to delete.
+   *
+   * @param {number} userId - The ID of the user to be deleted.
+   * @returns {void} This method does not return a value.
+  */
+  openUserModal(userId: number, roleId: number): void {
+    this.userIdToDelete &#x3D; userId;
+    this.userToDeleteRoleId &#x3D; roleId;
+  }
+
+  /**
+   * Opens a modal for user haiku deletion confirmation by setting the user haiku ID to delete.
+   *
+   * @param {number} userHaikuId - The ID of the user haiku to be deleted.
+   * @returns {void} This method does not return a value.
+  */
+  openUserHaikuModal(userHaikuId: number): void {
+    this.userHaikuIdToDelete &#x3D; userHaikuId;
+  }
+
+  /**
+   * Checks if the given role ID is not an admin role.
+   * 
+   * This method compares the provided role ID with the defined admin role ID. 
+   * 
+   * @param {number} roleId - The role ID to check against the admin role.
+   * @returns {boolean} - &#x60;true&#x60; if the role ID is not an admin role, &#x60;false&#x60; otherwise.
+  */
+  userIsNotAdmin(roleId: number): boolean {
+    if (roleId !&#x3D; this.adminRole)
+      return true
+
+    return false;
+  }
+
+  /**
+   * Checks if the given owner ID is not the current user.
+   * 
+   * This method compares the provided owner ID with the fetched user ID. 
+   * 
+   * @param {number} roleId - The owner ID to check against the user ID.
+   * @returns {boolean} - &#x60;true&#x60; if the owner ID does not belong to the user, &#x60;false&#x60; otherwise.
+  */
+  isNotOwner(ownerId: number): boolean {
+    if (ownerId !&#x3D; this.currentUserId)
+      return true
+
+    return false;
+  }
+
+  /**
+   * Checks if the current user is of role Admin.
+   * 
+   * @returns {boolean} - &#x60;true&#x60; if the current user is an admin, &#x60;false&#x60; otherwise.
+  */
+  isAdmin(): boolean {
+    if (this.currentUserIsAdmin)
+      return true
+
+    return false;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;container mt-5&quot;&gt;
+  &lt;div class&#x3D;&quot;card&quot;&gt;
+    &lt;div class&#x3D;&quot;card-header text-center&quot;&gt;
+      &lt;h3&gt;&lt;i class&#x3D;&quot;fas fa-pen-fancy mt-2&quot;&gt;&lt;/i&gt; User Haiku&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div *ngIf&#x3D;&quot;errorMessages.userHaiku&quot; class&#x3D;&quot;alert alert-danger mt-3 mx-auto text-center&quot; style&#x3D;&quot;max-width: 300px;&quot;&gt;
+      {{ errorMessages.userHaiku }}
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;flex-grow-1 mt-3 mt-md-0&quot;&gt;
+      &lt;h1 class&#x3D;&quot;display-4 text-center&quot; style&#x3D;&quot;overflow: auto; white-space: nowrap;&quot;&gt;{{ userHaikuDto?.title }}&lt;/h1&gt;
+      &lt;p class&#x3D;&quot;lead mt-3 text-center mb-3&quot; style&#x3D;&quot;overflow: auto; white-space: nowrap;&quot;&gt;{{ userHaikuDto?.lineOne }}&lt;/p&gt;
+      &lt;p class&#x3D;&quot;lead mt-3 text-center mb-3&quot; style&#x3D;&quot;overflow: auto; white-space: nowrap;&quot;&gt;{{ userHaikuDto?.lineTwo }}&lt;/p&gt;
+      &lt;p class&#x3D;&quot;lead mt-3 text-center mb-3&quot; style&#x3D;&quot;overflow: auto; white-space: nowrap;&quot;&gt;{{ userHaikuDto?.lineThree }}&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;text-center align-middle mb-3&quot;&gt;
+      &lt;ng-container *appIsAuthorized&#x3D;&quot;[&#x27;Admin&#x27;, &#x27;User&#x27;]&quot;&gt;
+        &lt;button class&#x3D;&quot;btn btn-primary me-2&quot; *ngIf&#x3D;&quot;!isNotOwner(userHaikuDto.userId)&quot; (click)&#x3D;&quot;updateUserHaiku(userHaikuDto.id)&quot;&gt;Update&lt;/button&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger&quot; *ngIf&#x3D;&quot;!isNotOwner(userHaikuDto.userId) || isAdmin()&quot; data-toggle&#x3D;&quot;modal&quot; data-target&#x3D;&quot;#deleteUserHaikuModal&quot; (click)&#x3D;&quot;openUserHaikuModal(userHaikuDto.id)&quot;&gt;Delete&lt;/button&gt;
+      &lt;/ng-container&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;card-header text-center&quot;&gt;
+      &lt;h3&gt;&lt;i class&#x3D;&quot;fas fa-user mt-2&quot;&gt;&lt;/i&gt; User&lt;/h3&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;card-body&quot;&gt;
+      &lt;div *ngIf&#x3D;&quot;errorMessages.user&quot; class&#x3D;&quot;alert alert-danger mt-3 mx-auto text-center&quot; style&#x3D;&quot;max-width: 300px;&quot;&gt;
+        {{ errorMessages.user }}
+      &lt;/div&gt;
+      &lt;p class&#x3D;&quot;lead mt-3 text-center&quot;&gt;Details of the User, featuring their username and bio.&lt;/p&gt;
+
+      &lt;ng-container *ngIf&#x3D;&quot;loadingStates.user; else userTemplate&quot;&gt;
+        &lt;div class&#x3D;&quot;d-flex justify-content-center align-items-center mt-3&quot; style&#x3D;&quot;height: 100px;&quot;&gt;
+          &lt;div class&#x3D;&quot;spinner-border text-primary&quot; role&#x3D;&quot;status&quot;&gt;
+            &lt;span class&#x3D;&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/ng-container&gt;
+
+      &lt;ng-template #userTemplate&gt;
+        &lt;div class&#x3D;&quot;table-responsive&quot; style&#x3D;&quot;overflow-x: auto;&quot;&gt;
+          &lt;table class&#x3D;&quot;table table-striped mt-2&quot; style&#x3D;&quot;table-layout: fixed;&quot;&gt;
+            &lt;thead&gt;
+              &lt;tr&gt;
+                &lt;th style&#x3D;&quot;cursor: pointer; width: 100px;&quot;&gt;
+                  Username
+                &lt;/th&gt;
+                &lt;th style&#x3D;&quot;width: 250px;&quot;&gt;Bio&lt;/th&gt;
+                &lt;th style&#x3D;&quot;width: 100px;&quot;&gt;Actions&lt;/th&gt;
+              &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;
+                &lt;td class&#x3D;&quot;text-center align-middle&quot; style&#x3D;&quot;overflow: auto; white-space: nowrap;&quot;&gt;{{ accountDto.username }}&lt;/td&gt;
+                &lt;td class&#x3D;&quot;text-center align-middle&quot; style&#x3D;&quot;overflow: auto; white-space: nowrap;&quot;&gt;{{ accountDto.bio }}&lt;/td&gt;
+                &lt;td class&#x3D;&quot;text-center align-middle&quot; style&#x3D;&quot;overflow: auto; white-space: nowrap;&quot;&gt;
+                  &lt;button class&#x3D;&quot;btn btn-primary me-2&quot; (click)&#x3D;&quot;viewUser(accountDto.id)&quot;&gt;View&lt;/button&gt;
+                  &lt;ng-container *appIsAuthorized&#x3D;&quot;[&#x27;Admin&#x27;]&quot;&gt;
+                    &lt;button *ngIf&#x3D;&quot;userIsNotAdmin(accountDto.roleId)&quot; type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger&quot; data-toggle&#x3D;&quot;modal&quot; data-target&#x3D;&quot;#deleteUserModal&quot; (click)&#x3D;&quot;openUserModal(accountDto.id, accountDto.roleId)&quot;&gt;Delete&lt;/button&gt;
+                  &lt;/ng-container&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+        &lt;/div&gt;
+      &lt;/ng-template&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class&#x3D;&quot;modal fade&quot; id&#x3D;&quot;deleteUserModal&quot; tabindex&#x3D;&quot;-1&quot; role&#x3D;&quot;dialog&quot; aria-labelledby&#x3D;&quot;deleteUserModalLabel&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
+    &lt;div class&#x3D;&quot;modal-dialog modal-dialog-centered&quot; role&#x3D;&quot;document&quot;&gt;
+      &lt;div class&#x3D;&quot;modal-content&quot;&gt;
+        &lt;div class&#x3D;&quot;modal-header card-header&quot;&gt;
+          &lt;h4 class&#x3D;&quot;modal-title&quot; id&#x3D;&quot;deleteModalLabel&quot;&gt;&lt;i class&#x3D;&#x27;fas fa-exclamation-circle&#x27;&gt;&lt;/i&gt; Delete User&lt;/h4&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;modal-body&quot;&gt;
+          &lt;p&gt;
+            Are you sure you want to delete this User?&lt;br /&gt;&lt;br /&gt;
+            &lt;strong&gt;This change is irreversible&lt;/strong&gt;.&lt;br /&gt;&lt;br /&gt;
+            All Haikus associated with this user will be deleted.
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;modal-footer&quot;&gt;
+          &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary&quot; data-dismiss&#x3D;&quot;modal&quot;&gt;Cancel&lt;/button&gt;
+          &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger&quot; (click)&#x3D;&quot;deleteUser()&quot; data-dismiss&#x3D;&quot;modal&quot;&gt;Confirm&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class&#x3D;&quot;modal fade&quot; id&#x3D;&quot;deleteUserHaikuModal&quot; tabindex&#x3D;&quot;-1&quot; role&#x3D;&quot;dialog&quot; aria-labelledby&#x3D;&quot;deleteUserHaikuLabel&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
+    &lt;div class&#x3D;&quot;modal-dialog modal-dialog-centered&quot; role&#x3D;&quot;document&quot;&gt;
+      &lt;div class&#x3D;&quot;modal-content&quot;&gt;
+        &lt;div class&#x3D;&quot;modal-header card-header&quot;&gt;
+          &lt;h4 class&#x3D;&quot;modal-title&quot; id&#x3D;&quot;deleteModalLabel&quot;&gt;&lt;i class&#x3D;&#x27;fas fa-exclamation-circle&#x27;&gt;&lt;/i&gt; Delete Haiku&lt;/h4&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;modal-body&quot;&gt;
+          &lt;p&gt;
+            Are you sure you want to delete this User Haiku?&lt;br /&gt;&lt;br /&gt;
+            &lt;strong&gt;This change is irreversible&lt;/strong&gt;.&lt;br /&gt;
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;modal-footer&quot;&gt;
+          &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary&quot; data-dismiss&#x3D;&quot;modal&quot;&gt;Cancel&lt;/button&gt;
+          &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger&quot; (click)&#x3D;&quot;deleteUserHaiku()&quot; data-dismiss&#x3D;&quot;modal&quot;&gt;Confirm&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./single-user-haiku.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="container mt-5">  <div class="card">    <div class="card-header text-center">      <h3><i class="fas fa-pen-fancy mt-2"></i> User Haiku</h3>    </div>    <div *ngIf="errorMessages.userHaiku" class="alert alert-danger mt-3 mx-auto text-center" style="max-width: 300px;">      {{ errorMessages.userHaiku }}    </div>    <div class="flex-grow-1 mt-3 mt-md-0">      <h1 class="display-4 text-center" style="overflow: auto; white-space: nowrap;">{{ userHaikuDto?.title }}</h1>      <p class="lead mt-3 text-center mb-3" style="overflow: auto; white-space: nowrap;">{{ userHaikuDto?.lineOne }}</p>      <p class="lead mt-3 text-center mb-3" style="overflow: auto; white-space: nowrap;">{{ userHaikuDto?.lineTwo }}</p>      <p class="lead mt-3 text-center mb-3" style="overflow: auto; white-space: nowrap;">{{ userHaikuDto?.lineThree }}</p>    </div>    <div class="text-center align-middle mb-3">      <ng-container *appIsAuthorized="[\'Admin\', \'User\']">        <button class="btn btn-primary me-2" *ngIf="!isNotOwner(userHaikuDto.userId)" (click)="updateUserHaiku(userHaikuDto.id)">Update</button>        <button type="button" class="btn btn-danger" *ngIf="!isNotOwner(userHaikuDto.userId) || isAdmin()" data-toggle="modal" data-target="#deleteUserHaikuModal" (click)="openUserHaikuModal(userHaikuDto.id)">Delete</button>      </ng-container>    </div>    <div class="card-header text-center">      <h3><i class="fas fa-user mt-2"></i> User</h3>    </div>    <div class="card-body">      <div *ngIf="errorMessages.user" class="alert alert-danger mt-3 mx-auto text-center" style="max-width: 300px;">        {{ errorMessages.user }}      </div>      <p class="lead mt-3 text-center">Details of the User, featuring their username and bio.</p>      <ng-container *ngIf="loadingStates.user; else userTemplate">        <div class="d-flex justify-content-center align-items-center mt-3" style="height: 100px;">          <div class="spinner-border text-primary" role="status">            <span class="sr-only">Loading...</span>          </div>        </div>      </ng-container>      <ng-template #userTemplate>        <div class="table-responsive" style="overflow-x: auto;">          <table class="table table-striped mt-2" style="table-layout: fixed;">            <thead>              <tr>                <th style="cursor: pointer; width: 100px;">                  Username                </th>                <th style="width: 250px;">Bio</th>                <th style="width: 100px;">Actions</th>              </tr>            </thead>            <tbody>              <tr>                <td class="text-center align-middle" style="overflow: auto; white-space: nowrap;">{{ accountDto.username }}</td>                <td class="text-center align-middle" style="overflow: auto; white-space: nowrap;">{{ accountDto.bio }}</td>                <td class="text-center align-middle" style="overflow: auto; white-space: nowrap;">                  <button class="btn btn-primary me-2" (click)="viewUser(accountDto.id)">View</button>                  <ng-container *appIsAuthorized="[\'Admin\']">                    <button *ngIf="userIsNotAdmin(accountDto.roleId)" type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteUserModal" (click)="openUserModal(accountDto.id, accountDto.roleId)">Delete</button>                  </ng-container>                </td>              </tr>            </tbody>          </table>        </div>      </ng-template>    </div>  </div>  <div class="modal fade" id="deleteUserModal" tabindex="-1" role="dialog" aria-labelledby="deleteUserModalLabel" aria-hidden="true">    <div class="modal-dialog modal-dialog-centered" role="document">      <div class="modal-content">        <div class="modal-header card-header">          <h4 class="modal-title" id="deleteModalLabel"><i class=\'fas fa-exclamation-circle\'></i> Delete User</h4>        </div>        <div class="modal-body">          <p>            Are you sure you want to delete this User?<br /><br />            <strong>This change is irreversible</strong>.<br /><br />            All Haikus associated with this user will be deleted.          </p>        </div>        <div class="modal-footer">          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>          <button type="button" class="btn btn-danger" (click)="deleteUser()" data-dismiss="modal">Confirm</button>        </div>      </div>    </div>  </div>  <div class="modal fade" id="deleteUserHaikuModal" tabindex="-1" role="dialog" aria-labelledby="deleteUserHaikuLabel" aria-hidden="true">    <div class="modal-dialog modal-dialog-centered" role="document">      <div class="modal-content">        <div class="modal-header card-header">          <h4 class="modal-title" id="deleteModalLabel"><i class=\'fas fa-exclamation-circle\'></i> Delete Haiku</h4>        </div>        <div class="modal-body">          <p>            Are you sure you want to delete this User Haiku?<br /><br />            <strong>This change is irreversible</strong>.<br />          </p>        </div>        <div class="modal-footer">          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>          <button type="button" class="btn btn-danger" (click)="deleteUserHaiku()" data-dismiss="modal">Confirm</button>        </div>      </div>    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AddAuthorComponent', 'selector': 'app-add-author'},{'name': 'AddAuthorFormComponent', 'selector': 'app-add-author-form'},{'name': 'AddAuthorHaikuComponent', 'selector': 'app-add-author-haiku'},{'name': 'AddAuthorHaikuFormComponent', 'selector': 'app-add-author-haiku-form'},{'name': 'AddUserHaikuComponent', 'selector': 'app-add-user-haiku'},{'name': 'AddUserHaikuFormComponent', 'selector': 'app-add-user-haiku-form'},{'name': 'AllAuthorHaikusComponent', 'selector': 'app-all-author-haikus'},{'name': 'AllAuthorsComponent', 'selector': 'app-all-authors'},{'name': 'AllUserHaikusComponent', 'selector': 'app-all-user-haikus'},{'name': 'AllUsersComponent', 'selector': 'app-all-users'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LoginFormComponent', 'selector': 'app-login-form'},{'name': 'NotFoundComponent', 'selector': 'app-not-found'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'RegisterFormComponent', 'selector': 'app-register-form'},{'name': 'SingleAuthorComponent', 'selector': 'app-single-author'},{'name': 'SingleAuthorHaikuComponent', 'selector': 'app-single-author-haiku'},{'name': 'SingleUserComponent', 'selector': 'app-single-user'},{'name': 'SingleUserHaikuComponent', 'selector': 'app-single-user-haiku'},{'name': 'UpdateAuthorComponent', 'selector': 'app-update-author'},{'name': 'UpdateAuthorFormComponent', 'selector': 'app-update-author-form'},{'name': 'UpdateAuthorHaikuComponent', 'selector': 'app-update-authorHaiku'},{'name': 'UpdateAuthorHaikuFormComponent', 'selector': 'app-update-author-haiku-form'},{'name': 'UpdateProfileComponent', 'selector': 'app-update-profile'},{'name': 'UpdateProfileFormComponent', 'selector': 'app-update-profile-form'},{'name': 'UpdateUserHaikuComponent', 'selector': 'app-update-userHaiku'},{'name': 'UpdateUserHaikuFormComponent', 'selector': 'app-update-user-haiku-form'}];
+    var DIRECTIVES = [{'name': 'IsAuthorizedDirective', 'selector': '[appIsAuthorized]'},{'name': 'IsUnAuthenticatedDirective', 'selector': '[appIsUnAuthenticated]'}];
+    var ACTUAL_COMPONENT = {'name': 'SingleUserHaikuComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'SingleUserHaikuComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script>
+               $darkModeToggleSwitchers = document.querySelectorAll('.dark-mode-switch input');
+               checkToggle(darkModeState);
+               if ($darkModeToggleSwitchers.length > 0) {
+                    for (var i = 0; i < $darkModeToggleSwitchers.length; i++) {
+                         $darkModeToggleSwitchers[i].addEventListener('change', function (event) {
+                              darkModeState = !darkModeState;
+                              toggleDarkMode(darkModeState);
+                         });
+                    }
+               }
+          </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
