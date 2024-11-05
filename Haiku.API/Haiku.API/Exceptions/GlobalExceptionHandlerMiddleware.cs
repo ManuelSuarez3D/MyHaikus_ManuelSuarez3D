@@ -24,7 +24,7 @@ public class GlobalExceptionHandlerMiddleware
     {
         try
         {
-            await _next(context); // Call the next middleware in the pipeline
+            await _next(context);
         }
         catch (Exception ex)
         {

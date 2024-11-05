@@ -52,18 +52,17 @@ namespace Haiku.API.Database
                 new Role { Id = 2, Title = "User" }
             );
 
-            var hashedPassword = BCrypt.Net.BCrypt.HashPassword("12345678");
             modelBuilder.Entity<User>().HasData(
-                new User { Id = 1, Username = "Manny", Password = hashedPassword, RoleId = 1 },
-                new User { Id = 2, Username = "MarcoPolo", Password = hashedPassword, RoleId = 2 },
-                new User { Id = 3, Username = "John", Password = hashedPassword, RoleId = 2 },
-                new User { Id = 4, Username = "Bob", Password = hashedPassword, RoleId = 2 },
-                new User { Id = 5, Username = "Charlie", Password = hashedPassword, RoleId = 2 },
-                new User { Id = 6, Username = "Diana", Password = hashedPassword, RoleId = 2 },
-                new User { Id = 7, Username = "Eve", Password = hashedPassword, RoleId = 2 },
-                new User { Id = 8, Username = "Frank", Password = hashedPassword, RoleId = 2 },
-                new User { Id = 9, Username = "Grace", Password = hashedPassword, RoleId = 2 },
-                new User { Id = 10, Username = "Heidi", Password = hashedPassword, RoleId = 2 }
+                new User { Id = 1, Username = "Manny", Password = HashPassword("12345678"), RoleId = 1 },
+                new User { Id = 2, Username = "MarcoPolo", Password = HashPassword("12345678"), RoleId = 2 },
+                new User { Id = 3, Username = "John", Password = HashPassword("12345678"), RoleId = 2 },
+                new User { Id = 4, Username = "Bob", Password = HashPassword("12345678"), RoleId = 2 },
+                new User { Id = 5, Username = "Charlie", Password = HashPassword("12345678"), RoleId = 2 },
+                new User { Id = 6, Username = "Diana", Password = HashPassword("12345678"), RoleId = 2 },
+                new User { Id = 7, Username = "Eve", Password = HashPassword("12345678"), RoleId = 2 },
+                new User { Id = 8, Username = "Frank", Password = HashPassword("12345678"), RoleId = 2 },
+                new User { Id = 9, Username = "Grace", Password = HashPassword("12345678"), RoleId = 2 },
+                new User { Id = 10, Username = "Heidi", Password = HashPassword("12345678"), RoleId = 2 }
             );
 
             modelBuilder.Entity<Image>().HasData(
@@ -128,6 +127,10 @@ namespace Haiku.API.Database
                 new UserHaiku { Id = 9, Title = "Gentle Rainfall", LineOne = "Gentle rain falls down,", LineTwo = "Kissing the thirsty ground sweet,", LineThree = "Nature’s warm embrace.", UserId = 7 },
                 new UserHaiku { Id = 10, Title = "A New Dawn", LineOne = "A new dawn awakens,", LineTwo = "With colors bursting to life,", LineThree = "Hope blooms in the light.", UserId = 8 }
             );
+        }
+        private string HashPassword(string plainTextPassword)
+        {
+            return BCrypt.Net.BCrypt.HashPassword(plainTextPassword);
         }
     }
 }

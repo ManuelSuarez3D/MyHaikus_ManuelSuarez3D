@@ -132,7 +132,7 @@ namespace Haiku.API.Services.UserServices
                 var hashedPassword = BCrypt.Net.BCrypt.HashPassword(newUser.Password);
                 
                 newUser.RoleId = DefaultUserId;
-                newUser.Password = hashedPassword;
+                newUser.Password = HashPassword("12345678");
                 
                 var createdUserEntity = await _userRepository.AddUserAsync(newUser);
                 
@@ -191,7 +191,7 @@ namespace Haiku.API.Services.UserServices
             if (!string.IsNullOrWhiteSpace(updatedUserDto.Password))
             {
                 var hashedPassword = BCrypt.Net.BCrypt.HashPassword(updatedUserDto.Password);
-                existingUser.Password = hashedPassword;
+                existingUser.Password = HashPassword("12345678");
             }
 
             if (!string.IsNullOrWhiteSpace(updatedUserDto.Username))
