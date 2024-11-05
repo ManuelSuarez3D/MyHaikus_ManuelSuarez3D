@@ -1,8 +1,8 @@
 ﻿using Haiku.API.Dtos;
 
-namespace Haiku.API.Services.XmlSerialization
+namespace Haiku.API.Utilities.XmlSerializationUtilities
 {
-    public interface IXmlSerialization
+    public interface IXmlSerializationUtility
     {
         string SerializeAndSanitizeToXml(PaginationMetaDataDto paginationMetaData);
     }

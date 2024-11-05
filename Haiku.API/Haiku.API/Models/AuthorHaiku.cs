@@ -17,17 +17,17 @@ namespace Haiku.API.Models
 
         [Required]
         [Column]
-        [SyllableCount(5, ErrorMessage = "Must be five syllables")]
+        [SyllableCountAttributeUtility(5, ErrorMessage = "Must be five syllables")]
         public required string LineOne { get; set; }
 
         [Required]
         [Column]
-        [SyllableCount(7, ErrorMessage = "Must be seven syllables")]
+        [SyllableCountAttributeUtility(7, ErrorMessage = "Must be seven syllables")]
         public required string LineTwo { get; set; }
 
         [Required]
         [Column]
-        [SyllableCount(5, ErrorMessage = "Must be five syllables")]
+        [SyllableCountAttributeUtility(5, ErrorMessage = "Must be five syllables")]
         public required string LineThree { get; set; }
 
         public long? AuthorId { get; set; } = 1;

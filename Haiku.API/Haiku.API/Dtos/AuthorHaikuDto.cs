@@ -16,19 +16,19 @@ namespace Haiku.API.Dtos
         public string? Title { get; set; } = "Untitled";
 
         [XmlElement("lineOne")]
-        [SyllableCount(5, ErrorMessage = "Must be five syllables")]
+        [SyllableCountAttributeUtility(5, ErrorMessage = "Must be five syllables")]
         [Required]
         [StringLength(50, ErrorMessage = "First line length can't be more than 50.")]
         public required string LineOne { get; set; }
 
         [XmlElement("lineTwo")]
-        [SyllableCount(7, ErrorMessage = "Must be seven syllables")]
+        [SyllableCountAttributeUtility(7, ErrorMessage = "Must be seven syllables")]
         [Required]
         [StringLength(50, ErrorMessage = "Second line length can't be more than 50.")]
         public required string LineTwo { get; set; }
 
         [XmlElement("lineThree")]
-        [SyllableCount(5, ErrorMessage = "Must be five syllables")]
+        [SyllableCountAttributeUtility(5, ErrorMessage = "Must be five syllables")]
         [Required]
         [StringLength(50, ErrorMessage = "Third line length can't be more than 50.")]
         public required string LineThree { get; set; }

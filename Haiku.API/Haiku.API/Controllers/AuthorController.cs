@@ -1,7 +1,7 @@
 ﻿using Haiku.API.Dtos;
 using Haiku.API.Services.AuthorServices;
-using Haiku.API.Services.PaginationService;
-using Haiku.API.Utilities.XmlSerializations;
+using Haiku.API.Utilities.PaginationUtilities;
+using Haiku.API.Utilities.XmlSerializationUtilities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,11 +13,11 @@ namespace Haiku.API.Controllers
     public class AuthorController : ControllerBase
     {
         private readonly IAuthorService _authorService;
-        private readonly IPaginationService _paginationService;
-        private readonly IXmlSerialization _xmlSerialization;
+        private readonly IPaginationUtility _paginationService;
+        private readonly IXmlSerializationUtility _xmlSerialization;
         private readonly ILogger<AuthorController> _logger;
 
-        public AuthorController(IAuthorService authorService, IPaginationService paginationService, IXmlSerialization xmlSerialization, ILogger<AuthorController> logger)
+        public AuthorController(IAuthorService authorService, IPaginationUtility paginationService, IXmlSerializationUtility xmlSerialization, ILogger<AuthorController> logger)
         {
             _authorService = authorService;
             _paginationService = paginationService;

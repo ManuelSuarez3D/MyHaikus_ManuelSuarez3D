@@ -16,7 +16,7 @@ namespace HaikuApi.Tests.UnitTests
     {
         private readonly AuthorController _controller;
         private readonly Mock<IAuthorService> _mockService = new();
-        private readonly Mock<IPaginationService> _mockPagination= new();
+        private readonly Mock<IPaginationUtility> _mockPagination= new();
         private readonly Mock<IXmlSerialization> _mockSerialization = new();
         private readonly Mock<ILogger<AuthorController>> _mockLogger = new();
         private readonly ITestOutputHelper _output;

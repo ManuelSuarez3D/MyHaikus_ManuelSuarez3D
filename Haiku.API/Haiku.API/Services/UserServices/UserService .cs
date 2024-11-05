@@ -12,11 +12,11 @@ namespace Haiku.API.Services.UserServices
     {
         private readonly IUserRepository _userRepository;
         private readonly IProfileService _userprofileService;
-        private readonly IUnitOfWork _unitOfWork;
+        private readonly IUnitOfWorkUtility _unitOfWork;
         private readonly IMapper _mapper;
         private const long DefaultUserId = 2;
 
-        public UserService(IUserRepository userRepository, IProfileService userprofileService, IUnitOfWork unitOfWork, IMapper mapper)
+        public UserService(IUserRepository userRepository, IProfileService userprofileService, IUnitOfWorkUtility unitOfWork, IMapper mapper)
         {
             _userRepository = userRepository;
             _userprofileService = userprofileService;

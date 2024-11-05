@@ -2,17 +2,17 @@
 
 namespace Haiku.API.Utilities
 {
-    public class MinLengthIfNotEmptyAttribute : ValidationAttribute
+    public class MinLengthIfNotEmptyAttributeUtility : ValidationAttribute
     {
         private readonly int _minLength;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="MinLengthIfNotEmptyAttribute"/> class.
+        /// Initializes a new instance of the <see cref="MinLengthIfNotEmptyAttributeUtility"/> class.
         /// This attribute enforces a minimum length for a string property, only if the property is not empty.
         /// </summary>
         /// <param name="minLength">The minimum required length for the string property. Must be a non-negative value.</param>
         /// <param name="field">The name of the field being validated. This will be used in the error message.</param>
-        public MinLengthIfNotEmptyAttribute(int minLength, string field)
+        public MinLengthIfNotEmptyAttributeUtility(int minLength, string field)
         {
             _minLength = minLength;
             ErrorMessage = $"{field} length must be at least {minLength} characters.";

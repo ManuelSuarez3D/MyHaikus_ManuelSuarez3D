@@ -4,9 +4,9 @@ using Haiku.API.Repositories.ImageRepositories;
 using Haiku.API.Repositories.ProfileRepositories;
 using Haiku.API.Repositories.UserRepositories;
 
-namespace Haiku.API.Utilities
+namespace Haiku.API.Utilities.UnitOfWorkUtilities
 {
-    public interface IUnitOfWork : IDisposable
+    public interface IUnitOfWorkUtility : IDisposable
     {
         IAuthorRepository Authors { get; }
         IAuthorHaikuRepository AuthorHaikus { get; }

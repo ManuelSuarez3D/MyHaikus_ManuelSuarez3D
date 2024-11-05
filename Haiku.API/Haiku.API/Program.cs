@@ -103,9 +103,9 @@ builder.Services.AddScoped<IProfileService, ProfileService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IRoleRepository, RoleRepository>();
 builder.Services.AddScoped<IRoleService, RoleService>();
-builder.Services.AddScoped<IPaginationService, PaginationService>();
-builder.Services.AddScoped<IXmlSerialization, XmlSerialization>();
-builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<IPaginationUtility, PaginationUtility>();
+builder.Services.AddScoped<IXmlSerialization, XmlSerializationUtility>();
+builder.Services.AddScoped<IUnitOfWorkUtility, UnitOfWorkUtility>();
 builder.Services.AddScoped<IImageRepository, ImageRepository>();
 builder.Services.AddScoped<IImageService, ImageService>();
 
@@ -116,7 +116,7 @@ builder.Logging.AddSerilog();
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Haiku.API", Version = "v1" });
-    c.SchemaFilter<CustomSchemaFilter>();
+    c.SchemaFilter<CustomSchemaFilterUtility>();
 
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {

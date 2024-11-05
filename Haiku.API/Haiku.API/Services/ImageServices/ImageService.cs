@@ -12,12 +12,12 @@ namespace Haiku.API.Services.ImageServices
     public class ImageService : IImageService
     {
         private readonly IImageRepository _imageRepository;
-        private readonly IUnitOfWork _unitOfWork;
+        private readonly IUnitOfWorkUtility _unitOfWork;
         private readonly IMapper _mapper;
         private const long DefaultImageId = 1;
         private const string defaultUrl = "http://localhost:5104";
 
-        public ImageService(IImageRepository imageRepository, IUnitOfWork unitOfWork, IMapper mapper)
+        public ImageService(IImageRepository imageRepository, IUnitOfWorkUtility unitOfWork, IMapper mapper)
         {
             _imageRepository = imageRepository;
             _unitOfWork = unitOfWork;

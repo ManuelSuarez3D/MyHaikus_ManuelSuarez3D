@@ -12,11 +12,11 @@ namespace Haiku.API.Controllers
     public class UserHaikuController : ControllerBase
     {
         private readonly IUserHaikuService _userHaikuService;
-        private readonly IPaginationService _paginationService;
+        private readonly IPaginationUtility _paginationService;
         private readonly IXmlSerialization _xmlSerializationService;
         private readonly ILogger<UserHaikuController> _logger;
 
-        public UserHaikuController(IUserHaikuService userHaikuService, IPaginationService paginationService, IXmlSerialization xmlSerializationService, ILogger<UserHaikuController> logger)
+        public UserHaikuController(IUserHaikuService userHaikuService, IPaginationUtility paginationService, IXmlSerialization xmlSerializationService, ILogger<UserHaikuController> logger)
         {
             _userHaikuService = userHaikuService;
             _paginationService = paginationService;

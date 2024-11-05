@@ -11,13 +11,13 @@ namespace Haiku.API.Dtos
         public long Id { get; set; }
 
         [XmlElement("username")]
-        [StringLengthIfNotEmpty(20, "Username")]
-        [MinLengthIfNotEmpty(4, "Username")]
+        [StringLengthIfNotEmptyAttributeUtility(20, "Username")]
+        [MinLengthIfNotEmptyAttributeUtility(4, "Username")]
         public required string Username { get; set; }
 
         [XmlElement("password")]
-        [StringLengthIfNotEmpty(20, "Password")]
-        [MinLengthIfNotEmpty(8, "Password")]
+        [StringLengthIfNotEmptyAttributeUtility(20, "Password")]
+        [MinLengthIfNotEmptyAttributeUtility(8, "Password")]
         public required string Password { get; set; }
 
         [XmlElement("roleId")]

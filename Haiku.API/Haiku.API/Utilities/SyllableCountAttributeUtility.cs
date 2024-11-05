@@ -4,15 +4,15 @@ using System.Text.RegularExpressions;
 namespace Haiku.API.Utilities
 {
     [AttributeUsage(AttributeTargets.Property, AllowMultiple = false)]
-    public class SyllableCountAttribute : ValidationAttribute
+    public class SyllableCountAttributeUtility : ValidationAttribute
     {
         private readonly int _expectedCount;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SyllableCountAttribute"/> class.
+        /// Initializes a new instance of the <see cref="SyllableCountAttributeUtility"/> class.
         /// </summary>
         /// <param name="expectedCount">The expected number of syllables for validation purposes.</param>
-        public SyllableCountAttribute(int expectedCount)
+        public SyllableCountAttributeUtility(int expectedCount)
         {
             _expectedCount = expectedCount;
         }
