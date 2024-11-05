@@ -162,7 +162,7 @@ app.UseCors(options =>
     .WithExposedHeaders("x-pagination")
 );
 
-app.UseMiddleware<GlobalExceptionHandlerMiddleware>();
+app.UseMiddleware<GlobalExceptionHandlerUtility>();
 app.UseAuthorization();
 app.UseHttpsRedirection();
 app.MapControllers();
