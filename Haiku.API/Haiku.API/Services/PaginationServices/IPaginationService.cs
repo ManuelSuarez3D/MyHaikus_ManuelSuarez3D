@@ -1,6 +1,6 @@
 ﻿using Haiku.API.Dtos;
 
-namespace Haiku.API.Utilities.PaginationUtilities
+namespace Haiku.API.Services.PaginationServices
 {
     public interface IPaginationService
     {

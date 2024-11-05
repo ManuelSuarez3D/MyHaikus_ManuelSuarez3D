@@ -1,9 +1,9 @@
 ﻿using Haiku.API.Dtos;
 using System.Xml.Serialization;
 
-namespace Haiku.API.Utilities.XmlSerializationUtilities
+namespace Haiku.API.Services.XmlSerializationServices
 {
-    public class XmlSerializationUtility : IXmlSerializationUtility
+    public class XmlSerializationService : IXmlSerializationService
     {
 
         /// <summary>

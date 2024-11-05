@@ -2,7 +2,7 @@ using FluentAssertions;
 using Haiku.API.Controllers;
 using Haiku.API.Dtos;
 using Haiku.API.Services.AuthorHaikuServices;
-using Haiku.API.Services.PaginationService;
+using Haiku.API.Services.PaginationServices;
 using Haiku.API.Services.XmlSerializationServices;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -16,8 +16,8 @@ namespace AuthorHaikuApi.Tests.UnitTests
     {
         private readonly AuthorHaikuController _controller;
         private readonly Mock<IAuthorHaikuService> _mockAuthorHaikuService = new();
-        private readonly Mock<IPaginationUtility> _mockPagination = new();
-        private readonly Mock<IXmlSerialization> _mockSerialization = new();
+        private readonly Mock<IPaginationService> _mockPagination = new();
+        private readonly Mock<IXmlSerializationService> _mockSerialization = new();
         private readonly Mock<ILogger<AuthorHaikuController>> _mockLogger = new();
         private readonly ITestOutputHelper _output;
 
