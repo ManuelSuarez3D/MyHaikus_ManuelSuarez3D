@@ -2,13 +2,13 @@
 ### C# | TypeScript | Swagger (Swashbuckle) | Angular | Bootstrap | XUnit | SSMS | Serilog | .NET | RESTful API | Visual Studio
 
 # Summary
-MyHaikus is a platform that allows users to explore a diverse collection of renowned authors and their haikus. It offers a user-friendly environment for effortlessly managing personal haikus and viewing those created by others, enabling users to appreciate the beauty of this unique form of poetry. Users can create, update, delete, and share haikus with ease, all facilitated through the front-end using Angular and TypeScript.
+MyHaikus is a platform that allows users to explore a diverse collection of renowned authors and their haikus. It offers a user-friendly environment for effortlessly managing personal haikus and viewing those created by others, enabling users to appreciate the beauty of this unique form of poetry. Users can create, update, delete, and share haikus with ease, all facilitated through the front-end using Angular and TypeScript. It features comprehensive XML documentation in the back end and JSDoc in the front end, strongly emphasizing XML for data transfer, as the controller endpoints produce and consume XML, which involves serialization and deserialization of data between the two.
 
 Haiku.API serves as a robust RESTful API designed for creating and managing haikus and haiku creators. It features JWT Authorization for secure access (utilizing cookies to store the tokens), CRUD operations with built-in validation (including a custom syllable counter), and Serilog for efficient log tracking and monitoring, all implemented through the back-end using .NET.
 
-For documentation, DocFX is utilized to generate comprehensive back-end documentation, ensuring developers have clear and accessible resources. On the front-end, Compodoc is employed for JSDoc documentation, providing detailed insights into the Angular application structure and components. This dual documentation approach enhances maintainability and understanding across the project.
+For documentation, DocFX is utilized to generate comprehensive back-end documentation, ensuring clear and accessible resources. On the front-end, Compodoc is employed for JSDoc documentation, providing detailed insights into the Angular application structure and components.
 
-The project also includes unit tests for services using XUnit to ensure reliability and performance in the back-end, as well as Karma for unit testing in the front-end.
+The project also includes unit testing functionality using XUnit to ensure reliability and performance for the back end and Karma for unit testing in the front end.
 
 # Dependencies
 ### Back-end
@@ -49,6 +49,18 @@ The project also includes unit tests for services using XUnit to ensure reliabil
 - Login Credentials: Use the following credentials for login management (or register):
   - Username: Manny | Password: 12345678
   - Username: MarcoPolo | Password: 12345678
+
+# Documentation
+### Back-end
+- DocFX: Run docfx serve _site in the command prompt from the main project folder.
+### Front-end
+- Compodoc: Run npx compodoc -s in the command prompt from the main client app folder.
+- 
+# Unit Tests
+### Back-end
+- Run tests from Test Explorer in Visual Studio.
+### Front-end
+- Run ng test in the command prompt from the main project folder to execute tests.
   
 # Features
 - User Authorization: Secure access control for different user roles.
@@ -68,9 +80,9 @@ The project also includes unit tests for services using XUnit to ensure reliabil
   
 # Business Rules
 - XML Serialization: All data exchanged between the front end and back end must be in XML format, ensuring strict adherence to XML markup for communication.
-- Authorized Users: Only authorized users can create, update, and delete (C.U.D.) their haikus.
+- Authorized Users: Only authorized users can create, update, and delete (C.U.D.) haikus.
 - Admin Role Permissions: Only admin-role users can create, read, update, and delete (C.R.U.D.) authors and their associated haikus.
 - Admin User Capabilities: Admin-role users can delete any non-admin users and remove user haikus that do not belong to them.
   
 # Demo
-[![Haiku.API](https://img.youtube.com/vi/p6lQowGQDFQ/0.jpg)](https://www.youtube.com///watch?v=p6lQowGQDFQ "Haiku.API")
+[![MyHaikus](https://img.youtube.com/vi/rjoDBPW8It8/0.jpg)](https://www.youtube.com///watch?v=rjoDBPW8It8 "MyHaikus")
