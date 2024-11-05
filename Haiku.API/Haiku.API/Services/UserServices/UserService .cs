@@ -4,7 +4,7 @@ using Haiku.API.Exceptions;
 using Haiku.API.Models;
 using Haiku.API.Repositories.UserRepositories;
 using Haiku.API.Services.IProfileServices;
-using Haiku.API.Utilities;
+using Haiku.API.Utilities.UnitOfWorks;
 
 namespace Haiku.API.Services.UserServices
 {

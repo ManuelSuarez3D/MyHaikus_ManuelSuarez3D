@@ -1,7 +1,7 @@
 ﻿using Haiku.API.Dtos;
 using Haiku.API.Services.AuthorServices;
 using Haiku.API.Services.PaginationService;
-using Haiku.API.Services.XmlSerializationServices;
+using Haiku.API.Utilities.XmlSerializations;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,14 +14,14 @@ namespace Haiku.API.Controllers
     {
         private readonly IAuthorService _authorService;
         private readonly IPaginationService _paginationService;
-        private readonly IXmlSerializationService _xmlSerializationService;
+        private readonly IXmlSerialization _xmlSerialization;
         private readonly ILogger<AuthorController> _logger;
 
-        public AuthorController(IAuthorService authorService, IPaginationService paginationService, IXmlSerializationService xmlSerializationService, ILogger<AuthorController> logger)
+        public AuthorController(IAuthorService authorService, IPaginationService paginationService, IXmlSerialization xmlSerialization, ILogger<AuthorController> logger)
         {
             _authorService = authorService;
             _paginationService = paginationService;
-            _xmlSerializationService = xmlSerializationService;
+            _xmlSerialization = xmlSerialization;
             _logger = logger;
         }
 
@@ -40,7 +40,7 @@ namespace Haiku.API.Controllers
             var totalAuthors = await _authorService.GetTotalAuthorsAsync(searchOption ?? string.Empty);
             var paginationMetaDataDto = _paginationService.GetPaginationMetaData(totalAuthors, pageSize, currentPage);
 
-            var sanitizedXml = _xmlSerializationService.SerializeAndSanitizeToXml(paginationMetaDataDto);
+            var sanitizedXml = _xmlSerialization.SerializeAndSanitizeToXml(paginationMetaDataDto);
             Response.Headers["x-pagination"] = sanitizedXml;
 
             return Ok(authorDtos);

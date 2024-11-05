@@ -20,7 +20,6 @@ using Haiku.API.Repositories.RoleRepositories;
 using Haiku.API.Services.RoleServices;
 using Haiku.API.Services.PaginationService;
 using Haiku.API.Services.XmlSerializationServices;
-using Haiku.API.Utilities;
 using Haiku.API.Services.AuthServices;
 using Haiku.API.Services.ProfileServices;
 using Haiku.API.Services.IProfileServices;
@@ -29,6 +28,7 @@ using Haiku.API.Exceptions;
 using System.Security.Cryptography;
 using Haiku.API.Repositories.ImageRepositories;
 using Haiku.API.Services.ImageServices;
+using Haiku.API.Utilities.UnitOfWorks;
 
 
 Log.Logger = new LoggerConfiguration()
@@ -104,7 +104,7 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IRoleRepository, RoleRepository>();
 builder.Services.AddScoped<IRoleService, RoleService>();
 builder.Services.AddScoped<IPaginationService, PaginationService>();
-builder.Services.AddScoped<IXmlSerializationService, XmlSerializationService>();
+builder.Services.AddScoped<IXmlSerialization, XmlSerialization>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IImageRepository, ImageRepository>();
 builder.Services.AddScoped<IImageService, ImageService>();

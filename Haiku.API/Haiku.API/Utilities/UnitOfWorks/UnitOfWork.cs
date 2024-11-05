@@ -6,7 +6,7 @@ using Haiku.API.Repositories.ProfileRepositories;
 using Haiku.API.Repositories.UserRepositories;
 using Haiku.API.Repositories.ImageRepositories;
 
-namespace Haiku.API.Utilities
+namespace Haiku.API.Utilities.UnitOfWorks
 {
     public class UnitOfWork : IUnitOfWork
     {
