@@ -13,11 +13,9 @@ namespace Haiku.API.Dtos
         public string? Bio { get; set; }
 
         [XmlElement("imageId")]
-        [Required]
         public long ImageId { get; set; }
 
         [XmlElement("userId")]
-        [Required]
-        public long UserId { get; set; }
+        public required long UserId { get; set; }
     }
 }

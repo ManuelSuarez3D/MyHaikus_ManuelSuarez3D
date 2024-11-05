@@ -4,7 +4,7 @@ using Haiku.API.Exceptions;
 using Haiku.API.Models;
 using Haiku.API.Repositories.UserRepositories;
 using Haiku.API.Services.IProfileServices;
-using Haiku.API.Utilities.UnitOfWorks;
+using Haiku.API.Services.UnitOfWorkServices;
 
 namespace Haiku.API.Services.UserServices
 {
@@ -12,15 +12,15 @@ namespace Haiku.API.Services.UserServices
     {
         private readonly IUserRepository _userRepository;
         private readonly IProfileService _userprofileService;
-        private readonly IUnitOfWorkUtility _unitOfWork;
+        private readonly IUnitOfWorkService _unitOfWorkService;
         private readonly IMapper _mapper;
         private const long DefaultUserId = 2;
 
-        public UserService(IUserRepository userRepository, IProfileService userprofileService, IUnitOfWorkUtility unitOfWork, IMapper mapper)
+        public UserService(IUserRepository userRepository, IProfileService userprofileService, IUnitOfWorkService unitOfWorkService, IMapper mapper)
         {
             _userRepository = userRepository;
             _userprofileService = userprofileService;
-            _unitOfWork = unitOfWork;
+            _unitOfWorkService = unitOfWorkService;
             _mapper = mapper;
         }
 
@@ -122,7 +122,7 @@ namespace Haiku.API.Services.UserServices
         /// </exception>
         public async Task<UserDto> AddUserAsync(RegisterDto newRegisterDto)
         {
-            await _unitOfWork.BeginTransactionAsync();
+            await _unitOfWorkService.BeginTransactionAsync();
             try
             {
                 if (await UsernameVerificationAsync(newRegisterDto.Username))
@@ -149,7 +149,7 @@ namespace Haiku.API.Services.UserServices
                 if (createdProfileEntity == null || createdProfileEntity.Id <= 0)
                     throw new NotSavedException($"An error occurred saving a profile for the new user.");
 
-                await _unitOfWork.CommitAsync();
+                await _unitOfWorkService.CommitAsync();
 
                 var createdEntityDto = _mapper.Map<UserDto>(createdUserEntity);
                 return createdEntityDto;
@@ -157,7 +157,7 @@ namespace Haiku.API.Services.UserServices
             }
             catch
             {
-                await _unitOfWork.RollbackAsync();
+                await _unitOfWorkService.RollbackAsync();
                 throw;
             }
         }
@@ -247,6 +247,11 @@ namespace Haiku.API.Services.UserServices
                 return false;
 
             return true;
+        }
+
+        private string HashPassword(string plainTextPassword)
+        {
+            return BCrypt.Net.BCrypt.HashPassword(plainTextPassword);
         }
     }
 }

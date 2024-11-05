@@ -1,6 +1,4 @@
 ﻿using Haiku.API.Dtos;
-using Haiku.API.Services.PaginationService;
-using Haiku.API.Services.XmlSerializationServices;
 using Microsoft.AspNetCore.Mvc;
 using Haiku.API.Services.UserServices;
 using Microsoft.AspNetCore.Authorization;
@@ -12,11 +10,11 @@ namespace Haiku.API.Controllers
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;
-        private readonly IPaginationUtility _paginationService;
-        private readonly IXmlSerialization _xmlSerializationService;
+        private readonly IPaginationServices _paginationService;
+        private readonly IXmlSerializationServices _xmlSerializationService;
         private readonly ILogger<UserController> _logger;
 
-        public UserController(IUserService userService, IPaginationUtility paginationService, IXmlSerialization xmlSerializationService, ILogger<UserController> logger)
+        public UserController(IUserService userService, IPaginationServices paginationService, IXmlSerializationServices xmlSerializationService, ILogger<UserController> logger)
         {
             _userService = userService;
             _paginationService = paginationService;

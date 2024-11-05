@@ -4,7 +4,7 @@ using Haiku.API.Exceptions;
 using Haiku.API.Models;
 using Haiku.API.Repositories.ImageRepositories;
 using Haiku.API.Services.IProfileServices;
-using Haiku.API.Utilities.UnitOfWorks;
+using Haiku.API.Services.UnitOfWorkServices;
 
 
 namespace Haiku.API.Services.ImageServices
@@ -12,15 +12,15 @@ namespace Haiku.API.Services.ImageServices
     public class ImageService : IImageService
     {
         private readonly IImageRepository _imageRepository;
-        private readonly IUnitOfWorkUtility _unitOfWork;
+        private readonly IUnitOfWorkService _unitOfWorkService;
         private readonly IMapper _mapper;
         private const long DefaultImageId = 1;
         private const string defaultUrl = "http://localhost:5104";
 
-        public ImageService(IImageRepository imageRepository, IUnitOfWorkUtility unitOfWork, IMapper mapper)
+        public ImageService(IImageRepository imageRepository, IUnitOfWorkService unitOfWorkService, IMapper mapper)
         {
             _imageRepository = imageRepository;
-            _unitOfWork = unitOfWork;
+            _unitOfWorkService = unitOfWorkService;
             _mapper = mapper;
         }
 
@@ -70,13 +70,13 @@ namespace Haiku.API.Services.ImageServices
 
             Image newImage = null;
 
-            await _unitOfWork.BeginTransactionAsync();
+            await _unitOfWorkService.BeginTransactionAsync();
             try
             {
                 if (!await ImageExistsByIdAsync(currentImageId))
                     throw new NotFoundException($"Image with ID: {currentImageId}, was not found.");
 
-                if (!await _unitOfWork.Profiles.ProfileExistsByIdAsync(profileId))
+                if (!await _unitOfWorkService.Profiles.ProfileExistsByIdAsync(profileId))
                     throw new NotFoundException($"Profile with ID: {profileId}, was not found.");
 
                 if (currentImageId != DefaultImageId)
@@ -112,23 +112,23 @@ namespace Haiku.API.Services.ImageServices
                 if (createdEntity == null || createdEntity.Id <= 0)
                     throw new NotSavedException($"{fileName}, was not saved succesfully");
 
-                var currentProfile = await _unitOfWork.Profiles.GetProfileByIdAsync(profileId);
+                var currentProfile = await _unitOfWorkService.Profiles.GetProfileByIdAsync(profileId);
 
                 if (currentProfile == null)
                     throw new NotRetrievedException($"Profile with ID: {profileId}, was not retrieved.");
 
                 currentProfile.ImageId = newImage.Id;
-                var rowsAffected = await _unitOfWork.Profiles.UpdateProfileAsync(currentProfile);
+                var rowsAffected = await _unitOfWorkService.Profiles.UpdateProfileAsync(currentProfile);
 
                 if (rowsAffected <= 0)
                     throw new NotSavedException($"Profile with ID: {profileId}, was not updated succesfully");
 
-                await _unitOfWork.CompleteAsync();
-                await _unitOfWork.CommitAsync();
+                await _unitOfWorkService.CompleteAsync();
+                await _unitOfWorkService.CommitAsync();
             }
             catch
             {
-                await _unitOfWork.RollbackAsync();
+                await _unitOfWorkService.RollbackAsync();
                 throw;
             }
         }

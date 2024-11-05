@@ -3,19 +3,19 @@ using Haiku.API.Dtos;
 using Haiku.API.Exceptions;
 using Haiku.API.Models;
 using Haiku.API.Repositories.AuthorRepositories;
-using Haiku.API.Utilities.UnitOfWorkUtilities;
+using Haiku.API.Services.UnitOfWorkServices;
 
 namespace Haiku.API.Services.AuthorServices
 {
     public class AuthorService : IAuthorService
     {
         private readonly IAuthorRepository _authorRepository;
-        private readonly IUnitOfWorkUtility _unitOfWork;
+        private readonly IUnitOfWorkService _unitOfWork;
         private readonly IMapper _mapper;
         private const string DefaultBio = "No Bio";
         private const long DefaultAuthor = 1;
 
-        public AuthorService(IAuthorRepository authorRepository, IUnitOfWorkUtility unitOfWork, IMapper mapper)
+        public AuthorService(IAuthorRepository authorRepository, IUnitOfWorkService unitOfWork, IMapper mapper)
         {
             _authorRepository = authorRepository;
             _unitOfWork = unitOfWork;

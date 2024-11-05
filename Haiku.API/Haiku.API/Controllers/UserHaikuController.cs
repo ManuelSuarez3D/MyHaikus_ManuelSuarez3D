@@ -1,6 +1,6 @@
 ﻿using Haiku.API.Dtos;
 using Haiku.API.Services.UserHaikuServices;
-using Haiku.API.Services.PaginationService;
+using Haiku.API.Services.PaginationServices;
 using Microsoft.AspNetCore.Mvc;
 using Haiku.API.Services.XmlSerializationServices;
 using Microsoft.AspNetCore.Authorization;
@@ -12,11 +12,11 @@ namespace Haiku.API.Controllers
     public class UserHaikuController : ControllerBase
     {
         private readonly IUserHaikuService _userHaikuService;
-        private readonly IPaginationUtility _paginationService;
-        private readonly IXmlSerialization _xmlSerializationService;
+        private readonly IPaginationService _paginationService;
+        private readonly IXmlSerializationService _xmlSerializationService;
         private readonly ILogger<UserHaikuController> _logger;
 
-        public UserHaikuController(IUserHaikuService userHaikuService, IPaginationUtility paginationService, IXmlSerialization xmlSerializationService, ILogger<UserHaikuController> logger)
+        public UserHaikuController(IUserHaikuService userHaikuService, IPaginationService paginationService, IXmlSerializationService xmlSerializationService, ILogger<UserHaikuController> logger)
         {
             _userHaikuService = userHaikuService;
             _paginationService = paginationService;

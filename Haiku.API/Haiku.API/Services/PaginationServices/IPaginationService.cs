@@ -2,7 +2,7 @@
 
 namespace Haiku.API.Utilities.PaginationUtilities
 {
-    public interface IPaginationUtility
+    public interface IPaginationService
     {
         PaginationMetaDataDto GetPaginationMetaData(int totalLogs, int pageSize, int pageNumber);
     }

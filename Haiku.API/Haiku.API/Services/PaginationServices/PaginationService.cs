@@ -1,8 +1,8 @@
 ﻿using Haiku.API.Dtos;
 
-namespace Haiku.API.Utilities.PaginationUtilities
+namespace Haiku.API.Services.PaginationServices
 {
-    public class PaginationUtility : IPaginationUtility
+    public class PaginationService : IPaginationService
     {
         /// <summary>
         /// Calculates pagination metadata for a collection of logs.

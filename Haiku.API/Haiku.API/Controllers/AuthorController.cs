@@ -13,11 +13,11 @@ namespace Haiku.API.Controllers
     public class AuthorController : ControllerBase
     {
         private readonly IAuthorService _authorService;
-        private readonly IPaginationUtility _paginationService;
+        private readonly IPaginationService _paginationService;
         private readonly IXmlSerializationUtility _xmlSerialization;
         private readonly ILogger<AuthorController> _logger;
 
-        public AuthorController(IAuthorService authorService, IPaginationUtility paginationService, IXmlSerializationUtility xmlSerialization, ILogger<AuthorController> logger)
+        public AuthorController(IAuthorService authorService, IPaginationService paginationService, IXmlSerializationUtility xmlSerialization, ILogger<AuthorController> logger)
         {
             _authorService = authorService;
             _paginationService = paginationService;
